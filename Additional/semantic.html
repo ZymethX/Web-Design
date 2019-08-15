@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<head>
+<title>Семантические элементы</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS -->
+<link href="../sources/css/type_text.css"        rel="stylesheet">
+<link href="../sources/css/bootstrap.min.css"    rel="stylesheet">
+<link href="../sources/css/font-awesome.min.css" rel="stylesheet">
+<link href="../sources/css/templatemo_misc.css"  rel="stylesheet">
+<link href="../sources/css/templatemo_style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+<link href="../sources/css/go_top.css"           rel="stylesheet">
+<link href="../sources/css/scrollbar.css"        rel="stylesheet">
+<!-- JS -->
+<script src="../sources/js/jquery.min.js"></script> 
+<script src="../sources/js/jquery.lightbox.js"></script>
+<script src="../sources/js/templatemo_custom.js"></script>
+<script src='../sources/js/jquery.min.js'></script>
+<script src="../sources/js/prefixfree.min.js"></script>
+<script src="../sources/js/go_top.js"></script>
+<script src="js/semantic.js"></script>
+<style>
+@media(max-height:700px){.all{zoom:90%}}
+p,h1,h2,h3,h4,h5,ol,td,ul,li{
+color:black;
+font-family: Lora-Regular;
+}
+h2 {
+font-size: 150%;
+}
+body {
+font-family: 'Roboto';
+color: #333;
+background-color:#393e42;
+}
+a {font-size:108%; color:#e9e9e9; }
+a:hover {font-size:108%; color:#da7b7f; }
+a.pick {font-size:108%; color:#ff000d; }
+
+.sticky {
+position: fixed;
+top: 0px;  
+z-index: 101;
+}
+.stop {
+position: relative;
+z-index: 101;
+}
+article {
+display: block;
+float: left;
+}
+hr.separator:after {
+background: none repeat scroll 0% 0% #000;
+content: "";
+height: 10px;
+left: 40%;
+margin: -5px auto auto -5px;
+position: absolute;
+transform: rotate(-45deg);
+width: 10px;
+}
+hr.separator {
+border-top: 1px solid #000;
+width: 95%;
+clear: both;
+}
+a.txthref{ color: #0477f7; font-weight: 400; font-style: italic; }
+a:hover.txthref {  color:#da7b7f; }
+@font-face {
+font-family: Lora-Regular; /* Имя шрифта */
+src: url(../sources/fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+p {          
+text-indent: 1.5em;
+}
+</style>
+</head>
+<body>
+<div class="all">
+<div class="site-header">
+<div class="main-navigation">
+<div class="responsive_menu">
+<ul>
+<ul>
+<li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+<li><a href="../L1/lab1.html">1</a></li>
+<li><a href="../L2/lab2.html">2</a></li>
+<li><a href="../L3/lab3.html">3</a></li>
+<li><a href="../L4/lab4.html">4</a></li>
+<li><a href="../L5/lab5.html">5</a></li>
+<li><a href="../L6/lab6.html">6</a></li>
+<li><a href="../L7/lab7.html">7</a></li>
+<li><a href="#" style="color:#f24660;"><span class="fa fa-exclamation"></span>Инфо</a></li>
+</ul>
+</ul>
+</div>
+<div class="container">
+<div class="row templatemo_gallerygap">
+<div class="col-md-1 col-sm-1">
+<a href="#"><img src="../sources/images/logo.png" alt="Web Design"></a>
+</div>
+<div class="main_menu">
+<ul>
+<li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+<li><a href="../L1/lab1.html">1</a></li>
+<li><a href="../L2/lab2.html">2</a></li>
+<li><a href="../L3/lab3.html">3</a></li>
+<li><a href="../L4/lab4.html">4</a></li>
+<li><a href="../L5/lab5.html">5</a></li>
+<li><a href="../L6/lab6.html">6</a></li>
+<li><a href="../L7/lab7.html">7</a></li>
+<li><a href="#" style="color:#f24660;"><span class="fa fa-exclamation"></span>Инфо</a></li>
+</ul>
+</div> <!-- /.col-md-12 -->
+<div id=T1 class='text' style="position: relative; margin-top: 10%">
+<div class='content'></div>
+<div class='dash'></div>
+</div> 
+</div> <!-- /.row -->
+</div> <!-- /.container -->
+</div> <!-- /.main-navigation -->
+</div> <!-- /.site-header -->
+<!-- book start -->
+<div id="article" >
+
+<div style="background-image: url(../sources/images/ppm.png); width: 60%; margin-left:10%; background-size: 110%;background-repeat: repeat-y;background-attachment: fixed;margin-top:-5%; ">
+
+<img src="../sources/images/top1.png" style="position: relative; width:100%;">
+
+<div style="width:90%;margin: auto;margin-top:-10%; font-size: 140%; a:link{color:#ffffff;} " > <!--CONTENT-->
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M1>Семантические элементы</h2></div><br>
+
+<p><strong>Семантические элементы HTML5</strong> доступно описывают свой смысл или 
+назначение как для браузеров, так и для веб-разработчиков.<br>
+До появления стандарта HTML5 вся разметка страниц осуществлялась преимущественно с помощью 
+элементов <code>&lt;div&gt;</code>, которым присваивали классы <code>class</code> или идентификаторы 
+<code>id</code> для наглядности разметки (например, <code>&lt;div id="header"&gt;</code>). С их помощью 
+в HTML-документе размещали верхние и нижние колонтитулы, боковые панели, навигацию и многое другое.
+</p>
+<p>Стандарт HTML5 предоставил новые элементы для структурирования, группировки контента и разметки текстового 
+содержимого. Новые семантические элементы позволили улучшить структуру веб-страницы, добавив смысловое значение 
+заключенному в них содержимому (было <code>&lt;div id="header"&gt;</code>, стало <code>&lt;header&gt;</code>). 
+Для отображения внешнего вида элементов не задано никаких правил, поэтому элементы можно стилизовать по своему 
+усмотрению. Для всех элементов доступны ‎глобальные атрибуты.
+</p>
+<p>Согласно спецификации HTML5 каждый элемент принадлежит к определенной (ноль или более) категории. 
+Каждая из них группирует элементы со схожими характеристиками. Выделяют следующие общие категории:
+</p>
+<ul style="list-style:circle;margin-bottom:20px;margin-left:20px">
+<li>Мета содержимое</li>
+<li>Потоковое содержимое</li>
+<li>Секционное содержимое</li>
+<li>Заголовочное содержимое</li>
+<li>Текстовое содержимое</li>
+<li>Встроенное содержимое</li>
+<li>Интерактивное содержимое</li>
+</ul>
+<p  style="text-align:center; color:blue; font-size:28px">Описание HTML5-элементов</p>
+<h2  align="center" id="part1">1. Элемент &lt;header&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое.<br>
+Группирует вводные и навигационные элементы, не является обязательным. Может содержать заголовки, 
+оборачивать содержание раздела страницы, форму поиска или логотип. В HTML-документе может содержаться 
+одновременно несколько элементов <code>&lt;header&gt;</code> и они могут располагаться в любой части страницы.
+</p>
+<pre>
+&lt;header&gt;
+&lt;h1&gt;Site description&lt;/h1&gt;
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="">About&lt;/a&gt;
+&lt;li&gt;&lt;a href="">Forum&lt;/a&gt;
+&lt;li&gt;&lt;a href="">Download&lt;/a&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;</pre>
+<p>Элемент <code>&lt;header&gt;</code> нельзя помещать внутрь элементов <code>&lt;footer&gt;</code>, <code>&lt;address&gt;</code> или другого элемента <code>&lt;header&gt;</code>.
+</p>
+<h2  align="center" id="part2">2. Элемент &lt;nav&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>
+Предназначен для создания блока навигации веб-страницы или всего веб-сайта, при этом не обязательно должен находиться внутри <code>&lt;header&gt;</code>. На странице может быть несколько элементов <code>&lt;nav&gt;</code>. Не заменяет теги <code>&lt;ul&gt;</code> или <code>&lt;оl&gt;</code>, он просто их обрамляет. Не все группы ссылок на странице должны быть обёрнуты <code>&lt;nav&gt;</code>, этот элемент предназначен в первую очередь для разделов, которые состоят из главных навигационных блоков.
+</p>
+<pre>&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+<p>В качестве элементов панели навигации можно использовать не только элементы списков:
+</p>
+<pre>&lt;nav&gt;
+&lt;p&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;...&lt;/a&gt;&lt;/p&gt;
+&lt;/nav&gt;</pre>
+<p>Также можно добавлять заголовки внутрь элемента:
+</p>
+<pre>&lt;nav&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+<h2  align="center" id="part3">3. Элемент &lt;article&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>
+Используется для группировки записей — публикаций, статей, записей блога, комментариев. Представляет собой независимый обособленный блок, предназначенный для многократного использования, как правило, начинается с заголовка. Может дублироваться на других страницах сайта и содержать внутри другие элементы <code>&lt;article&gt;</code>, которые по содержанию имеют близкое отношение к содержанию внешней статьи. Если на странице присутствует только одна статья с заголовком и текстовым содержимым, она не нуждается в обёртке элементом <code>&lt;article&gt;</code>. Элемент рекомендуется использовать только в том случае, если содержимое элемента будет явно указано в схеме документа.
+</p>
+<pre>&lt;article&gt;
+&lt;header&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;/header&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;footer&gt;
+Опубликовано в категории&lt;a href=""&gt;Музыка&lt;/a&gt;.
+&lt;a href=""&gt;0 комментариев&lt;/a&gt;
+&lt;/footer&gt;
+&lt;/article&gt;</pre>
+<h2  align="center" id="part4">4. Элемент &lt;section&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>
+Элемент представляет собой универсальный раздел документа. Группирует тематическое содержимое и обычно содержит заголовок. Не является блоком-оберткой, для этих целей уместнее использовать элемент <code>&lt;div&gt;</code>. В качестве содержимого может выступать оглавление, разделы научных публикаций, программа мероприятия. Домашняя страница сайта также может быть поделена на секции — блок вводной информации, новости и контакты. Элемент рекомендуется использовать только в том случае, если содержимое элемента будет явно указано в схеме документа.
+</p>
+<pre>&lt;article&gt;
+&lt;h1&gt;...&lt;/h1&gt;
+&lt;section&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/section&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/article&gt;</pre>
+<p style="text-align:center; font-size:20px"><code>&lt;article&gt;</code> внутри <code>&lt;section&gt;</code></p>
+<p>Можно создавать родительские элементы <code>&lt;section&gt;</code> с вложенными элементами <code>&lt;article&gt;</code>, в которых есть один или несколько элементов <code>&lt;article&gt;</code>. Не все страницы должны быть устроены именно так, но это допустимый способ вложения элементов. Например, основная область контента страницы содержит два блока со статьями разной тематики. Можно сделать на этом акцент, поместив каждую статью одной тематики внутрь элемента <code>&lt;section&gt;</code></p>
+<pre>&lt;section&gt;
+&lt;h1&gt;Заметки о природе&lt;/h1&gt;
+&lt;article&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/article&gt;
+&lt;article&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/article&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;h1&gt;Исторические заметки&lt;/h1&gt;
+&lt;article&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/article&gt;
+&lt;article&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/article&gt;
+&lt;/section&gt;</pre>
+<h2  align="center" id="part5">5. Элемент &lt;aside&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>
+Группирует содержимое, связанное с окружающим его контентом напрямую, но которое можно счесть отдельным <em>(т.е., удаление этого блока не повлияет на понимание основного содержимого)</em>. Чаще всего элемент позиционируется как боковая колонка (как в книгах) и включает в себя группу элементов: <code>&lt;nav&gt;</code>, цифровые данные, цитаты, рекламные блоки, архивные записи. Не подходит для блоков, просто позиционированных в стороне.
+</p>
+
+<pre>&lt;aside&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/aside&gt;</pre>
+<pre>&lt;aside&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;...&lt;cite&gt;...&lt;/cite&gt;...&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/aside&gt;</pre>
+<h2  align="center" id="part6">6. Элемент &lt;footer&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое.<br>
+Представляет собой нижний колонтитул содержащей его секции или корневого элемента. Обычно содержит информацию об авторе статьи, данные о копирайте и т.д. Если используется как колонтитул всей страницы, содержимое дополняется сведениями об авторских правах, ссылками на условия использования, контактную информацию, ссылками на связанное содержимое и т.п.
+</p>
+<p>В одном веб-документе может быть несколько элементов <code>&lt;footer&gt;</code>. Как каждая страница, так и каждая статья может иметь свой элемент <code>&lt;footer&gt;</code>, более того, <code>&lt;footer&gt;</code> можно поместить в элемент <code>&lt;blockquote&gt;</code>, чтобы указать источник цитирования.
+</p>
+<pre>&lt;footer&gt;
+&lt;address&gt;...&lt;/address&gt;
+&lt;small&gt;@2014...&lt;/small&gt;
+&lt;/footer&gt;</pre>
+<h2  align="center" id="part7">7. Элемент &lt;address&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое.<br>
+Используется для определения контактной информации автора/владельца документа или статьи. Для обозначения автора документа тег размещают внутри элемента <code>&lt;body&gt;</code>, для отображения автора статьи — внутри тега <code>&lt;article&gt;</code>. В браузере обычно отображается курсивом.
+</p>
+<h2  align="center" id="part8">8. Элемент &lt;main&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое.<br>
+Элемент <code>&lt;main&gt;</code> представляет основное содержимое документа (содержимое элемента <code>&lt;body&gt;</code>). Контент, находящийся внутри элемента, должен быть уникальным и не повторяться во всех документах сайта, таких как навигационные ссылки, информация о копирайте, логотипы, формы поиска (в случае, если форма поиска является основной функцией документа).
+</p>
+<p>Элемент <code>&lt;main&gt;</code> не может быть потомком таких элементов как <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;header&gt;</code> или <code>&lt;nav&gt;</code>.
+</p>
+<pre>&lt;body&gt;
+&lt;header&gt;
+&lt;h1&gt;Пудель&lt;/h1&gt;
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="index.html"&gt;Главная&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="about.html"&gt;О породе&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="health.html"&gt;Здоровье&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+&lt;section&gt;
+&lt;header&gt;
+&lt;h2&gt;О породе&lt;/h2&gt;
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#basic"&gt;Разновидности&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#app"&gt;Внешний вид&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#temp"&gt;Характер&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;section id="basic"&gt;
+&lt;h3&gt;Разновидности&lt;/h3&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="app"&gt;
+&lt;h3&gt;Внешний вид&lt;/h3&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="temp"&gt;
+&lt;h3&gt;Характер&lt;/h3&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/section&gt;
+&lt;footer&gt;
+&lt;a href="#basic"&gt;Разновидности&lt;/a&gt;
+&lt;a href="#app"&gt;Внешний вид&lt;/a&gt;
+&lt;a href="#temp"&gt;Характер&lt;/a&gt;
+&lt;/footer&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+&lt;small&gt;Copyright © &lt;time datetime="2016"&gt;2016&lt;/time&gt; Моя собака.ру&lt;/small&gt;
+&lt;/footer&gt;
+&lt;/body&gt;</pre>
+<h2  align="center" id="part9">9. Элемент &lt;figure&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, корневое секционное содержимое.<br>
+Элемент <code>&lt;figure&gt;</code> представляет автономный контент (необязательно с заголовком), являющийся самостоятельным элементом основного потока. Элемент может быть перемещен из основного содержимого документа в боковую колонку или приложение, не затрагивая поток документа. С помощью элемента <code>&lt;figure&gt;</code> можно добавлять краткие характеристики к иллюстрациям, фотографиям, диаграммам, фрагментам кода и т.д..
+</p>
+<pre>&lt;figure&gt;
+&lt;img src="picture.jpg" alt="Осень"&gt;
+&lt;figcaption&gt;Осенний лес&lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+<p>Элемент <code>&lt;figure&gt;</code> является блочным, по ширине занимает всю ширину блока-контейнера за минусом внешних отступов <code>margin</code>:  </p>
+<pre>margin-left: 40px;
+margin-right: 40px;
+margin-top: 1em;
+margin-bottom: 1em;</pre>
+<h2  align="center" id="part10">10. Элемент &lt;figcaption&gt;</h2>
+<p>Элемент <code>&lt;figcaption&gt;</code> — потомок элемента <code>&lt;figure&gt;</code>, не принадлежит ни к одной категории контента. Элемент является блочным, по ширине равен ширине элемента <code>&lt;figure&gt;</code>, высота по умолчанию равна <code>18px</code>.
+</p>
+<h2  align="center" id="part11">11. Элемент &lt;time&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, текстовое содержимое.<br>
+Определяет время (24 часа) или дату по григорианскому календарю с возможным указанием времени и смещения часового пояса. Текст, заключенный в данный тег, не имеет стилевого оформления браузером. Для тега доступен атрибут <code>datetime</code>, в качестве содержимого которого указывается то, что будет видеть пользователь на экране своего компьютера:
+</p>
+<pre>&lt;time datetime="2014-09-25"&gt; 25 Сентября 2014&lt;/time&gt;</pre>
+<p>Чтобы дата могла считываться автоматически, она должна быть в формате <code>YYYY-MM-DD</code>. Время, которое также может указываться, задается в формате <code>HH:MM</code> с добавлением разделяющего префикса <code>T</code> (time): </p>
+<pre>&lt;time datetime="2014-09-25T12:00"&gt; 25 Сентября 2014&lt;/time&gt;</pre>
+<h2  align="center" id="part12">12. Элемент &lt;mark&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, текстовое содержимое.<br>
+Текст, помещенный внутрь тега <code>&lt;mark&gt;</code>, выделяется по умолчанию желтым цветом (цвет фона и цвет шрифта в выделенном блоке можно изменить, задав определенные css-стили). С помощью данного тега можно отмечать важное содержимое, а также ключевые слова.
+</p>
+<h2  align="center" id="part13">13. Элемент &lt;bdi&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, текстовое содержимое.<br>
+Отделяет фрагмент текста, который должен быть изолирован от остального текста для двунаправленного форматирования текста. Используется для текстов, написанных одновременно на языках, читающихся слева направо и справа налево.
+</p>
+<h2  align="center" id="part14">14. Элемент &lt;wbr&gt;</h2>
+<p><b>Категории контента:</b> потоковое содержимое, текстовое содержимое.<br>
+Одиночный тег, показывает браузеру место, где можно добавить разрыв длинной строки в случае необходимости.
+</p>
+<br><br><p style="text-align: center; font-size: 22px"><a class="txthref" href="#T1">Вернуться в начало</a></p><br><br>
+</div>
+</div>
+</div>  <!-- book end -->
+<!-- content start -->
+<div style="display: block ;width: 20%; height: 100%; right:5%; top:28%; z-index: 101; position: absolute;font-size: 150%; line-height: 1.6;">
+<p style="color:#f24660; font-size: 28px; text-align:center; text-indent: 0;">Дополнительная информация</p>
+<div  id="aside1" style="text-indent: 0;" >   
+<hr>
+<div>
+<LI><A HREF="html_tags.html">HTML - теги</A><BR>
+<LI><A HREF="html_atributes.html">Глобальные атрибуты</A><BR>
+<LI><A class="pick" HREF="">Элементы разметки</A><BR>
+<LI><A HREF="css.html">CSS - свойства</A><BR>
+</div>
+<hr>
+<!--     <p style="text-align: center; font-size: 28px; color: #fafafa; margin-top: -10px;  text-indent: 0;"> 
+<a href="lab1.html#practic">Практика</a></p> -->
+</div>
+<!-- content end -->
+</div>
+<!-- footer start -->
+<div class="templatemo_footer" style="position: relative; left: 0; bottom: 0; ">
+<div class="container">
+<div class="row" style="color: white">
+<div class="col-md-9 col-sm-12">
+<span>Dnipro National University |  Laboratory Workshop &copy; 2019  </span>
+</div>
+<div  style="text-align: right">
+<span> Designed by Zymeth</span>
+</div>
+</div>
+</div>
+</div>
+<!-- footer end -->    
+<script src='../sources/js/content_scroll.js'></script>
+</body>
+</HTML>

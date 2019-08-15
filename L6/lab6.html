@@ -1,0 +1,938 @@
+﻿<!DOCTYPE HTML>
+  <head>
+    <title>Лабораторная работа №6</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="../sources/css/type_text.css"        rel="stylesheet">
+    <link href="../sources/css/bootstrap.min.css"    rel="stylesheet">
+    <link href="../sources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../sources/css/templatemo_misc.css"  rel="stylesheet">
+    <link href="../sources/css/templatemo_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+    <link href="../sources/css/go_top.css"           rel="stylesheet">
+    <link href="../sources/css/scrollbar.css"        rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../sources/js/jquery.min.js"></script> 
+    <script src="../sources/js/jquery.lightbox.js"></script>
+    <script src="../sources/js/templatemo_custom.js"></script>
+    <script src='../sources/js/jquery.min.js'></script>
+    <script src="../sources/js/prefixfree.min.js"></script>
+    <script src="../sources/js/go_top.js"></script>
+    <script src="js/index.js"></script>
+    
+    <style>
+      @media(max-height:700px){.all{zoom:90%}}
+
+      p,h1,h2,h2,h4,h5,ol,td,ul,li{
+        color:black;
+        font-family: Lora-Regular;
+      }
+
+      h2 {
+        font-size: 150%;
+      }
+
+      body {
+        font-family: 'Roboto';
+        color: #333;
+        background-color:#393e42;
+      }
+
+      a {font-size:108%; color:#e9e9e9; }
+      a:hover {font-size:108%; color:#da7b7f; }
+
+      .sticky {
+        position: fixed;
+        top: 0px;  
+        z-index: 101;
+      }
+
+      .stop {
+        position: relative;
+        z-index: 101;
+      }
+
+      article {
+        display: block;
+        float: left;
+      }
+
+      hr.separator:after {
+        background: none repeat scroll 0% 0% #000;
+        content: "";
+        height: 10px;
+        left: 40%;
+        margin: -5px auto auto -5px;
+        position: absolute;
+        transform: rotate(-45deg);
+        width: 10px;
+      }
+      hr.separator {
+        border-top: 1px solid #000;
+        width: 95%;
+        clear: both;
+      }
+
+      a.txthref{ color: #0477f7; font-weight: 400; }
+      a:hover.txthref {  color:#da7b7f; }
+      
+      @font-face {
+        font-family: Lora-Regular; /* Имя шрифта */
+        src: url(../sources/fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+      }
+
+      p {          
+        text-indent: 1.5em;
+      }
+    </style>
+</head>
+<body>
+<div class="all">
+  <div class="site-header">
+    <div class="main-navigation">
+      <div class="responsive_menu">
+        <ul>
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-envelope"></span>Инфо</a></li>
+              </ul>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row templatemo_gallerygap">
+                    <div class="col-md-1 col-sm-1">
+                      <a href="#"><img src="../sources/images/logo.png" alt="Web Design"></a>
+                    </div>
+          <div class="main_menu">
+             
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="#"><span class="fa fa-star"></span>6</a></li> 
+              <li><a href="../L7/lab7.html">7</a></li>
+
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-exclamation"></span>Инфо</a></li>
+              </ul>
+
+          </div> <!-- /.col-md-12 -->
+
+          <div id=T1 class='text' style="position: relative; margin-top: 10%">
+          <div class='content'></div>
+          <div class='dash'></div>
+          </div> 
+        
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.main-navigation -->
+  </div> <!-- /.site-header -->
+
+
+    <!-- book start -->
+<div id="article" >
+<div style="background-image: url(../sources/images/ppm.png); width: 60%; margin-left:10%; background-size: 110%;background-repeat: repeat-y;background-attachment: fixed;margin-top:-5%; ">
+
+<img src="../sources/images/top1.png" style="position: relative; width:100%;">
+
+
+<div style="width:90%;margin: auto;margin-top:-10%; font-size: 140%; a:link{color:#ffffff;} " > <!--CONTENT-->
+
+
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M1>1. Основные положения</h2></div><br>
+
+<p><strong>HTML-формы</strong> являются элементами управления, которые применяются для сбора 
+информации от посетителей веб-сайта. </p>
+<p>Веб-формы состоят из набора текстовых полей, кнопок, списков и других элементов управления, 
+которые активизируются щелчком мыши. Технически формы передают данные от пользователя удаленному серверу. </p>
+<p>Для получения и обработки данных форм используются языки веб-программирования, такие как PHP, Perl.</p>
+<p>До появления HTML5 веб-формы представляли собой набор нескольких элементов <code>&lt;input type="text"&gt;</code>, 
+<code>&lt;input type="password"&gt;</code>, завершающихся кнопкой <code>&lt;input type="submit"&gt;</code>. 
+Для стилизации форм в разных браузерах приходилось прилагать немало усилий. Кроме того, формы требовали применения 
+JavaScript для проверки введенных данных, а также были лишены специфических типов полей ввода для указания повседневной 
+информации типа дат, адресов электронной почты и URL-адресов.</p>
+<p>HTML5-формы решили большинство этих распространенных проблем благодаря наличию 
+новых атрибутов, предоставив возможность изменять внешний вид элементов форм за счет CSS3.</p>
+<figure style="margin-left: 10%"><img src="example/pic/html5_form.png" alt="html5_form" width="660" height="696">
+<figcaption>Рис. 1. Улучшенные веб-формы с помощью HTML5</figcaption></figure>
+
+<h2 align="center" id=M2>2. Элемент <code>&lt;form&gt;</code></h2><br>
+
+<p>Основу любой формы составляет элемент <code>&lt;form&gt;...&lt;/form&gt;</code>. 
+Он не предусматривает ввод данных, так как является контейнером, удерживая вместе все 
+элементы управления формы – <b>поля</b>. Атрибуты этого элемента содержат информацию, 
+общую для всех полей формы, поэтому в одну форму нужно включать поля, объединенные логически.</p>
+<table border="1px">
+<caption>Таблица 1. Атрибуты тега &lt;form&gt;</caption>
+<tbody style="outline-style: double;outline-color: #454545"><tr>
+<th style="width:13%;">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>accept-charset</code></td>
+<td>Значение атрибута представляет собой разделенный пробелами <b>список кодировок символов</b>, 
+которые будут использоваться для отправки формы, например, <code>&lt;form accept-charset="ISO-8859-1"&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>action</code></td>
+<td><b>Обязательный атрибут</b>, который указывает <code>url</code> обработчика формы на сервере, 
+которому передаются данные. Представляет из себя файл (например, <code>action.php</code>), в котором 
+описано, что нужно делать с данными формы. Если значение атрибута не будет указано, то после перезагрузки 
+страницы элементы формы примут значения по умолчанию.<br>
+В случае, если вся работа будет выполняться на стороне клиента сценариями JavaScript, то для атрибута 
+<code>action</code> можно указать значение <code>#</code>.<br>
+Также можно сделать так, чтобы заполненная посетителем форма приходила вам на почту. Для этого нужно внести следующую запись:<br>
+<code>&lt;form action="mailto:адрес вашей электронной почты" enctype="text/plain"&gt;&lt;/form&gt;</code></td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">autocomplete</code></td>
+<td>Отвечает за запоминание введенных в текстовое поле значений и автоподстановку их при последующем вводе:<br>
+<code>on</code> — означает, что поле не защищено, и его значение можно сохранять и извлекать,<br>
+<code>off</code> — отключает автозаполнение для полей форм.</td>
+</tr>
+<tr>
+<td><code>enctype</code></td>
+<td>Используется для указания <b>MIME</b>-типа данных, отправляемых вместе с формой, например, 
+<code>enctype="multipart/form-data"</code>. Указывается только в случае <code>method="post"</code>.<br>
+<code>application/x-www-form-urlencoded</code> — тип содержимого по умолчанию, указывает на то, что 
+передаваемые данные представляют список URL-кодированных переменных формы. Символы пробела (ASCII 32) 
+будут закодированы как <code>+</code>, а специальный символ, например, такой как <code>!</code> будет 
+закодирован шестнадцатиричной форме как <code>%21</code>.<br>
+<code>multipart/form-data</code> — используется для отправки форм, содержащих файлы, не-ASCII данные и 
+бинарные данные, состоит из нескольких частей, каждая из которых представляет содержимое отдельного элемента формы.<br>
+<code>text/plain</code> — указывает на то, что передается обычный (не html) текст.</td>
+</tr>
+<tr>
+<td><code>method</code></td>
+<td>Задает способ передачи данных формы.<br>
+Метод <code>get</code> передает данные на сервер через адресную строку браузера. При формировании запроса 
+к серверу все переменные и их значения формируют последовательность вида <code>www.anysite.ru/form.php?var1=1&amp;var2=2</code>. 
+Имена и значения переменных присоединяются к адресу сервера после знака <code>?</code> и разделяются между собой знаком <code>&amp;</code>. 
+Все специальные символы и буквы, отличные от латинских, кодируются в формате <code>%nn</code>, пробел заменяется на <code>+</code>. 
+Этот метод нужно использовать, если вы не передаете больших объемов информации. Если вместе с формой предполагается отправка 
+какого-либо файла, этот метод не подойдет.<br>
+Метод <code>post</code> применяется для пересылки данных больших объемов, а также конфиденциальной информации и паролей. 
+Данные, отправляемые с помощью этого метода, не видны в заголовке URL, так как они содержатся в теле сообщения.<br>
+<code>&lt;form action="action.php" enctype="multipart/form-data" method="post"&gt;&lt;/form&gt;</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Задает <b>имя формы</b>, которое будет использоваться для доступа к элементам 
+формы через сценарии, например, <code>name="opros"</code>.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">novalidate</code></td>
+<td>Отключает проверку в кнопке для отправки формы. Атрибут используется без указания значения</td>
+</tr>
+<tr>
+<td><code>target</code></td>
+<td>Указывает окно, в которое будет направлена информация:<br>
+<code>_blank</code> — новое окно<br>
+<code>_self</code> — тот же фрейм<br>
+<code>_parent</code> — родительский фрейм (если он существует, если нет — то в текущий)<br>
+<code>_top</code> — окно верхнего уровня по отношению к данному фрейму. 
+Если вызов происходит не из дочернего фрейма, то в тот же фрейм.</td>
+</tr>
+</tbody></table>
+
+<h2 align="center" id=M3>3. Группировка элементов формы</code></h2><br>
+
+<p>Элемент <code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code> предназначен для группировки элементов, 
+связанных друг с другом, разделяя таким образом форму на логические фрагменты. </p>
+<p>Каждой группе элементов можно присвоить название с помощью элемента <code>&lt;legend&gt;</code>, который идет 
+сразу за тегом <code>&lt;fieldset&gt;</code>. Название группы проявляется слева в верхней границе 
+<code>&lt;fieldset&gt;</code>. Например, если в элементе <code>&lt;fieldset&gt;</code> хранится контактная информация: </p>
+
+<pre>&lt;form>
+&lt;fieldset>
+&lt;legend>Контактная информация&lt;/legend>
+&lt;p>&lt;label for="name">Имя &lt;em>*&lt;/em>&lt;/label>&lt;input type="text" id="name&lt;/p>
+&lt;p>&lt;label for="email">E-mail&lt;/label>&lt;input type="email" id="email">&lt;/p>
+&lt;/fieldset>
+&lt;p>&lt;input type="submit" value="Отправить">&lt;/p>
+&lt;/form></pre>
+
+<figure style="margin-left: 10%"><img src="example/pic/fieldset.png" alt="fieldset" width="660" height="303">
+<figcaption>Рис. 2. Группировка элементов формы с помощью &lt;fieldset&gt;</figcaption></figure><br>
+<table border="1px">
+<caption>Таблица 2. Атрибуты тега &lt;fieldset&gt;</caption>
+<tbody><tr>
+<th style="width:13%">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Если атрибут присутствует, то группа связанных элементов формы, находящихся внутри контейнера 
+<code>&lt;fieldset&gt;</code>, отключены для заполнения и редактирования. Используется для ограничения 
+доступа к некоторым полям формы, содержащих ранее введенные данные. Атрибут используется без указания 
+значения — <code>&lt;fieldset disabled&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>form</code></td>
+<td>Значение атрибута должно быть равно атрибуту <code>id</code> элемента <code>&lt;form&gt;</code> 
+в этом же документе. Указывает на одну или несколько форм, к которым принадлежит данная группа элементов. 
+На данный момент атрибут не поддерживается ни одним браузером.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Определяет <b>имя</b>, которое будет использоваться для ссылки на элементы в JavaScript, 
+или для ссылки на данные формы после заполнения и отправки формы. Является аналогом атрибута <code>id</code>.</td>
+</tr>
+</tbody></table>
+
+<h2 align="center" id=M4>4. Создание полей формы</code></h2><br>
+
+<p>Элемент <code>&lt;input&gt;</code> создает большинство полей формы. Атрибуты элемента отличаются в 
+зависимости от типа поля, для создания которого используется этот элемент.  </p>
+<p>С помощью css-стилей можно изменить размер шрифта, тип шрифта, цвет и другие свойства текста, а также 
+добавить границы, цвет фона и фоновое изображение. Ширина поля задается свойством <code>width</code>.</p>
+<table border="1px">
+<caption>Таблица 3. Атрибуты тега &lt;input&gt;</caption>
+<tbody><tr>
+<th style="width:13%">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>accept</code></td>
+<td>Определяет тип файла, разрешенных для отправки на сервер. Указывается только для 
+<code>&lt;input type="file"&gt;</code>. Возможные значения:<br>
+file_extension — разрешает загрузку файлов с указанным расширением, например, <code>accept=".gif"</code>, 
+<code>accept=".pdf"</code>, <code>accept=".doc"</code><br>
+<code>audio/*</code> — разрешает загрузку аудиофайлов<br>
+<code>video/*</code> — разрешает загрузку видеофайлов<br>
+<code>image/*</code> — разрешает загрузку изображений<br>
+media_type — указывает на медиа-тип загружаемых файлов.</td>
+</tr>
+<tr>
+<td><code>alt</code></td>
+<td>Определяет <b>альтернативный текст</b> для изображений, указывается только для <code>&lt;input type="image"&gt;</code>.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">autocomplete</code></td>
+<td>Отвечает за запоминание введенных в текстовое поле значений и автоподстановку их при последующем вводе:<br>
+<code>on</code> — означает, что поле не защищено, и его значение можно сохранять и извлекать,<br>
+<code>off</code> — отключает автозаполнение для полей форм.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">autofocus</code></td>
+<td>Позволяет сделать так, чтобы в загружаемой форме то или иное поле 
+ввода уже имело фокус (было выбрано), являясь готовым к вводу значения.</td>
+</tr>
+<tr>
+<td><code>checked</code></td>
+<td>Атрибут проверяет, установлен ли флажок по умолчанию при загрузке страницы 
+для полей типа <code>type="checkbox"</code> и <code>type="radio"</code>.</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Отключает возможность редактирования и копирования содержимого поля.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">form</code></td>
+<td>Значение атрибута должно быть равно атрибуту <code>id</code> элемента <code>&lt;form&gt;</code> в этом же документе. 
+Определяет одну или несколько форм, которым принадлежит данное поле формы.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">formaction</code></td>
+<td>Задает <code>url</code> файла, который будет обрабатывать введенные в поля данные при отправке формы. 
+Задается только для полей типа <code>type="submit"</code> и <code>type="image"</code>. Атрибут переопределяет 
+значение атрибута <code>action</code> самой формы.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">formenctype</code></td>
+<td>Определяет, как будут кодироваться данные полей формы при отправке на сервер. Переопределяет значение атрибута 
+<code>enctype</code> формы. Задается только для полей типа <code>type="submit"</code> и <code>type="image"</code>. Варианты:<br>
+<code>application/­x-www-form-urlencoded</code> — значение по умолчанию. Все символы кодируются перед отправкой 
+(пробелы заменяются на символ <code>+</code>, специальные символы преобразуются в значения ASCII HEX)<br>
+<code>multipart/form-data</code> — символы не кодируются<br>
+<code>text/plain</code> — пробелы заменяются на символ <code>+</code>, а специальные символы не кодируются.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">formmethod</code></td>
+<td>Атрибут определяет метод, который браузер будет использовать для отправки данных формы на сервер. 
+Задается только для полей типа <code>type="submit"</code> и <code>type="image"</code>. Переопределяет 
+значение атрибута <code>method</code> формы. Варианты:<br>
+<code>get</code> — значение по умолчанию. Данные из формы (пара имя/значение) добавляются в url-адрес и 
+отправляются на сервер: <code>URL?имя=значение&amp;имя=значение</code><br>
+<code>post</code> — данные формы отправляются в виде http-запроса.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">formnovalidate</code></td>
+<td>Определяет, что данные полей формы не должны проверяться при отправке формы. Переопределяет значение 
+атрибута <code>novalidate</code> формы. Можно использовать без указания значения атрибута.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">formtarget</code></td>
+<td>Определяет, где выводить ответ, полученный после отправки формы. Задается только для полей типа 
+<code>type="submit"</code> и <code>type="image"</code>. Переопределяет значение атрибута <code>target</code> формы.<br>
+<code>_blank</code> — загружает ответ в новое окно/вкладку<br>
+<code>_self</code> — загружает ответ в то же окно (значение по умолчанию)<br>
+<code>_parent</code> – загружает ответ в родительский фрейм<br>
+<code>_top</code> – загружает ответ во весь экран<br>
+framename – загружает ответ во фрейм с указанным именем.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">height</code></td>
+<td>Значение атрибута содержит количество пикселей без указания единицы измерения. Устанавливает высоту 
+поля формы типа <code>type="image"</code>, например,  <code>&lt;input type="image" src="img_submit.gif" 
+height="50"&gt;</code>. Рекомендуется одновременно устанавливать как высоту, так и ширину поля.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">list</code></td>
+<td>Является ссылкой на элемент <code>&lt;datalist&gt;</code>, содержит его <code>id</code>.Позволяет 
+предоставить пользователю несколько вариантов на выбор, когда он начинает вводить значение в соответствующем поле.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">max</code></td>
+<td>Позволяет ограничить допустимый ввод числовых данных максимальным значением, значение атрибута может 
+содержать целое или дробное число. Рекомендуется использовать этот атрибут вместе с атрибутом <code>min</code>. 
+Работает со следующими типами полей: <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime</code>,
+ <code>datetime-local</code>, <code>month</code>, <code>time</code> и <code>week</code>.</td>
+</tr>
+<tr>
+<td><code>maxlength</code></td>
+<td>Атрибут задает максимальное количество символов, вводимых в поле. Значение по умолчанию 524288 символов.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">min</code></td>
+<td>Позволяет ограничить допустимый ввод числовых данных минимальным значением.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">multiple</code></td>
+<td>Позволяет пользователю ввести несколько значений атрибутов, разделяя их запятой. Применяется в отношении 
+файлов и адресов электронной почты. Указывается без значения атрибута.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Определяет имя, которое будет использоваться для доступа к элементу <code>&lt;form&gt;</code>, к примеру, 
+в таблицах стилей css. Является аналогом атрибута <code>id</code>.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">pattern</code></td>
+<td>Позволяет определять с помощью <b>регулярного выражения</b> синтаксис данных, ввод которых должен быть 
+разрешен в определенном поле. Например, <code>pattern="[a-z]{3}-[0-9]{3}"</code> — квадратные скобки устанавливают 
+диапазон допустимых символов, в данном случае — любые строчные буквы, число в фигурных скобках указывает, что нужны 
+три строчные буквы, после которых следует тире, далее — три цифры в диапазоне от 0 до 9.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">placeholder</code></td>
+<td>Содержит текст, который отображается в поле ввода до заполнения (чаще всего это подсказка).</td>
+</tr>
+<tr>
+<td><code>readonly</code></td>
+<td>Не позволяет пользователю изменять значения элементов формы, выделение и копирование текста при 
+этом доступно. Указывается без значения атрибута.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">required</code></td>
+<td>Выводит сообщение о том, что данное поле является обязательным для заполнения. Если пользователь 
+попытается отправить форму, не введя в это поле требуемое значение, то на экране отобразится 
+предупреждающее сообщение. Указывается без значения атрибута.</td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>Задает видимую ширину поля в символах. Значение по умолчанию — 20. Работает со следующими 
+типами полей: <code>text</code>, <code>search</code>, <code>tel</code>, 
+<code>url</code>, <code>email</code> и <code>password</code>.</td>
+</tr>
+<tr>
+<td><code>src</code></td>
+<td>Задает <code>url</code> изображения, используемого в качестве кнопки отправки данных формы. 
+Указывается только для поля <code>&lt;input type="image"&gt;</code>.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">step</code></td>
+<td>Используется для элементов, предполагающих ввод числовых значений, указывает величину 
+увеличения или уменьшения значений в процессе регулировки диапазона (шаг).</td>
+</tr>
+<tr>
+<td rowspan="21"><code>type</code></td>
+<td><code>button</code> — создает кнопку.<br>
+<input type="button" value="Кнопка"></td>
+</tr>
+<tr>
+<td><code>checkbox</code> — превращает поле ввода во флажок, который можно установить или очистить, например,<br>
+<input type="checkbox" name="vehicle" value="Автомобиль">У меня есть автомобиль</td>
+</tr>
+<tr>
+<td><code>color</code> — генерирует палитры цветов в поддерживающих браузерах, давая пользователям 
+возможность выбирать значения цветов в шестнадцатеричном формате.<br>
+<input type="color" name="color"></td>
+</tr>
+<tr>
+<td><code>date</code> — позволяет вводить дату в формате дд.мм.гггг.<br>
+День рождения: <input type="date" name="birthday"></td>
+</tr>
+<tr>
+<td><code>datetime-local</code> — позволяет вводить дату и время, разделенные 
+прописной английской буквой <code>Т</code> по шаблону дд.мм.гггг  чч:мм.<br>
+День рождения — день и время: <input type="datetime-local" name="birthday"></td>
+</tr>
+<tr>
+<td><code>email</code> — браузеры, поддерживающие данный атрибут, будут ожидать, что 
+пользователь введет данные, соответствующие синтаксису адресов электронной почты.<br>
+E-mail: <input type="email" name="email"></td>
+</tr>
+<tr>
+<td><code>file</code> — позволяет загружать файлы с компьютера пользователя.<br>
+Выберите файл: <input type="file" name="img"></td>
+</tr>
+<tr>
+<td><code>hidden</code> — скрывает элемент управления, который не отображается 
+браузером и не дает пользователю изменять значения по умолчанию.</td>
+</tr>
+<tr>
+<td><code>image</code> — создает кнопку, позволяя вместо текста на кнопке вставить изображение.<br>
+<input type="image" src="example/pic/webbutton.png" alt="Submit"></td>
+</tr>
+<tr>
+<td><code>month</code> — позволяет пользователю вводить год и номер месяца по шаблону гггг-мм.<br>
+<input type="month"></td>
+</tr>
+<tr>
+<td><code>number</code> — предназначено для ввода целочисленных значений. Его атрибуты <code>min</code>, 
+<code>max</code> и <code>step</code> задают верхний, нижний пределы и шаг между значениями соответственно. 
+Эти атрибуты предполагаются у всех элементов, имеющих численные показатели. Их значения по умолчанию зависят от типа элемента.<br>
+Укажите количество (от 1 до 5): <input type="number" name="quantity" min="1" max="5"></td>
+</tr>
+<tr>
+<td><code>password</code> — создает текстовые поля в форме, при этом вводимые пользователем 
+символы заменяются на звездочки, маркеры, либо другие, установленные браузером значки.<br>
+Введите пароль: <input type="password"></td>
+</tr>
+<tr>
+<td><code>radio</code> — создает переключатель — элемент управления в виде небольшого кружка, который можно включить или выключить.<br>
+Вегетарианец: <input type="radio"></td>
+</tr>
+<tr>
+<td><code>range</code> — позволит создать такой элемент интерфейса, как ползунок, min / max — позволят 
+установить диапазон выбора <input type="range" min="1" max="10" value="3"></td>
+</tr>
+<tr>
+<td><code>reset</code> — создает кнопку, которая очищает поля формы от введенных пользователем данных.<br>
+<input type="reset"></td>
+</tr>
+<tr>
+<td><code>search</code> — обозначает поле поиска, по умолчанию поле ввода имеет прямоугольную форму.<br>
+Поиск: <input type="search" name="search"></td>
+</tr>
+<tr>
+<td><code>submit</code> — создает стандартную кнопку, активизируемую щелчком мыши. 
+Кнопка собирает информацию с формы и отправляет ее для обработки.<br>
+<input type="submit" value="Отправить"></td>
+</tr>
+<tr>
+<td><code>text</code> — создает текстовые поля в форме, выводя однострочное текстовое поле для ввода текста.<br>
+<input type="text"></td>
+</tr>
+<tr>
+<td><code>time</code> — позволяет вводить время в 24-часовом формате по шаблону чч:мм. 
+В поддерживающих браузерах оно отображается как элемент управления в виде числового поля ввода со 
+значением, изменяемым с помощью мыши, и допускает ввод только значений времени.<br>
+Укажите время: <input type="time"></td>
+</tr>
+<tr>
+<td><code>url</code> — поле предназначено для указания URL-адресов.<br>
+Главная страница: <input type="url" name="homepage"></td>
+</tr>
+<tr>
+<td><code>week</code> — соответствующий инструмент-указатель позволяет пользователю выбрать одну неделю 
+в году, после чего обеспечит ввод данных в формате  нн-гггг. В зависимости от года число недель может быть 52 или 53.<br>
+Укажите неделю: <input type="week"></td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>Определяет текст, отображаемый на кнопке, в поле или связанный текст. Не указывается для полей типа file.</td>
+</tr>
+<tr>
+<td><code style="color:#38BAC7">width</code></td>
+<td>Значение атрибута содержит количество пикселей. Позволяет задать ширину полей формы.</td>
+</tr>
+</tbody></table>
+
+<h2 align="center" id=M5>5. Текстовые поля ввода</code></h2><br>
+
+<p>Элемент <code>&lt;textarea&gt;...&lt;/textarea&gt;</code> используется вместо элемента 
+<code>&lt;input type="text"&gt;</code>, когда нужно создать большие текстовые поля. Текст, отображаемый 
+как исходное значение, помещается внутрь тега. Размеры поля устанавливаются при помощи атрибутов 
+<code>cols</code> – размеры по горизонтали,  <code>rows</code> – размеры по вертикали. Высоту поля 
+можно задать свойством <code>height</code>. Все размеры считаются исходя из размера одного символа моноширинного шрифта.</p>
+
+
+<table border="1px">
+<caption>Таблица 4. Атрибуты тега &lt;textarea&gt;</caption>
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>autofocus</code></td>
+<td>Устанавливает фокус на нужном начальном текстовом поле автоматически.</td>
+</tr>
+<tr>
+<td><code>cols</code></td>
+<td>Устанавливает ширину через количество символов. Если пользователь вводит больше текста, появляется полоса прокрутки.</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Отключает возможность редактирования и копирования содержимого поля.</td>
+</tr>
+<tr>
+<td><code>form</code></td>
+<td>Значение атрибута должно быть равно значению атрибута <code>id</code> элемента <code>&lt;form&gt;</code> 
+в этом же документе. Определяет одну или несколько форм, которым принадлежит данное текстовое поле.</td>
+</tr>
+<tr>
+<td><code>maxlength</code></td>
+<td>Значение атрибута задает максимальное число символов для ввода в поле.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Задает имя текстового поля.</td>
+</tr>
+<tr>
+<td><code>placeholder</code></td>
+<td>Определяет короткую текстовую подсказку, которая описывает ожидаемое вводимое значение.</td>
+</tr>
+<tr>
+<td><code>readonly</code></td>
+<td>Отключает возможность редактирования содержимого поля.</td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td>Выводит сообщение о том, что данное поле является обязательным для заполнения.</td>
+</tr>
+<tr>
+<td><code>rows</code></td>
+<td>Указывает число, которое означает, сколько строк должно отображаться в текстовой области.</td>
+</tr>
+<tr>
+<td><code>wrap</code></td>
+<td>Определяет, должен ли текст сохранять переносы строк при отправке формы. Значение <code>hard</code> 
+сохраняет перенос, а значение <code>soft</code> не сохраняет. Если используется значение <code>hard</code>, 
+то должно указываться значение атрибута <code>cols</code>.</td>
+</tr>
+</tbody></table>
+
+<br><h2 align="center" id=M6>6. Раскрывающийся список</code></h2><br>
+
+<p>Списки дают возможность расположить большое количество пунктов компактно. Раскрывающиеся списки 
+создаются при помощи элемента <code>&lt;select&gt;...&lt;/select&gt;</code>. Они позволяют выбрать 
+одно или несколько значений из предложенного множества. По умолчанию в поле списка отображается его первый элемент.</p>
+<p>Для добавления в список пунктов используются элементы <code>&lt;option&gt;...&lt;/option&gt;</code>, 
+которые располагаются внутри <code>&lt;select&gt;</code>. </p>
+<p>Для систематизации списков применяется элемент <code>&lt;optgroup&gt;...&lt;/optgroup&gt;</code>, 
+который создает заголовки в списках. </p>
+<p>Для списков возможно изменить размер шрифта, тип шрифта, цвет и другие свойства текста, 
+а также добавить границы, цвет фона и фоновое изображение.</p>
+<table border="1px">
+<caption>Таблица 5. Атрибуты тега &lt;select&gt;</caption>
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>autofocus</code></td>
+<td>Устанавливает автоматический фокус на элементе при загрузке страницы.</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Отключает раскрывающийся список.</td>
+</tr>
+<tr>
+<td><code>form</code></td>
+<td>Определяет форму, которой принадлежит данный список. В качестве значения атрибута указывается идентификатор формы.</td>
+</tr>
+<tr>
+<td><code>multiple</code></td>
+<td>Дает возможность выбора одного или нескольких пунктов, для этого при выборе 
+нужно нажать и удерживать нажатой клавишу <code>Ctrl</code>.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Определяет имя для выпадающего списка. Значение атрибута содержит название, отражающее тематику списка.</td>
+</tr>
+<tr>
+<td><code>required</code></td>
+<td>Выводит сообщение о том, что пользователь должен выбрать значение из раскрывающегося списка перед отправкой формы.</td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>Задает количество одновременно видимых на экране элементов списка. Если количество элементов 
+списка превышает установленное количество, появляется полоса прокрутки. Значение атрибута задается целым положительным числом.</td>
+</tr>
+</tbody></table>
+<table border="1px">
+<caption>Таблица 6. Атрибуты тега &lt;option&gt;</caption>
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Делает недоступным для выбора элемент списка.</td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>Задает укороченную версию для элемента, которая будет отражаться в выпадающем списке. 
+Значение атрибута содержит текст, описывающий соответствующий пункт выпадающего списка.</td>
+</tr>
+<tr>
+<td><code>selected</code></td>
+<td>Отображает выбранный элемент списка по умолчанию при загрузке страницы браузером.</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>Указывает значение, которое будет отправлено на сервер при отправке формы.</td>
+</tr>
+</tbody></table>
+<table border="1px">
+<caption>Таблица 7. Атрибуты тега &lt;optgroup&gt;</caption>
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Отключает данную группу элементов списка для выбора.</td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>Задает заголовок для группы элементов выпадающего списка. Значение атрибута содержит текст, 
+недоступный для выбора, который будет располагаться над соответствующими пунктами списка. 
+Текст выделяется в браузере жирным начертанием.</td>
+</tr>
+</tbody></table>
+
+<br><h2 align="center" id=M7>7. Надписи к полям формы</code></h2><br>
+
+<p>Надписи к элементам формы создаются с помощью элемента <code>&lt;label&gt;...&lt;/label&gt;</code>. 
+Существует два способа группировки надписи и поля. Если поле находится внутри элемента <code>&lt;label&gt;</code>, 
+то атрибут <code>for</code> указывать не нужно.</p>
+
+<pre>&lt;!-- с указанием атрибута for -->
+&lt;label for="comments">Когда вы последний раз летали на самолете?&lt;/label>
+&lt;textarea id="comments">&lt;/textarea>
+
+&lt;!-- без атрибута for -->
+&lt;p>&lt;label>Кошка&lt;input id="cat" type="checkbox">&lt;/label>&lt;/p></pre>
+
+<table border="1px">
+<caption>Таблица 8. Атрибуты тега &lt;label&gt;</caption>
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>for</code></td>
+<td>Определяет, к какому полю формы привязан данный элемент. Можно создавать поясняющие 
+надписи к следующим элементам формы: <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, 
+<code>&lt;select&gt;</code>. Значение атрибута содержит идентификатор поля формы.</td>
+</tr>
+</tbody></table>
+
+<br><h2 align="center" id=M8>8. Кнопки</code></h2><br>
+
+<p>Элемент <code>&lt;button&gt;...&lt;/button&gt;</code> создает кликабельные кнопки. В отличие от кнопок, 
+созданных <code>&lt;input&gt;</code> (<code>&lt;input type="submit"&gt;&lt;/input&gt;</code>, <code>&lt;input 
+type="image"&gt;</code>, <code>&lt;input type="reset"&gt;</code>, <code>&lt;input type="button"&gt;</code>), 
+внутрь элемента <code>&lt;button&gt;</code> можно поместить контент — текст или изображение. </p>
+<p>Для корректного отображения элемента <code>&lt;button&gt;</code> разными браузерами нужно указывать атрибут 
+<code>type</code>, например, <code>&lt;button type="submit"&gt;&lt;/button&gt;</code>.</p>
+<p>Кнопки позволяют пользователям передавать данные в форму, очищать содержимое формы или предпринимать какие-либо 
+другие действия. Можно создавать границы, изменять фон и выравнивать текст на кнопке.</p>
+<table border="1px">
+<caption>Таблица 9. Атрибуты тега &lt;button&gt;</caption>
+<tbody><tr>
+<th>Атрибут</th>
+<th>Значение / описание</th>
+</tr>
+<tr>
+<td><code>autofocus</code></td>
+<td>Устанавливает фокус на кнопке при загрузке страницы.</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>Отключает кнопку, делая ее некликабельной.</td>
+</tr>
+<tr>
+<td><code>form</code></td>
+<td>Указывает на одну или несколько форм, которым принадлежит данная кнопка. 
+Значение атрибута — идентификатор соответствующей формы.</td>
+</tr>
+<tr>
+<td><code>formaction</code></td>
+<td>Значение атрибута содержит url-адрес обработчика данных формы, отправляемых при нажатии на кнопку. 
+Только для кнопки типа <code>type="submit"</code>. Переопределяет значение атрибута <code>action</code>, 
+указанного для элемента <code>&lt;form&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>formenctype</code></td>
+<td>Задает тип кодировки данных формы перед отправкой на сервер при нажатии на 
+кнопки типа <code>type="submit"</code>. Переопределяет значение атрибута <code>enctype</code>, 
+указанного для элемента <code>&lt;form&gt;</code>. Возможные значения:<br>
+<code>application/x-www-form-urlencoded</code> — значение по умолчанию. Все символы перед отправкой будут закодированы.<br>
+<code>multipart/form-data</code> — символы не кодируются. Используется в случае, когда с помощью формы загружаются файлы.<br>
+<code>text/plain</code> — символы не кодируются, а пробелы заменяются на символ <code>+</code>.</td>
+</tr>
+<tr>
+<td><code>formmethod</code></td>
+<td>Атрибут определяет метод, который браузер будет использовать для отправки формы. 
+Переопределяет значение атрибута <code>method</code>, указанного для элемента <code>&lt;form&gt;</code>. 
+Указывается только для кнопок типа <code>type="submit"</code>. Возможные значения:<br>
+<code>get</code> — данные из формы (пара имя/значение) добавляются в url-адрес и отправляются на сервер. 
+Данный способ имеет ограничения по размеру отправляемых данных и не подходит для отправки паролей и конфиденциальной информации.<br>
+<code>post</code> — данные из формы добавляются в виде http-запроса. Метод является 
+более надежным и безопасным, чем <code>get</code> и не имеет ограничений по размеру.</td>
+</tr>
+<tr>
+<td style="width:13%"><code>formnovalidate</code></td>
+<td>Атрибут задает, что данные формы не должны проверяться при отправке. Указывается только для кнопок типа <code>type="submit"</code>.</td>
+</tr>
+<tr>
+<td><code>formtarget</code></td>
+<td>Атрибут задает, в каком окне выводить результат после отправки формы. Указывается только для кнопок 
+типа <code>type="submit"</code>. Переопределяет значение атрибута <code>target</code>, 
+указанного для элемента <code>&lt;form&gt;</code>.<br>
+<code>_blank</code> — загружает ответ в новое окно/вкладку<br>
+<code>_self</code> — загружает ответ в то же окно (значение по умолчанию)<br>
+<code>_parent</code> — загружает ответ в родительский фрейм<br>
+<code>_top</code> — загружает ответ во весь экран<br>
+<code>framename</code> — загружает ответ во фрейм с указанным именем.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Задает имя кнопки, значение атрибута — текст. Используется для ссылки на данные формы, 
+после того как форма была отправлена, или для ссылки на данную кнопку (кнопки) в JavaScript.</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>Определяет тип кнопки. Возможные значения:<br>
+<code>button</code> — кликабельная кнопка<br>
+<code>reset</code> — кнопка сброса, возвращает первоначальное значение<br>
+<code>submit</code> — кнопка для отправки данных формы.</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>Задает значение по умолчанию, отправляемое при нажатии на кнопку.</td>
+</tr>
+</tbody></table>
+
+<br><h2 align="center" id=M9>9. Флажки и переключатели в формах</code></h2><br>
+
+<p>Флажки в формах задаются с помощью конструкции <code>&lt;input type="checkbox"&gt;</code>, 
+а переключатель — при помощи <code>&lt;input type="radio"&gt;</code>. </p>
+<p>Флажков, в отличие от переключателей, в одной форме может быть установлено несколько. Если для 
+флажков указан атрибут <code>checked</code>, то при загрузке станицы на соответствующих 
+полях формы флажки уже будут установлены.</p>
+<p>Элемент <code>&lt;label&gt;</code> применяется при реализации выбора с помощью переключателей 
+и флажков. Можно выбрать нужный пункт, просто щелкая кнопкой мыши на тексте, связанном с ним. Для 
+этого нужно поместить <code>&lt;input&gt;</code> внутрь элемента <code>&lt;label&gt;</code>.</p>
+
+
+<br>
+<hr class="separator">     
+<p id="practic" style="text-align: center; font-weight: 600; font-size: 36px; color: #000000; text-indent: 0;">ПРАКТИКА</p>
+<hr class="separator">     
+
+<p style="text-align: center; font-size: 18px">Цель работы: Практическое освоение форм в HTML-документах.</p>
+<br><h2 align="center" style="text-align:center;">Задание к лабораторной работе №6:</h2><br>
+
+<ol>
+  <li>В своей папке по пути: <code>Группа&nbsp;/&nbsp;Фамилия.Имя&nbsp;/</code> создать новый HTML - документ.</li>
+  <li>Сделать страницу регистрации для сайта используя:</li>
+  <ul>
+    <li>Текстовые поля для ввода имени и фамилии;</li>
+    <li>Поле пароля;</li>
+    <li>Поле подтверждение пароля;</li>
+    <li>Поле выбора из списка значений;</li>
+    <li>Поле для ввода текста;</li>
+    <li>Флажки;</li>
+    <li>Переключатели;</li>
+    <li>Поле для ввода даты рождения;</li>
+    <li>Поле для выбора любимого цвета;</li>
+    <li>Поля для ввода почты;</li>
+    <li>Кнопку для выбора файла аватара (чтоб пользователь мог выбирать только изображения);</li>
+    <li>Поле для выбора цифры от 0 до 9;</li>
+    <li>Кнопки для сброса и отправки информации;</li>
+  </ul>
+  <li>Сделайте несколько элементов выбранными по умолчанию при загрузке страницы;</li>
+  <li>Сделайте группировку элементов формы;</li>
+  <li>Отформатируйте полученную страницу различными способами (с помощью HTML и CSS).</li>
+</ol>
+
+<br><h2 style="text-align: center;">Отчет по лабораторной работе должен содержать:</h2><br>
+
+<P>В электронном варианте представить все HTML-документы созданные в работе. Проилюстрировать преподавателю функционирование этих HTML-документов по всем пунктам задания лабораторной работы.</P>
+
+<br><br><p style="text-align: center; font-size: 22px"><a class="txthref" href="#T1">Вернуться в начало</a></p><br><br>
+
+
+
+</div>
+</div>
+</div>
+  <!-- book end -->
+
+
+  <!-- content start -->
+<div style="display: block ;width: 20%; height: 100%; right:5%; top:28%; z-index: 101; position: absolute;font-size: 150%; line-height: 1.6;">
+  
+    <p style="color:#f24660; font-size: 28px; text-align:center; text-indent: 0;">Лабораторная работа №6</p>
+  <div  id="aside1" style="text-indent: 0;" >   
+   <hr>
+   
+    <LI><A HREF="lab6.html#T1">Общие положения</A><BR>
+    <LI><A HREF="lab6.html#M2">Элемент <code>&lt;form&gt;</code></A><BR>
+    <LI><A HREF="lab6.html#M3">Группировка элементов формы</A><BR>
+    <LI><A HREF="lab6.html#M4">Создание полей формы</A><BR>
+    <LI><A HREF="lab6.html#M5">Текстовые поля ввода</A><BR>
+    <LI><A HREF="lab6.html#M6">Раскрывающийся список</A><BR>
+    <LI><A HREF="lab6.html#M7">Надписи к полям формы</A><BR>
+    <LI><A HREF="lab6.html#M8">Кнопки</A><BR>
+    <LI><A HREF="lab6.html#M9">Флажки и переключатели</A><BR>
+
+    <hr>
+    <p style="text-align: center; font-size: 28px; color: #fafafa; margin-top: -10px;  text-indent: 0;"> 
+    <a href="lab6.html#practic">Практика</a></p>
+</div>
+  <!-- content end -->
+</div>
+  <!-- footer start -->
+    <div class="templatemo_footer" style="position: relative; left: 0; bottom: 0; ">
+      <div class="container">
+      <div class="row" style="color: white">
+          <div class="col-md-9 col-sm-12">
+              <span>Dnipro National University |  Laboratory Workshop &copy; 2019  </span>
+            </div>
+            <div  style="text-align: right">
+              <span> Designed by Zymeth</span>
+            </div>
+        </div>
+        </div>
+    </div>
+  <!-- footer end -->    
+
+<script src='../sources/js/content_scroll.js'></script>
+
+  </body>
+</HTML>

@@ -1,0 +1,1691 @@
+<!DOCTYPE HTML>
+<head>
+<title>CSS-свойства</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS -->
+<link href="../sources/css/type_text.css"        rel="stylesheet">
+<link href="../sources/css/bootstrap.min.css"    rel="stylesheet">
+<link href="../sources/css/font-awesome.min.css" rel="stylesheet">
+<link href="../sources/css/templatemo_misc.css"  rel="stylesheet">
+<link href="../sources/css/templatemo_style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+<link href="../sources/css/go_top.css"           rel="stylesheet">
+<link href="../sources/css/scrollbar.css"        rel="stylesheet">
+<!-- JS -->
+<script src="../sources/js/jquery.min.js"></script> 
+<script src="../sources/js/jquery.lightbox.js"></script>
+<script src="../sources/js/templatemo_custom.js"></script>
+<script src='../sources/js/jquery.min.js'></script>
+<script src="../sources/js/prefixfree.min.js"></script>
+<script src="../sources/js/go_top.js"></script>
+<script src="js/css.js"></script>
+<style>
+@media(max-height:700px){.all{zoom:90%}}
+p,h1,h2,h3,h4,h5,ol,td,ul,li{
+color:black;
+font-family: Lora-Regular;
+}
+h2 {
+font-size: 150%;
+}
+body {
+font-family: 'Roboto';
+color: #333;
+background-color:#393e42;
+}
+a {font-size:108%; color:#e9e9e9; }
+a:hover {font-size:108%; color:#da7b7f; }
+a.pick {font-size:108%; color:#ff000d; }   
+.sticky {
+position: fixed;
+top: 0px;  
+z-index: 101;
+}
+.stop {
+position: relative;
+z-index: 101;
+}
+article {
+display: block;
+float: left;
+}
+hr.separator:after {
+background: none repeat scroll 0% 0% #000;
+content: "";
+height: 10px;
+left: 40%;
+margin: -5px auto auto -5px;
+position: absolute;
+transform: rotate(-45deg);
+width: 10px;
+}
+hr.separator {
+border-top: 1px solid #000;
+width: 95%;
+clear: both;
+}
+a.txthref{ color: #0477f7; font-weight: 400; font-style: italic; }
+a:hover.txthref {  color:#da7b7f; }
+@font-face {
+font-family: Lora-Regular; /* Имя шрифта */
+src: url(../sources/fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+p {          
+text-indent: 1.5em;
+}
+table,tr,td{
+border: 2px solid #555555;
+}
+</style>
+</head>
+<body>
+<div class="all">
+<div class="site-header">
+<div class="main-navigation">
+<div class="responsive_menu">
+<ul>
+<ul>
+<li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+<li><a href="../L1/lab1.html">1</a></li>
+<li><a href="../L2/lab2.html">2</a></li>
+<li><a href="../L3/lab3.html">3</a></li>
+<li><a href="../L4/lab4.html">4</a></li>
+<li><a href="../L5/lab5.html">5</a></li>
+<li><a href="../L6/lab6.html">6</a></li>
+<li><a href="../L7/lab7.html">7</a></li>
+<li><a href="#" style="color:#f24660;"><span class="fa fa-exclamation"></span>Инфо</a></li>
+</ul>
+</ul>
+</div>
+<div class="container">
+<div class="row templatemo_gallerygap">
+<div class="col-md-1 col-sm-1">
+<a href="#"><img src="../sources/images/logo.png" alt="Web Design"></a>
+</div>
+<div class="main_menu">
+<ul>
+<li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+<li><a href="../L1/lab1.html">1</a></li>
+<li><a href="../L2/lab2.html">2</a></li>
+<li><a href="../L3/lab3.html">3</a></li>
+<li><a href="../L4/lab4.html">4</a></li>
+<li><a href="../L5/lab5.html">5</a></li>
+<li><a href="../L6/lab6.html">6</a></li>
+<li><a href="../L7/lab7.html">7</a></li>
+<li><a href="#" style="color:#f24660;"><span class="fa fa-exclamation"></span>Инфо</a></li>
+</ul>
+</div> <!-- /.col-md-12 -->
+<div id=T1 class='text' style="position: relative; margin-top: 10%">
+<div class='content'></div>
+<div class='dash'></div>
+</div> 
+</div> <!-- /.row -->
+</div> <!-- /.container -->
+</div> <!-- /.main-navigation -->
+</div> <!-- /.site-header -->
+<!-- book start -->
+<div id="article" >
+<div style="background-image: url(../sources/images/ppm.png); width: 60%; margin-left:10%; background-size: 110%;background-repeat: 
+repeat-y;background-attachment: fixed;margin-top:-5%; ">
+<img src="../sources/images/top1.png" style="position: relative; width:100%;">
+<div style="width:90%;margin: auto;margin-top:-10%; font-size: 140%; a:link{color:#ffffff;} " > <!--CONTENT-->
+<br><div style="position: relative;"><h2 style="text-align: center;" id="M1">CSS свойства</h2></div><br>
+<article class="node node-main-reference-page" role="article">
+<p>CSS позволяет тегам HTML назначать любые визуальные стили, формируя таким образом уникальный внешний вид сайта. Делается это при помощи свойств 
+CSS. В данном справочнике приводится информация по всем свойствам CSS с описанием, допустимыми значениями и примерами.</p>
+<div class="f-panel">
+<div class="view-cat-nodes-list">
+<h2>Свойства текста</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>hanging-punctuation</code>
+</td>
+<td>
+Устанавливает, может ли знак пунктуации располагаться вне контейнера с текстом вначале или в конце строки текста
+</td>
+</tr>
+<tr>
+<td>
+<code>hyphens</code>
+</td>
+<td>
+Сообщает браузеру, как расставлять переносы слов в блоке текста
+</td>
+</tr>
+<tr>
+<td>
+<code>letter-spacing</code>
+</td>
+<td>
+Устанавливает расстояние между символами в пределах элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>line-height</code>
+</td>
+<td>
+Устанавливает межстрочный интервал текста
+</td>
+</tr>
+<tr>
+<td>
+<code>tab-size</code>
+</td>
+<td>
+Устанавливает размер отсупа, заданного при помощи символа табуляции
+</td>
+</tr>
+<tr>
+<td>
+<code>text-align</code>
+</td>
+<td>
+Устанавливает горизонтальное выравнивание текста элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>text-align-last</code>
+</td>
+<td>
+Устанавливает выравнивание последней строки текста
+</td>
+</tr>
+<tr>
+<td>
+<code>text-decoration</code>
+</td>
+<td>
+Добавляет оформление текста в виде подчеркивания, перечеркивания, линии над текстом
+</td>
+</tr>
+<tr>
+<td>
+<code>text-decoration-color</code>
+</td>
+<td>
+Устанавливает цвет линии, которая добавляется через свойство text-decoration
+</td>
+</tr>
+<tr>
+<td>
+<code>text-decoration-line</code>
+</td>
+<td>
+Устанавливает тип оформления текста - подчеркивание, перечеркивание, линия над текстом
+</td>
+</tr>
+<tr>
+<td>
+<code>text-decoration-style</code>
+</td>
+<td>
+Устанавливает стиль декоративной линии оформления текста
+</td>
+</tr>
+<tr>
+<td>
+<code>text-indent</code>
+</td>
+<td>
+Устанавливает величину отступа первой строки текстового блока
+</td>
+</tr>
+<tr>
+<td>
+<code>text-justify</code>
+</td>
+<td>
+Определяет метод выравнивания текста по ширине
+</td>
+</tr>
+<tr>
+<td>
+<code>text-overflow</code>
+</td>
+<td>
+Определяет параметры видимости текста в блоке, если текст целиком не помещается в заданную область
+</td>
+</tr>
+<tr>
+<td>
+<code>text-transform</code>
+</td>
+<td>
+Управляет преобразованием текста элемента в заглавные или прописные символы
+</td>
+</tr>
+<tr>
+<td>
+<code>vertical-align</code>
+</td>
+<td>
+Выравнивает элемент по вертикали относительно своего родителя или окружающего текста
+</td>
+</tr>
+<tr>
+<td>
+<code>white-space</code>
+</td>
+<td>
+Устанавливает, как отображать пробелы между словами в пределах элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>word-break</code>
+</td>
+<td>
+Определяет, как делать перенос на новую строку внутри слов
+</td>
+</tr>
+<tr>
+<td>
+<code>word-spacing</code>
+</td>
+<td>
+Устанавливает расстояние между словами в пределах элемента
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>word-wrap</code>
+</td>
+<td>
+Устанавливает, можно или нельзя переносить на новую строку длинные слова
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M2">Шрифт</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>@font-face</code>
+</td>
+<td>
+Позволяет определить настройки шрифтов, а также загрузить специфичный шрифт на компьютер пользователя
+</td>
+</tr>
+<tr>
+<td>
+<code>font</code>
+</td>
+<td>
+Универсальное свойство, позволяющее определить все свойства шрифта за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>font-family</code>
+</td>
+<td>
+Задает семейство шрифта, которое будет использоваться для оформления текста содержимого
+</td>
+</tr>
+<tr>
+<td>
+<code>font-size</code>
+</td>
+<td>
+Определяет размер шрифта.
+</td>
+</tr>
+<tr>
+<td>
+<code>font-size-adjust</code>
+</td>
+<td>
+Позволяет контролировать размер шрифта, когда первый выбранный шрифт не доступен
+</td>
+</tr>
+<tr>
+<td>
+<code>font-stretch</code>
+</td>
+<td>
+Устанавливает более широкое или узкое начертание шрифта
+</td>
+</tr>
+<tr>
+<td>
+<code>font-style</code>
+</td>
+<td>
+Устанавливает стиль начертания шрифта - обычное, курсивное или наклонное
+</td>
+</tr>
+<tr>
+<td>
+<code>font-variant</code>
+</td>
+<td>
+Определяет, как следует представлять строчные буквы - делать их все прописными уменьшенного размера или оставить без изменений
+</td>
+</tr>
+<tr class="odd views-row-last">
+<td>
+<code>font-weight</code>
+</td>
+<td>
+Устанавливает насыщенность или "жирность" начертания шрифта
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M3">Режимы написания</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>direction</code>
+</td>
+<td>
+Это свойство определяет направление текста
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>unicode-bidi</code>
+</td>
+<td>
+Это свойство вместе со свойством direction определяет, как должен располагаться текст используемого языка
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M4">Цвет и фон</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>background</code>
+</td>
+<td>
+Короткое свойство, устанавливающее все свойства фона элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>background-attachment</code>
+</td>
+<td>
+Определяет, будет ли фоновое изображение зафиксировано, или оно будет прокручиваться вместе с остальным содержимым страницы
+</td>
+</tr>
+<tr>
+<td>
+<code>background-blend-mode</code>
+</td>
+<td>
+Устанавливает режим наложения фонового изображения элемента на фоны других элементов.
+</td>
+</tr>
+<tr>
+<td>
+<code>background-clip</code>
+</td>
+<td>
+Устанавливает область прорисовки фонового изображения
+</td>
+</tr>
+<tr>
+<td>
+<code>background-color</code>
+</td>
+<td>
+Определяет фоновый цвет элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>background-image</code>
+</td>
+<td>
+Определяет фоновое изображение элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>background-origin</code>
+</td>
+<td>
+Устанавливает область позиционирования фонового изображения
+</td>
+</tr>
+<tr>
+<td>
+<code>background-position</code>
+</td>
+<td>
+Задает начальное положение фонового изображения в пределах содержащего его элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>background-repeat</code>
+</td>
+<td>
+Определяет, как будет повторяться фоновое изображение, установленное с помощью параметра background-image
+</td>
+</tr>
+<tr>
+<td>
+<code>background-size</code>
+</td>
+<td>
+Устанавливает размер фонового изображения
+</td>
+</tr>
+<tr class="odd views-row-last">
+<td>
+<code>color</code>
+</td>
+<td>
+Это свойство определяет цвет текста элемента
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M5">Тени и прозрачность</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>box-shadow</code>
+</td>
+<td>
+Добавляет тень к элементу
+</td>
+</tr>
+<tr>
+<td>
+<code>opacity</code>
+</td>
+<td>
+Определяет уровень прозрачности элемента
+</td>
+</tr>
+<tr class="odd views-row-last">
+<td>
+<code>text-shadow</code>
+</td>
+<td>
+Добавляет тень к тексту
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M6">Анимация</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>@keyframes</code>
+</td>
+<td>
+Устанавливает ключевые кадры при анимации элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>animation</code>
+</td>
+<td>
+Позволяет установить все значения свойств анимации в одном объявлении
+</td>
+</tr>
+<tr>
+<td>
+<code>animation-delay</code>
+</td>
+<td>
+Устанавливает время ожидания перед запуском анимации
+</td>
+</tr>
+<tr>
+<td>
+<code>animation-direction</code>
+</td>
+<td>
+Устанавливает направление движения анимации
+</td>
+</tr>
+<tr>
+<td>
+<code>animation-duration</code>
+</td>
+<td>
+Устанавливает время в секундах или миллисекундах, сколько должен длиться один цикл анимации
+</td>
+</tr>
+<tr>
+<td>
+<code>animation-fill-mode</code>
+</td>
+<td>
+Определяет, какие стили должны применяться к элементу, когда анимация не проигрывается
+</td>
+</tr>
+<tr>
+<td>
+<code>animation-iteration-count</code>
+</td>
+<td>
+Устанавливает, сколько раз проигрывать цикл анимации
+</td>
+</tr>
+<tr>
+<td>
+<code>animation-name</code>
+</td>
+<td>
+Определяет список имен анимаций, которые должны быть применены к выбранному элементу
+</td>
+</tr>
+<tr>
+<td>
+<code>animation-play-state</code>
+</td>
+<td>
+Определяет, проигрывать анимацию или поставить её на паузу
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>animation-timing-function</code>
+</td>
+<td>
+Определяет кривую скорости для анимации
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M7">Трансформация</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>backface-visibility</code>
+</td>
+<td>
+Определяет, показывать обратную сторону элемента или нет
+</td>
+</tr>
+<tr>
+<td>
+<code>perspective</code>
+</td>
+<td>
+Определяет, на сколько пикселей удален 3D элемент от точки обзора
+</td>
+</tr>
+<tr>
+<td>
+<code>perspective-origin</code>
+</td>
+<td>
+Определяет, где располагается 3D элемент на осях x и y
+</td>
+</tr>
+<tr>
+<td>
+<code>transform</code>
+</td>
+<td>
+Применяет к элементу 2D или 3D трансформацию
+</td>
+</tr>
+<tr>
+<td>
+<code>transform-origin</code>
+</td>
+<td>
+Устанавливает исходную точку трансформации элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>transform-style</code>
+</td>
+<td>
+Определяет, как дочерние элементы будут отображаться в 3D-пространстве
+</td>
+</tr>
+<tr>
+<td>
+<code>transition</code>
+</td>
+<td>
+Позволяет делать плавные переходы между двумя значениями какого-либо CSS свойства
+</td>
+</tr>
+<tr>
+<td>
+<code>transition-delay</code>
+</td>
+<td>
+Устанавливает продолжительность задержки перед началом анимации перехода
+</td>
+</tr>
+<tr>
+<td>
+<code>transition-duration</code>
+</td>
+<td>
+Устанавливает продолжительность анимации перехода
+</td>
+</tr>
+<tr>
+<td>
+<code>transition-property</code>
+</td>
+<td>
+Определяет CSS свойство, для которого будет применён эффект перехода
+</td>
+</tr>
+<tr class="odd views-row-last">
+<td>
+<code>transition-timing-function</code>
+</td>
+<td>
+Определяет кривую скорости для анимации перехода
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M8">Рамка и контур</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>border</code>
+</td>
+<td>
+Это свойство позволяет определить все атрибуты рамки HTML элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>border-bottom</code>
+</td>
+<td>
+Это свойство позволяет определить все атрибуты нижней рамки HTML элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>border-bottom-color</code>
+</td>
+<td>
+Это свойство определяет цвет нижней стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-bottom-left-radius</code>
+</td>
+<td>
+Устанавливает радиус скругления левого нижнего уголка рамки
+</td>
+</tr>
+<tr>
+<td>
+<code>border-bottom-right-radius</code>
+</td>
+<td>
+Устанавливает радиус скругления правого нижнего уголка рамки
+</td>
+</tr>
+<tr>
+<td>
+<code>border-bottom-style</code>
+</td>
+<td>
+Это свойство определяет стиль нижней стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-bottom-width</code>
+</td>
+<td>
+Это свойство определяет толщину нижней стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-color</code>
+</td>
+<td>
+Это свойство определяет цвет всех четырех сторон рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-image</code>
+</td>
+<td>
+Позволяет устанавливать изображение вместо обычной рамки вокруг элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-image-outset</code>
+</td>
+<td>
+Устанавливает отступ рамки-изображения за пределы границ элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-image-repeat</code>
+</td>
+<td>
+Устанавливает способ заполнения фоновым изображением пространства между углами рамки
+</td>
+</tr>
+<tr>
+<td>
+<code>border-image-slice</code>
+</td>
+<td>
+Определяет размер частей изображения, используемых для оформления границ элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-image-source</code>
+</td>
+<td>
+Задаёт путь к изображению, которое будет использоваться в качестве рамки элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-image-width</code>
+</td>
+<td>
+Задаёт ширину изображения для рамки элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-left</code>
+</td>
+<td>
+Это свойство позволяет определить все атрибуты левой рамки HTML элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>border-left-color</code>
+</td>
+<td>
+Это свойство определяет цвет левой стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-left-style</code>
+</td>
+<td>
+Это свойство определяет стиль левой стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-left-width</code>
+</td>
+<td>
+Это свойство определяет толщину левой стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-radius</code>
+</td>
+<td>
+Устанавливает радиус скругления уголков рамки
+</td>
+</tr>
+<tr>
+<td>
+<code>border-right</code>
+</td>
+<td>
+Это свойство позволяет определить все атрибуты правой рамки HTML элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>border-right-color</code>
+</td>
+<td>
+Это свойство определяет цвет правой стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-right-style</code>
+</td>
+<td>
+Это свойство определяет стиль правой стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-right-width</code>
+</td>
+<td>
+Это свойство определяет толщину правой стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-style</code>
+</td>
+<td>
+Это свойство определяет стиль всей рамки вокруг элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-top</code>
+</td>
+<td>
+Это свойство позволяет определить все атрибуты верхней рамки HTML элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>border-top-color</code>
+</td>
+<td>
+Это свойство определяет цвет верхней стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-top-left-radius</code>
+</td>
+<td>
+Устанавливает радиус скругления левого верхнего уголка рамки
+</td>
+</tr>
+<tr>
+<td>
+<code>border-top-right-radius</code>
+</td>
+<td>
+Устанавливает радиус скругления правого верхнего уголка рамки
+</td>
+</tr>
+<tr>
+<td>
+<code>border-top-style</code>
+</td>
+<td>
+Это свойство определяет стиль верхней стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-top-width</code>
+</td>
+<td>
+Это свойство определяет толщину верхней стороны рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>border-width</code>
+</td>
+<td>
+Это свойство определяет толщину всех четырех сторон рамки HTML элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>outline</code>
+</td>
+<td>
+Универсальное свойство, которое устанавливает атрибуты контура элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>outline-color</code>
+</td>
+<td>
+Определяет цвет контура
+</td>
+</tr>
+<tr>
+<td>
+<code>outline-offset</code>
+</td>
+<td>
+Задает величину отступа контура от элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>outline-style</code>
+</td>
+<td>
+Определяет стиль контура
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>outline-width</code>
+</td>
+<td>
+Определяет толщину контура
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M9">Размеры</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>box-sizing</code>
+</td>
+<td>
+Устанавливает алгоритм вычисления ширины и высоты элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>height</code>
+</td>
+<td>
+Устанавливает высоту блочных или заменяемых элементов
+</td>
+</tr>
+<tr>
+<td>
+<code>max-height</code>
+</td>
+<td>
+Устанавливает максимальную высоту элемента.
+</td>
+</tr>
+<tr>
+<td>
+<code>max-width</code>
+</td>
+<td>
+Устанавливает максимальную ширину элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>min-height</code>
+</td>
+<td>
+Устанавливает минимальную высоту элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>min-width</code>
+</td>
+<td>
+Устанавливает минимальную ширину элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>resize</code>
+</td>
+<td>
+Определяет, может ли пользователь изменять размер элемента
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>width</code>
+</td>
+<td>
+Устанавливает ширину блочных или заменяемых элементов
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M10">Внешние и внутренние отступы</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>margin</code>
+</td>
+<td>
+Универсальное свойство, которое позволяет устанавливать размер всех отступов элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>margin-bottom</code>
+</td>
+<td>
+Это свойство устанавливает размер нижнего отступа элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>margin-left</code>
+</td>
+<td>
+Это свойство устанавливает размер левого отступа элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>margin-right</code>
+</td>
+<td>
+Это свойство устанавливает размер правого отступа элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>margin-top</code>
+</td>
+<td>
+Это свойство устанавливает размер верхнего отступа элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>padding</code>
+</td>
+<td>
+Универсальное свойство, которое позволяет устанавливать размер всех полей элемента за одну декларацию
+</td>
+</tr>
+<tr>
+<td>
+<code>padding-bottom</code>
+</td>
+<td>
+Это свойство устанавливает размер нижнего поля элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>padding-left</code>
+</td>
+<td>
+Это свойство устанавливает размер левого поля элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>padding-right</code>
+</td>
+<td>
+Это свойство устанавливает размер правого поля элемента
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>padding-top</code>
+</td>
+<td>
+Это свойство устанавливает размер верхнего поля элемента
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M11">Позиционирование и отображение</h2>    
+<table class="views-table cols-0 table table-striped" style=" overflow:visible">
+<tbody>
+<tr>
+<td>
+<code>bottom</code>
+</td>
+<td>
+Это свойство определяет расстояние от нижнего края HTML элемента до нижнего края его родительского элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>clear</code>
+</td>
+<td>
+Это свойство определяет, с какой стороны элемента запрещено его обтекание другими элементами
+</td>
+</tr>
+<tr>
+<td>
+<code>clip</code>
+</td>
+<td>
+Это свойство определяет область позиционированного элемента, в которой будет показано его содержимое
+</td>
+</tr>
+<tr>
+<td>
+<code>display</code>
+</td>
+<td>
+Определяет, как элемент должен быть показан в документе
+</td>
+</tr>
+<tr>
+<td>
+<code>float</code>
+</td>
+<td>
+Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с другой стороны
+</td>
+</tr>
+<tr>
+<td>
+<code>left</code>
+</td>
+<td>
+Это свойство определяет расстояние от левого края HTML элемента до левого края его родительского элемента, т.е. расстояние его смещения вправо
+</td>
+</tr>
+<tr>
+<td>
+<code>overflow</code>
+</td>
+<td>
+Определяет, каким образом будет отображаться содержимое элемента, если оно не помещается в область вывода данного элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>overflow-x</code>
+</td>
+<td>
+Определяет, как будет отображаться содержимое элемента, если оно не помещается слева/справа в область вывода данного элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>overflow-y</code>
+</td>
+<td>
+Определяет, как будет отображаться содержимое элемента, если оно не помещается вверху/внизу в область вывода данного элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>position</code>
+</td>
+<td>
+Устанавливает способ позиционирования элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>right</code>
+</td>
+<td>
+Это свойство определяет расстояние от правого края HTML элемента до правого края его родительского элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>top</code>
+</td>
+<td>
+Это свойство определяет расстояние от верхнего края HTML элемента до верхнего края его родительского элемента
+</td>
+</tr>
+<tr>
+<td style=" white-space: nowrap; padding-right: 20px">
+<code>visibility</code>
+</td>
+<td>
+Определяет видимость элемента
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>z-index</code>
+</td>
+<td>
+Определяет порядок позиционированных элементов по z-оси
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M12">Гибкая компоновка элементов</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>align-content</code>
+</td>
+<td>
+Выравнивает строки флекс-элементов по вертикали внутри флекс-контейнера
+</td>
+</tr>
+<tr>
+<td>
+<code>align-items</code>
+</td>
+<td>
+Выравнивает флекс-элементы внутри контейнера по высоте
+</td>
+</tr>
+<tr>
+<td>
+<code>align-self</code>
+</td>
+<td>
+Устанавливает выравнивание по высоте отдельно взятого флекс-элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>flex</code>
+</td>
+<td>
+Универсальное свойство, которое позволяет указать параметры элемента, чтобы он эффективно заполнял доступное пространство
+</td>
+</tr>
+<tr>
+<td>
+<code>flex-basis</code>
+</td>
+<td>
+Устанавливает базовую ширину флекс-элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>flex-direction</code>
+</td>
+<td>
+Определяет направление главной оси во флекс-контейнере
+</td>
+</tr>
+<tr>
+<td>
+<code>flex-flow</code>
+</td>
+<td>
+Позволяет за одну декларацию задать направление главной оси и возможность переноса флекс-элементов на новую строку
+</td>
+</tr>
+<tr>
+<td>
+<code>flex-grow</code>
+</td>
+<td>
+Определяет коэффициент увеличения ширины флекс-элемента относительно других флекс-элементов
+</td>
+</tr>
+<tr>
+<td>
+<code>flex-shrink</code>
+</td>
+<td>
+Определяет коэффициент уменьшения ширины флекс-элемента относительно других флекс-элементов
+</td>
+</tr>
+<tr>
+<td>
+<code>flex-wrap</code>
+</td>
+<td>
+Устанавливает, следует ли флекс-элементам располагаться в одну строку или можно занять несколько строк
+</td>
+</tr>
+<tr>
+<td>
+<code>justify-content</code>
+</td>
+<td>
+Выравнивает флекс-элементы по ширине флекс-контейнера
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>order</code>
+</td>
+<td>
+Определяет порядок вывода флекс-элементов внутри флекс-контейнера
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M13">Свойства списков</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>list-style</code>
+</td>
+<td>
+Определяет стиль маркера списка, его положение и его изображение
+</td>
+</tr>
+<tr>
+<td>
+<code>list-style-image</code>
+</td>
+<td>
+Устанавливает изображение, которое будет использоваться в качестве маркера элементов списка
+</td>
+</tr>
+<tr>
+<td>
+<code>list-style-position</code>
+</td>
+<td>
+Определяет, как будет размещаться маркер относительно текста
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>list-style-type</code>
+</td>
+<td>
+Устанавливает вид маркера элементов списка
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M14">Свойства таблиц</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>border-collapse</code>
+</td>
+<td>
+Это свойство определяет, какую модель рамки вокруг ячеек таблицы следует использовать
+</td>
+</tr>
+<tr>
+<td>
+<code>border-spacing</code>
+</td>
+<td>
+Это свойство определяет расстояние между рамками соседних ячеек таблицы
+</td>
+</tr>
+<tr>
+<td>
+<code>caption-side</code>
+</td>
+<td>
+Это сойство определяет, где будет отображаться заголовок таблицы
+</td>
+</tr>
+<tr>
+<td>
+<code>empty-cells</code>
+</td>
+<td>
+Это свойство задает отображение границ и фона в ячейке таблицы, если она пустая
+</td>
+</tr>
+<tr class="odd views-row-last">
+<td>
+<code>table-layout</code>
+</td>
+<td>
+Определяет, как браузер должен вычислять высоту и ширину ячеек таблицы, основываясь на ее содержимом
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M15">Генерируемый контент</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>content</code>
+</td>
+<td>
+Позволяет вставлять генерируемое содержание в текст веб-страницы, которое первоначально в тексте отсутствует
+</td>
+</tr>
+<tr>
+<td>
+<code>counter-increment</code>
+</td>
+<td>
+Это свойство позволяет увеличить значение счетчика приращений, который задается свойством counter-reset
+</td>
+</tr>
+<tr>
+<td>
+<code>counter-reset</code>
+</td>
+<td>
+Это свойство определяет идентификатор, в котором будет храниться счётчик отображений определенного элемента, а также его начальное значение
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>quotes</code>
+</td>
+<td>
+Устанавливает тип кавычек, который применяется в тексте документа
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M16">Вывод на печать</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>orphans</code>
+</td>
+<td>
+Определяет минимальное число строк текста, которое остается на предыдущей странице при печати документа
+</td>
+</tr>
+<tr>
+<td>
+<code>page-break-after</code>
+</td>
+<td>
+Добавляет разрыв страницы при печати документа после заданного элемента
+</td>
+</tr>
+<tr>
+<td>
+<code>page-break-before</code>
+</td>
+<td>
+Добавляет разрыв страницы при печати документа перед заданным элементом
+</td>
+</tr>
+<tr>
+<td>
+<code>page-break-inside</code>
+</td>
+<td>
+Разрешает или запрещает разрыв страницы внутри заданного элемента при печати документа
+</td>
+</tr>
+<tr class="odd views-row-last">
+<td>
+<code>widows</code>
+</td>
+<td>
+Определяет минимальное число строк текста, которое располагается на следующей странице при печати документа
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="M17">Другое</h2>    
+<table class="views-table cols-0 table table-striped">
+<tbody>
+<tr>
+<td>
+<code>column-count</code>
+</td>
+<td>
+Определяет количество колонок в многоколоночном тексте
+</td>
+</tr>
+<tr>
+<td>
+<code>column-fill</code>
+</td>
+<td>
+Определяет, как контент должен распределяться внутри колонок.
+</td>
+</tr>
+<tr>
+<td>
+<code>column-gap</code>
+</td>
+<td>
+Определяет расстояние между колонками в многоколоночном тексте
+</td>
+</tr>
+<tr>
+<td>
+<code>column-rule</code>
+</td>
+<td>
+Определяет параметры разделительной линии между колонок многоколоночного текста
+</td>
+</tr>
+<tr>
+<td>
+<code>column-rule-color</code>
+</td>
+<td>
+Устанавливает цвет разделительных линий между колонок в многоколоночном тексте
+</td>
+</tr>
+<tr>
+<td>
+<code>column-rule-style</code>
+</td>
+<td>
+Определяет стиль разделительных линий между колонок в многоколоночном тексте
+</td>
+</tr>
+<tr>
+<td>
+<code>column-rule-width</code>
+</td>
+<td>
+Определяет толщину разделительных линий между колонок многоколоночного текста
+</td>
+</tr>
+<tr>
+<td>
+<code>column-span</code>
+</td>
+<td>
+Определяет, должен ли элемент в многоколоночном тексте занимать ширину всех колонок или только одну из них
+</td>
+</tr>
+<tr>
+<td>
+<code>column-width</code>
+</td>
+<td>
+Определяет оптимальную ширину колонки в многоколоночном тексте
+</td>
+</tr>
+<tr>
+<td>
+<code>columns</code>
+</td>
+<td>
+Позволяет одновременно задать ширину и количество колонок многоколоночного текста
+</td>
+</tr>
+<tr>
+<td>
+<code>cursor</code>
+</td>
+<td>
+Определяет вид курсора при наведении мышки на элемент
+</td>
+</tr>
+<tr class="even views-row-last">
+<td>
+<code>filter</code>
+</td>
+<td>
+Позволяет применить художественные эффекты к элементам
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+<br><br><p style="text-align: center; font-size: 22px"><a class="txthref" href="#T1">Вернуться в начало</a></p><br><br>
+</div>
+</div>
+</div>  <!-- book end -->
+<!-- content start -->
+<div style="display: block ;width: 20%; height: 100%; right:5%; top:28%; z-index: 101; position: absolute;font-size: 150%; line-height: 1.6;">
+<p style="color:#f24660; font-size: 28px; text-align:center; text-indent: 0;">Дополнительная информация
+</p>
+<div>
+<hr>
+<LI><A HREF="html_tags.html">HTML - теги</A><BR>
+<LI><A href="html_atributes.html">Глобальные атрибуты</A><BR>
+<LI><A HREF="semantic.html">Элементы разметки</A><BR>
+<LI><A class="pick" HREF="">CSS - свойства</A><BR>
+</div>	
+<div id="aside1" style="text-indent: 0;"> 
+<hr>
+<LI><A HREF="css.html#M1">Свойства текста</A>
+<LI><A HREF="css.html#M2">Шрифт</A>
+<LI><A HREF="css.html#M3">Режимы написания</A> 
+<LI><A HREF="css.html#M4">Цвет и фон</A>
+<LI><A HREF="css.html#M5">Тени и прозрачность</A>
+<LI><A HREF="css.html#M6">Анимация</A>
+<LI><A HREF="css.html#M7">Трансформация</A>
+<LI><A HREF="css.html#M8">Рамка и контур</A>
+<LI><A HREF="css.html#M9">Размеры</A> 
+<LI><A HREF="css.html#M10">Отступы</A> 
+<LI><A HREF="css.html#M11">Позиционирование и отображение</A> 
+<LI><A HREF="css.html#M12">Гибкая компоновка</A> 
+<LI><A HREF="css.html#M13">Свойства списков</A> 
+<LI><A HREF="css.html#M14">Свойства таблиц</A> 
+<LI><A HREF="css.html#M15">Генерируемый контент</A> 
+<LI><A HREF="css.html#M16">Вывод на печать</A> 
+<LI><A HREF="css.html#M17">Другое</A> 
+
+</div>
+<!-- content end -->
+</div>
+<!-- footer start -->
+<div class="templatemo_footer" style="position: relative; left: 0; bottom: 0; ">
+<div class="container">
+<div class="row" style="color: white">
+<div class="col-md-9 col-sm-12">
+<span>Dnipro National University |  Laboratory Workshop &copy; 2019  </span>
+</div>
+<div  style="text-align: right">
+<span> Designed by Zymeth</span>
+</div>
+</div>
+</div>
+</div>
+<!-- footer end -->    
+<script src='../sources/js/content_scroll.js'></script>
+</body>
+</HTML>

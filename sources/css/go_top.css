@@ -1,0 +1,16 @@
+#go-top {
+  position: fixed; 
+  top: 50px; 
+  left: 3%; 
+  cursor:pointer; 
+  display:none;
+  width: 50px;
+  height: 83px;
+  background-size: 99% 99%;
+  background-image:url(../images/strelka_ed1.png) 
+}
+ 
+#go-top:hover {
+  background-size: 99% 99%;
+  background-image:url(../images/strelka_ed_hover2.png)
+}

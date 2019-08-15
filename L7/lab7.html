@@ -1,0 +1,1310 @@
+<!DOCTYPE HTML>
+  <head>
+    <title>Лабораторная работа №7</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="../sources/css/type_text.css"        rel="stylesheet">
+    <link href="../sources/css/bootstrap.min.css"    rel="stylesheet">
+    <link href="../sources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../sources/css/templatemo_misc.css"  rel="stylesheet">
+    <link href="../sources/css/templatemo_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+    <link href="../sources/css/go_top.css"           rel="stylesheet">
+    <link href="../sources/css/scrollbar.css"        rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../sources/js/jquery.min.js"></script> 
+    <script src="../sources/js/jquery.lightbox.js"></script>
+    <script src="../sources/js/templatemo_custom.js"></script>
+    <script src='../sources/js/jquery.min.js'></script>
+    <script src="../sources/js/prefixfree.min.js"></script>
+    <script src="../sources/js/go_top.js"></script>
+    <script src="js/index.js"></script>
+    
+    <style>
+      @media(max-height:700px){.all{zoom:90%}}
+
+      p,h1,h2,h2,h4,h5,ol,td,ul,li{
+        color:black;
+        font-family: Lora-Regular;
+      }
+
+      h2 {
+        font-size: 150%;
+      }
+
+      body {
+        font-family: 'Roboto';
+        color: #333;
+        background-color:#393e42;
+      }
+
+      a {font-size:108%; color:#e9e9e9; }
+      a:hover {font-size:108%; color:#da7b7f; }
+
+      .sticky {
+        position: fixed;
+        top: 0px;  
+        z-index: 101;
+      }
+
+      .stop {
+        position: relative;
+        z-index: 101;
+      }
+
+      article {
+        display: block;
+        float: left;
+      }
+
+      hr.separator:after {
+        background: none repeat scroll 0% 0% #000;
+        content: "";
+        height: 10px;
+        left: 40%;
+        margin: -5px auto auto -5px;
+        position: absolute;
+        transform: rotate(-45deg);
+        width: 10px;
+      }
+      hr.separator {
+        border-top: 1px solid #000;
+        width: 95%;
+        clear: both;
+      }
+
+      a.txthref{ color: #0477f7; font-weight: 400; }
+      a:hover.txthref {  color:#da7b7f; }
+      
+      @font-face {
+        font-family: Lora-Regular; /* Имя шрифта */
+        src: url(../sources/fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+      }
+
+      p {          
+        text-indent: 1.5em;
+      }
+
+      table,tr,th,td{
+        border: 1px solid grey;
+        padding: 5px;
+      }
+
+      .text-shadow-1 {
+        background-color: #333333;
+        color: white;
+        text-shadow: -2px -2px 0 #4D4644, 2px -2px 0 #4D4644, -2px 2px 0 #4D4644, 2px 2px 0 #4D4644, 4px 4px 0 white, 5px 5px 0 white, 6px 6px 0 white;
+        letter-spacing: 0.1em;
+      }
+
+      .text-shadow-2 {
+        background: linear-gradient(-45deg, #FEE864, #F5965E);
+        color: #f4f4f4;
+        text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+      }
+
+      .text-shadow-3 {
+        background-color: #222222;
+        color: #FB631E;
+        letter-spacing: .1em;
+        text-shadow: 4px 4px white, 6px 6px #D7CC88;
+      }
+
+      .text-shadow-4 {
+        background: black;
+        color: white;
+        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+      }
+
+      .text-shadow-5 {
+        color: white;
+        text-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);
+      }
+    </style>
+</head>
+<body>
+<div class="all">
+  <div class="site-header">
+    <div class="main-navigation">
+      <div class="responsive_menu">
+        <ul>
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-envelope"></span>Инфо</a></li>
+              </ul>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row templatemo_gallerygap">
+                    <div class="col-md-1 col-sm-1">
+                      <a href="#"><img src="../sources/images/logo.png" alt="Web Design"></a>
+                    </div>
+          <div class="main_menu">
+             
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href=""><span class="fa fa-star"></span>7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-exclamation"></span>Инфо</a></li>
+              </ul>
+
+          </div> <!-- /.col-md-12 -->
+
+          <div id=T1 class='text' style="position: relative; margin-top: 10%">
+          <div class='content'></div>
+          <div class='dash'></div>
+          </div> 
+        
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.main-navigation -->
+  </div> <!-- /.site-header -->
+
+
+    <!-- book start -->
+<div id="article" >
+<div style="background-image: url(../sources/images/ppm.png); width: 60%; margin-left:10%; background-size: 110%;background-repeat: repeat-y;background-attachment: fixed;margin-top:-5%; ">
+
+<img src="../sources/images/top1.png" style="position: relative; width:100%;">
+
+
+<div style="width:90%;margin: auto;margin-top:-10%; font-size: 140%; a:link{color:#ffffff;} " > <!--CONTENT-->
+
+
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M1>1. Понятие блоков в CSS</h2></div><br>
+
+<p>В CSS используется модель представления визуально отображаемых элементов документа в виде прямоугольных блоков, возможно, вложенных друг в друга.</p>
+
+<p>Каждый такой блок имеет информационное содержимое (текст, изображения и т.д.), а также может иметь отступы (<code>padding</code>), границы (<code>border</code>) и поля (<code>margin</code>). Соответствующие свойства CSS позволяют оформить блок желаемым образом. Например, блоку, который обтекается этим текстом заданы отступы, границы, поля, ширина. Обтекание задается свойством <code>float</code>.</p>
+
+<p><FORM ACTION="example\block.html">
+<INPUT TYPE="submit" value="Пример"></FORM></p>
+
+<p>Следующая иллюстрация представляет взаимное расположение полей, границ и отступов:</p>
+
+<p  style="text-align: center;"><img src="example/pic/CSSbox.gif"></p>
+
+<p style="color: red; font-style: italic; text-align: center;">Используйте справочник <a target="_blank" class="txthref" href="../Additional/css.html">CSS-свойств</a> во вкладке "Инфо".</p>
+<p>Для блоков наиболее актуальны разделы <a target="_blank" class="txthref" href="../Additional/css.html#M9">размеры</a>, <a target="_blank" class="txthref" href="../Additional/css.html#M8">рамки</a>, <a target="_blank" class="txthref" href="../Additional/css.html#M10">отступы</a>, <a target="_blank" class="txthref" href="../Additional/css.html#M11">позиционирование</a>.</p>
+<p>Далее подробнее рассмотрим стилизацию <code>border</code>.</p>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M2>2. Работа с рамками</h2></div><br>
+
+<p>CSS-рамка элемента представляет собой одну или несколько линий, окружающих содержимое элемента и его отступы <code>padding</code>. Рамка задаётся с помощью краткого свойства <code>border</code>. Стиль рамки задается с помощью трех свойств: <b>стиль</b>, <b>цвет</b> и <b>ширина</b>.</p>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M21>2.1. Стиль рамки</h2></div><br>
+
+<p>По умолчанию рамки всегда отрисовываются поверх фона элемента, фон распространяется до внешнего края элемента. Стиль рамки определяет ее отображение, без этого свойства рамки не будут видны вообще. Для элемента можно задавать рамку для всех сторон одновременно с помощью свойства <code>border-style</code> или для каждой стороны отдельно с помощью уточняющих свойств <code>border-top-style</code> и т.д.</p>
+
+<table>
+<caption>border-style (border-top-style, border-right-style, border-bottom-style, border-left-style)</caption>
+<tbody>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>Значение по умолчанию, означает отсутствие рамки. Также убирает рамку элемента из группы элементов с установленным значением данного свойства.</td>
+</tr>
+<tr>
+<td><code>hidden</code></td>
+<td>Эквивалентно <code>none</code>.</td>
+</tr>
+<tr>
+<td><code>dotted</code></td>
+<td>
+<h6 style="border:3px dotted #7c8299;padding:5px">dotted</h6>
+</td>
+</tr>
+<tr>
+<td><code>dashed</code></td>
+<td>
+<h6 style="border:3px dashed #7c8299;padding:5px">dashed</h6>
+</td>
+</tr>
+<tr>
+<td><code>solid</code></td>
+<td>
+<h6 style="border:3px solid #7c8299;padding:5px">solid</h6>
+</td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td>
+<h6 style="border:3px double #7c8299;padding:5px">double</h6>
+</td>
+</tr>
+<tr>
+<td><code>groove</code></td>
+<td>
+<h6 style="border:3px groove #7c8299;padding:5px">groove</h6>
+</td>
+</tr>
+<tr>
+<td><code>ridge</code></td>
+<td>
+<h6 style="border:3px ridge #7c8299;padding:5px">ridge</h6>
+</td>
+</tr>
+<tr>
+<td><code>inset</code></td>
+<td>
+<h6 style="border:3px inset #7c8299;padding:5px">inset</h6>
+</td>
+</tr>
+<tr>
+<td><code>outset</code></td>
+<td>
+<h6 style="border:3px outset #7c8299;padding:5px">outset</h6>
+</td>
+</tr>
+<tr>
+<td><code>{1,4}</code></td>
+<td>
+<h6 style="border:3px #7c8299; border-style: solid dotted none dotted;padding:5px">Одновременное перечисление четырех разных стилей для рамок элемента, только для свойства <code>border-style</code>:<br>
+<code>{border-style: solid dotted none dotted;}</code></h6>
+</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M22>2.2. Цвет рамки</h2></div><br>
+
+<p>Свойство <code>border-color</code> задаёт цвет рамок всех сторон одновременно. С помощью уточняющих свойств можно установить свой цвет для рамки каждой стороны элемента. Если для рамки цвет не задан, то он будет таким же, как и цвет текста элемента. Если в элементе нет текста, то цвет рамки будет таким же, как и цвет текста родительского элемента.</p>
+
+<table>
+<caption>border-color (border-top-color, border-right-color, border-bottom-color, border-left-color)</caption>
+<tbody>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>transparent</code></td>
+<td>Устанавливает прозрачный цвет для рамки. При этом ширина рамки остается. Можно использовать для смены цвета рамки при наведении курсора мыши на элемент, чтобы избежать смещение элемента.</td>
+</tr>
+<tr>
+<td>цвет</td>
+<td>Цвет рамок задается при помощи значений свойства <a href="../L6/lab6.html#M11" target="_blank" class="txthref">color</a>.<p></p>
+<h6 style="border:3px solid #7c8299;padding:5px">{border-color: #7c8299;}</h6>
+</td>
+</tr>
+<tr>
+<td><code>{1,4}</code></td>
+<td>
+<h6 style="border:3px solid; border-color: #7c8299 #5faf8a #b9cea5 #aab238;padding:5px">Одновременное перечисление четырех разных цветов для рамок элемента, только для свойства <code>border-color</code>:<br>
+<code>{border-color: #7c8299 #5faf8a #b9cea5 #aab238;}</code></h6>
+</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M23>2.3. Ширина рамки</h2></div><br>
+
+<p>Ширина рамки <code>border-width</code> задается с помощью единиц измерения длины или ключевых слов. Если для свойства <code>border-style</code> задано значение <code>none</code>, и для рамки элемента установлена какая-то ширина, то в данном случае ширина рамки приравнивается к нулю.</p>
+
+<table>
+<caption>border-width (border-top-width, border-right-width, border-bottom-width, border-left-width)</caption>
+<tbody>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>thin / medium / thick</code></td>
+<td>Ключевые слова, устанавливают ширину рамки относительно друг друга. Первое значение уже, чем второе, второе — тоньше третьего. Значение по умолчанию — <code>medium</code></td>
+</tr>
+<tr>
+<td><code>width (px, em)</code></td>
+<td>
+<h6 style="border:5px solid #7c8299;padding:5px">{border-width: 5px;}</h6>
+</td>
+</tr>
+<tr>
+<td><code>{1,4}</code></td>
+<td>
+<h6 style="border:3px solid #7c8299; border-width:5px 10px 15px 3px;padding:5px">Возможность одновременного задания четырех разных ширин для рамок элемента, только для свойства <code>border-width</code>:<br>
+<code>{border-width: 5px 10px 15px 3px;}</code></h6>
+</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<p>Существует возможность задать стилизацию рамки одним свойством. Свойство <code>border</code> позволяет объединить в себе следующие свойства: <code>border-width</code>, <code>border-style</code>, <code>border-color</code>, например:</p>
+
+<pre>border: 2px solid grey;</pre>
+
+<p>При этом заданные свойства будут применяться ко всем границам элемента одновременно. Если какое-то из значений не указано, его место займет значение по умолчанию.</p>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M3>3. Колонки</h2></div><br>
+
+<p>Модуль <b>CSS3 columns</b> описывает многоколоночный макет, который позволяет организовать содержимое так, чтобы оно занимало несколько вертикальных контейнеров, подобно газете или журналу.  Колонки могут содержать заголовки, текст, таблицы, картинки и любые другие <code>inline</code>-элементы.</p>
+
+<p>Определение количества и ширины колонок является основополагающим при построении многоколоночного макета. Свойства <code>column-count</code> и <code>column-width</code> используются для установки количества и ширины колонок.</p>
+
+<p>Третье свойство, <code>columns</code>, является сокращенным свойством, которое устанавливает ширину и количество колонок одновременно.</p>
+
+<p>Другие факторы, такие как явные разрывы столбцов, содержимое и ограничения высоты, могут влиять на фактическое количество и ширину колонок.</p>
+
+<p>Свойство <code>column-width</code> указывает минимальную ширину, которую должен занимать каждый столбец.</p>
+
+<table>
+<tbody><tr>
+<th colspan="2">column-width</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>auto</code></td>
+<td>Означает, что ширина столбца будет определяться другими свойствами (например, <code>column-count</code>, если оно имеет значение, отличное от <code>auto</code>). Значение по умолчанию.</td>
+</tr>
+<tr>
+<td>длина</td>
+<td>Ширина колонок задаётся в единицах длины, кроме <code>%</code>. Фактическая ширина столбца может быть больше (для заполнения доступного пространства) или уже (только если доступное пространство меньше указанной ширины столбца). Отрицательные значения не допускаются. Используемые значения будут ограничены минимум <code>1px</code>.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+<br>
+<p>Свойство <code>column-count</code> описывает количество колонок, а их ширина будет рассчитываться, исходя из ширины доступного пространства. Если одновременно с <code>column-count</code> задается <code>column-width</code>, то значение <code>column-count</code> будет считаться максимальным числом колонок. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">column-count</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>auto</code></td>
+<td>Означает, что количество столбцов будет определяться другим свойством, например, <code>column-width</code>, если оно также не имеет значение <code>auto</code>. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td>число</td>
+<td>Описывает максимальное количество колонок. Значение задаётся целым числом, должно быть больше <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+<br>
+<p>Свойство <code>columns</code> — это сокращенное свойство для установки <code>column-width</code> и <code>column-count</code>. Опущенные значения устанавливаются в их начальные значения.</p>
+
+<pre>columns: 12em;      /* column-width: 12em; column-count: auto */
+columns: auto 12em; /* column-width: 12em; column-count: auto */
+columns: 2;         /* column-width: auto; column-count: 2 */
+columns: 2 auto;    /* column-width: auto; column-count: 2 */
+columns: auto;      /* column-width: auto; column-count: auto */
+columns: auto auto; /* column-width: auto; column-count: auto */
+columns: inherit;
+columns: initial;</pre>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M4>4. Разделители между колонками</h2></div><br>
+
+<p>Промежутки между колонками и разделительные линии помещаются между колонками в одном многоколоночном контейнере. Длина промежутков и разделительных равна высоте колонки. Промежутки в колонках занимают место, то есть, они раздвигают содержимое в соседних колонках.</p>
+
+<p>Разделительная линии рисуется в середине промежутка между колонками, не занимая места. То есть наличие или толщина разделительной линии не изменит размещение чего-либо еще. </p>
+
+<p>Линии закрашиваются чуть выше границы многоколоночного элемента. Если элемент имеет область прокрутки, разделительные линии прокручиваются вместе с колонками. Разделительные линии отображаются только между двумя колонками, которые имеют содержимое.</p>
+
+<p>Свойство <code>column-gap</code> определяет разрыв между колонками. Если для колонок установлена разделительная линия с помощью свойства <code>column-rule</code>, то эта линия будет расположена посередине промежутка, а ее ширина не изменит общую ширину. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">column-gap</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td>длина</td>
+<td>Промежуток между колонками задается в единицах длины. Значения не могут быть отрицательными. Процентное значение может быть удалено из спецификации.</td>
+</tr>
+<tr>
+<td><code>normal</code></td>
+<td>Эквивалентно <code>1em</code>. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+<br>
+<p>Свойство <code>column-rule-color</code> определяет цвет разделительной линии. </p>
+
+<p>Свойство <code>column-rule-style</code> устанавливает стиль разделительной линии.</p>
+
+<table>
+<tbody><tr>
+<th colspan="2">column-rule-style</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>Значение вычисляется в <code>0</code>. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>hidden</code></td>
+<td>Аналогично со значением <code>none</code>, линия скрыта.</td>
+</tr>
+<tr>
+<td><code>dotted</code></td>
+<td>Отображает линию набором квадратных точек.</td>
+</tr>
+<tr>
+<td><code>dashed</code></td>
+<td>Отображает линию как последовательность из тире.</td>
+</tr>
+<tr>
+<td><code>solid</code></td>
+<td>Обычная линия.</td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td>Отображает разделительную линию в виде двух параллельных тонких линий, расположенных на некотором расстоянии между собой. Толщина разделительной линии не указывается, но сумма линий и промежутка между ними равна значению <code>column-rule-width</code>.</td>
+</tr>
+<tr>
+<td><code>groove</code></td>
+<td>Отображает линию объемной, вдавленной в полотно. Это достигается путем создания тени из двух цветов, один из которых темнее, другой — светлее.</td>
+</tr>
+<tr>
+<td><code>ridge</code></td>
+<td>Отображает разделительную линию объемной, т.е. эффект, противоположный <code>groove</code>.</td>
+</tr>
+<tr>
+<td><code>inset</code></td>
+<td>Отображает сплошную линию цветом темнее, чем заданный цвет линии.</td>
+</tr>
+<tr>
+<td><code>outset</code></td>
+<td>Отображает сплошную линию цветом, заданным свойством <code>column-rule-color</code>.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+<br>
+<p>Свойство <code>column-rule-width</code> устанавливает ширину разделительной линии. Отрицательные значения не допускаются. Не работает без свойства <code>column-rule-style</code>. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">column-rule-width</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>thin</code></td>
+<td>Тонкая линия.</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>Значение по умолчанию. Средняя толщина линии.</td>
+</tr>
+<tr>
+<td><code>thick</code></td>
+<td>Утолщенная линия.</td>
+</tr>
+<tr>
+<td>длина</td>
+<td>Ширина разделительной линии задается в единицах длины.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+<br>
+<p>Свойство <code>column-rule</code> является сокращенной записью свойств <code>column-rule-width</code> <code>column-rule-style</code> <code>column-rule-color</code>. </p>
+
+<pre>column-rule: dotted;
+column-rule: solid 8px;
+column-rule: solid blue;
+column-rule: thick inset blue;
+column-rule: inherit;
+column-rule: initial;</pre>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M41>4.1. Разрыв колонок</h2></div><br>
+
+<p>Когда содержимое размещено в нескольких колонках, браузер должен определить, где размещаются разрывы колонок. Проблема разбиение контента на колонки аналогична разбиению контента на страницы. Для решения этого вопроса было введено три новых свойства, позволяющих описывать разрывы столбцов в тех же свойствах, что и разрывы страниц: <code>break-before</code>, <code>break-after</code> и <code>break-inside</code>.</p>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M5>5. Охват колонок: свойство <code>column-span</code></h2></div><br>
+
+<p>Свойство <code>column-span</code> позволяет элементу охватывать несколько столбцов. Указывается не для блока-контейнера, а для для конкретного элемента внутри, например, для заголовка. </p>
+
+<p>В будущем будет возможно указать количество колонок для охвата, подобно атрибуту <code>colspan</code>, который может быть применен к ячейке таблицы, но в спецификации CSS3 есть только два возможных значения: <code>none</code> и <code>all</code>. Свойство не работает по умолчанию в Firefox.</p>
+
+<table>
+<tbody><tr>
+<th colspan="2">column-span</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>Содержимое элемента отображается в пределах одной колонки. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>all</code></td>
+<td>Элемент охватывает все колонки. Колонка разбивается в том месте, где отображается элемент.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M6>6. Заполнение колонок содержимым: свойство <code>column-fill</code></h2></div><br>
+
+<p>Свойство <code>column-fill</code> контролирует заполнение колонок содержимым. Существует две стратегии заполнения колонок: колонки могут быть выровнены по высоте или нет. Если колонки выровнены, браузеры должны попытаться минимизировать изменения высоты колонки, учитывая при этом вынужденные разрывы, <code>widows</code>, <code>orphans</code> и другие свойства, которые могут влиять на высоту колонок. Если колонки не выровнены, они заполняются последовательно, некоторые из них могут быть частично заполнены или вообще не заполнены.</p>
+
+<table class="t1">
+<tbody><tr>
+<th colspan="2">column-fill</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>auto</code></td>
+<td>Заполняет колонки последовательно.</td>
+</tr>
+<tr>
+<td><code>balance</code></td>
+<td>Отображает содержимое одинаково во всех колонках. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>balance-all</code></td>
+<td>Выравнивает содержимое равномерно между колонками, насколько это возможно.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M7>7. Переполнение</h2></div><br>
+
+<p>За исключением случаев, когда это может привести к разрыву колонки, содержимое, которое выходит за границы колонки, выходит за ее границы и не обрезается. Это касается, в первую очередь, изображений. Чтобы решить эту проблему, нужно установить для изображений следующие свойства:</p>
+
+<pre>img {
+  display: block;    /*убираем нижний отступ под картинкой*/
+  width: 100%;       /*растягиваем изображение на всю ширину блока-контейнера*/
+}</pre>
+<br>
+<p>Содержимое и разделительные линии, которые выходят за рамки колонок по краям многоколоночного контейнера, обрезаются в соответствии со свойством <code>overflow</code>.</p>
+
+<p>Многоколоночный контейнер может иметь больше колонок, чем у него есть для этого места из-за ограничения высоты колонок (например, с помощью <code>height</code> или <code>max-height</code>) и явных разрывов колонок. В этом случае дополнительные колонки создаются в направлении строки, перемещаясь на следующие страницы.</p>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M8>8. Стилизация текста</h2></div><br>
+
+<p>Модуль <b>CSS-текст</b> описывает функции CSS, которые управляют переводом исходного текста в форматированный и переносом строк. Различные свойства CSS обеспечивают контроль над преобразованием регистра, обработкой пробелов, правилами переноса и переносом текста и строк, выравниванием, интервалами и отступами.</p>
+
+<p>Свойство <code>text-transform</code> стилизует текст. Оно не влияет на базовое содержимое и не должно влиять на содержимое операции копирования и вставки простого текста. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">text-transform</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>Значение по умолчанию, означает отсутствие эффектов.</td>
+</tr>
+<tr>
+<td><code>capitalize</code></td>
+<td>Изменяет написание первой буквы каждого слова в элементе, делая её прописной.</td>
+</tr>
+<tr>
+<td><code>uppercase</code></td>
+<td>Выводит все слова в элементе прописными буквами.</td>
+</tr>
+<tr>
+<td><code>lowercase</code></td>
+<td>Выводит все слова в элементе строчными буквами.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>  
+
+<p>Свойство <code>white-space</code> обрабатывает пробелы между словами и переносы строк внутри элемента. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">white-space</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>normal</code></td>
+<td>Значение по умолчанию. Между словами вставляется только по одному пробелу, дополнительные пробелы отбрасываются. Текст переносится только в случае необходимости.</td>
+</tr>
+<tr>
+<td><code>nowrap</code></td>
+<td>Запрещает переносы строк, за исключением применения <code>&lt;br&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>pre</code></td>
+<td>Пробелы в тексте не игнорируются, браузер отображает дополнительные пробелы и переносы строк.</td>
+</tr>
+<tr>
+<td><code>pre-wrap</code></td>
+<td>Сохраняет пробелы в тексте, делая разрывы строк там, где это необходимо.</td>
+</tr>
+<tr>
+<td><code>pre-line</code></td>
+<td>Удаляет лишние пробелы, за исключением случаев <code>&lt;br&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>break-spaces</code></td>
+<td>Поведение идентично <code>pre-wrap</code>, за исключением того, что: любая последовательность неудаляемых пробелов всегда занимает место, в том числе в конце строки; возможность переноса строки существует после каждого неудаляемого пробела, в том числе между пробелами.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M81>8.1. Расположение текста</h2></div><br>
+
+<p>Выравнивание и выключка строк контролируют, как встроенный контент распределяется в линейном блоке.</p>
+
+<p>Блок текста представляет собой набор линейных блоков. Свойство <code>text-align</code> задает свойства <code>text-align-all</code> и <code>text-align-last</code> и описывает, как блоки на уровне строки в каждом линейном блоке выравниваются относительно начальной и конечной сторон линейного блока. Значения, отличные от <code>justify-all</code> или <code>match-parent</code>, присваиваются <code>text-align-all</code> и сбрасываются в <code>text-align-last</code> на <code>auto</code>.</p>
+
+<table>
+<tbody><tr>
+<th colspan="2">text-align</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td>Содержимое на уровне строки выравнивается по начальному краю линейного блока. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td>Содержимое на уровне строки выравнивается по конечному краю линейного блока.</td>
+</tr>
+<tr>
+<td><code>left</code></td>
+<td>Содержимое на уровне строки выравнивается по левому краю строки линейного блока. В вертикальных системах письменности это будет физический верх или низ, в зависимости от ориентации текста.</td>
+</tr>
+<tr>
+<td><code>right</code></td>
+<td>Содержимое на уровне строки выравнивается по правому краю строки линейного блока. В вертикальных системах письменности это будет физический верх или низ, в зависимости от ориентации текста.</td>
+</tr>
+<tr>
+<td><code>center</code></td>
+<td>Содержимое на уровне строки центрируется внутри линейного блока.</td>
+</tr>
+<tr>
+<td><code>justify</code></td>
+<td>Текст выравнивается по ширине линейного блока, чтобы точно заполнить поле строки, прижимаюсь к левому и правому краям родительского элемента. Если иное не указано в <code>text-align-last</code>, последняя строка перед принудительным разрывом или конец блока выравнивается по началу. Пробелы между словами и буквами распределяются таким образом, чтобы длина всех строк была равна. Разные браузеры могут увеличить как отступы между словами, так и интервалы между буквами.</td>
+</tr>
+<tr>
+<td><code>justify-all</code></td>
+<td>Устанавливает <code>text-align-all</code> и <code>text-align-last</code> в <code>justify</code>, также выравнивая последнюю строку.</td>
+</tr>
+<tr>
+<td><code>match-parent</code></td>
+<td>Значение ведет себя так же, как <code>inherit</code> за исключением того, что унаследованное значение <code>start</code> или <code>end</code> интерпретируется относительно значения <code>direction</code> (или исходного содержащего блока, если нет родителя) и приводит к вычисленному значению <code>left</code> или <code>right</code>.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<p>Свойство <code>text-align-all</code> — сокращенный вариант свойства <code>text-align</code> определяет выравнивание всех строк содержимого в контейнере блока, за исключением последних строк, переопределенных значением <code>text-align-last</code>. Принимает значения <code>start</code>, <code>end</code>, <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code> и <code>match-parent</code>.</p>
+
+<p>Свойство <code>text-align-last</code> описывает, как выравнивается последняя строка блока или строки непосредственно перед принудительным разрывом строки.</p>
+
+<p>Если задано значение <code>auto</code>, содержимое в соответствующей строке выравнивается по <code>text-align-all</code>, если только для <code>text-align-all</code> не настроено <code>justify</code> — в этом случае оно выравнивается по началу блока. Все остальные значения интерпретируются как описано для <code>text-align</code>.</p>
+
+<p>Принимает значения <code>auto</code>, <code>start</code>, <code>end</code>, <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code> и <code>match-parent</code>.</p>
+
+<p style="font-weight: 600; font-style: italic;">Промежутки между словами</p>
+
+<p>CSS позволяет контролировать промежутки между словами и типографскими символами с помощью свойств <code>word-spacing</code> и <code>letter-spacing</code>.</p>
+
+<p>Свойство <code>word-spacing</code> определяет дополнительный интервал между словами.<br>
+Устанавливает интервалы между словами. Можно использовать положительные и отрицательные значения. При отрицательном значении слова могут накладываться друг на друга. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">word-spacing</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>normal</code></td>
+<td>Дополнительный интервал не применяется. Вычисляет в <code>0</code>. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td>длина</td>
+<td>Задает дополнительный интервал в дополнение к внутреннему интервалу между словами, определенному шрифтом. Значения могут быть отрицательными, но могут быть ограничения, зависящие от реализации.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<p style="font-weight: 600; font-style: italic;">Отступ первой строки</p>
+
+<p>Свойство <code>text-indent</code> задает отступ, применяемый к строкам встроенного содержимого в блоке. Отступ обрабатывается как поле, примененное к начальному краю линейного блока.<br>
+Если в первой строке блочного элемента присутствует изображение, то оно сдвинется вместе с остальным текстом. </p>
+
+<table class="t1">
+<tbody><tr>
+<th colspan="2">text-indent</th>
+</tr>
+<tr>
+<td>Значение:</td>
+<td></td>
+</tr>
+<tr>
+<td>длина/<code>%</code></td>
+<td>Размер отступа в виде абсолютной длины. Процентное значение вычисляется от собственной логической ширины блока-контейнера. Значение по умолчанию <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>each-line</code></td>
+<td>Отступы затрагивают первую строку каждого блока-контейнера и каждую строку после принудительного разрыва строки (но не строки после с мягким переносом).</td>
+</tr>
+<tr>
+<td><code>hanging</code></td>
+<td>Обратное преобразование. Все строки, кроме первой, будут с отступом.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M9>9. Шрифты</h2></div><br>
+
+<p>Свойство <code>font-family</code> используется для выбора начертания шрифта. Поскольку невозможно предсказать, установлен тот или иной шрифт на компьютере посетителя вашего сайта, рекомендуется прописывать все возможные варианты однотипных шрифтов. В таком случае браузер будет проверять их наличие, последовательно перебирая предложенные варианты. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">font-family</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td>family-name</td>
+<td>Название (имя) семейства шрифтов, например, <code>Times</code>, <code>Courier</code>, <code>Arial</code>. Рекомендуется указывать вместе с базовым семейством.</td>
+</tr>
+<tr>
+<td>generic-family</td>
+<td>Базовое семейство. CSS определяет пять базовых семейств шрифтов:<br>
+Шрифты с засечками — Serif (Times New Roman, Times, Garamond, Georgia)<br>
+Рубленые шрифты — Sans-serif (Helvetica, Geneva, Arial, Verdana, Trebuchet, Univers)<br>
+Моноширинные шрифты — Monospace (Courier, Courier New, Andele Mono)<br>
+Рукописные шрифты — Cursive (Comic Sans, Gabriola, Monotype Corsiva, Author, Zapf Chancery)<br>
+Аллегорические шрифты (Western, Woodblock, Klingon)</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<p>Пример:</p>
+
+<pre>font-family: "Times New Roman", Georgia, Serif;
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+font-family: fantasy;
+font-family: system-ui;
+font-family: inherit;
+font-family: initial;</pre>
+
+<p>Свойство <code>font-weight</code> задаёт насыщенность шрифта.</p>
+
+<table>
+<tbody><tr>
+<th colspan="2">font-weight</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>normal</code></td>
+<td>Значение по умолчанию, устанавливает нормальную насыщенность шрифта. Эквивалентно значению насыщенности, равной 400.</td>
+</tr>
+<tr>
+<td><code>bold</code></td>
+<td>Делает шрифт текста полужирным. Эквивалентно значению насыщенности, равной 700.</td>
+</tr>
+<tr>
+<td><code>bolder</code></td>
+<td>Насыщенность шрифта будет больше, чем у предка.</td>
+</tr>
+<tr>
+<td><code>lighter</code></td>
+<td>Насыщенность шрифта будет меньше, чем у предка.</td>
+</tr>
+<tr>
+<td><code>100, 200, 300, 400, 500, 600, 700, 800, 900</code></td>
+<td>Значение 100 соответствует самому легкому варианту начертания шрифта, а 900 — самому плотному. При этом, эти числа не определяют конкретной плотности, т.е. 100, 200, 300 и 400 могут соответствовать одному и тому же варианту слабой насыщенности начертания шрифта; 500 и 600 — средней насыщенности, а 700, 800 и 900 могут выводить одинаковое очень насыщенное начертание. Распределение плотности так же зависит от количества уровней насыщенности, определенных в конкретном семействе шрифтов.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<p style="text-align: center;"><img src="example/pic/font-weights.png" width="65%"></p><br>
+
+<p>Свойство <code>font-style</code> позволяет выбрать стиль начертания для шрифта. При этом разница между курсивом и наклонным начертанием заключается в том, что курсив вносит небольшие изменения в структуру каждого символа, в то время как наклонное начертание представляет собой наклонную версию прямого шрифта. </p>
+
+<table>
+<tbody><tr>
+<th colspan="2">font-style</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>normal</code></td>
+<td>Значение по умолчанию, устанавливает для текста обычное начертание шрифта.</td>
+</tr>
+<tr>
+<td><code>italic</code></td>
+<td>Выделяет текст курсивом.</td>
+</tr>
+<tr>
+<td><code>oblique</code></td>
+<td>Устанавливает наклонное начертание шрифта.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<p>Свойство <code>font-size</code> указывает желаемую высоту глифов из шрифта.</p>
+
+<table>
+<tbody><tr>
+<th colspan="2">font-size</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td>absolute-size</td>
+<td><code>xx-small</code>, <code>x-small</code>, <code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>, <code>xx-large</code>. В качестве стандартного размера принимается <code>medium</code>. В CSS1 предложенный коэффициент масштабирования между соседними индексами составлял 1.5, что для пользователя оказалось слишком большим. В CSS2 предложенный коэффициент масштабирования для экрана компьютера между смежными индексами составлял 1.2, что все еще создавало проблемы для небольших размеров. Новый коэффициент масштабирования варьируется между каждым индексом, чтобы обеспечить лучшую читаемость.</td>
+</tr>
+<tr>
+<td>relative-size</td>
+<td><code>smaller</code>, <code>larger</code>. Относительные размеры обусловливают изменение размера шрифта элемента относительно родителя. При этом размер шрифта может выйти за рамки размеров, предполагаемых для <code>xx-small</code> и <code>xx-large</code>.</td>
+</tr>
+<tr>
+<td>длина</td>
+<td>Размер шрифта устанавливается с помощью положительных значений единиц длины, например, <code>px</code>, <code>em</code>, как целых, так и дробных.</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Относительное значение, вычисляется на основании любого размера, унаследованного от родительского элемента. Обеспечивает более точную настройку вычисляемого размера шрифта. Задание размеров шрифта с помощью <code>em</code> эквивалентно процентному значению.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<table style=" margin: auto;">
+<tbody><tr>
+<th colspan="8">Значения absolute-size</th>
+</tr>
+<tr>
+<th><code>xx-small</code></th>
+<th><code>x-small</code></th>
+<th><code>small</code></th>
+<th><code>medium</code></th>
+<th><code>large</code></th>
+<th><code>x-large</code></th>
+<th><code>xx-large</code></th>
+<th></th>
+</tr>
+<tr>
+<th colspan="8">Коэффициент масштабирования</th>
+</tr>
+<tr>
+<td>3/5</td>
+<td>3/4</td>
+<td>8/9</td>
+<td>1</td>
+<td>6/5</td>
+<td>3/2</td>
+<td>2/1</td>
+<td>3/1</td>
+</tr>
+<tr>
+<th colspan="8">HTML заголовки</th>
+</tr>
+<tr>
+<td>h6</td>
+<td></td>
+<td>h5</td>
+<td>h4</td>
+<td>h3</td>
+<td>h2</td>
+<td>h1</td>
+<td></td>
+</tr>
+<tr>
+<th colspan="8">HTML размер шрифта</th>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M10>10.  Тень текста</h2></div><br>
+
+<p>Свойство <code>text-shadow</code> используется для добавления тени к тексту. Тень текста — интересный инструмент, который позволяет создавать удивительные эффекты. Тени могут быть однослойными или многослойными, размытыми, цветными или полупрозрачными. Задавая тень для элемента, можно указывать только одно значение длины и цвет, таким образом создавая цветную копию отдельного символа или слова. Также, с помощью тени можно сделать текст более читаемым, если контраст между цветом текста и фоном невелик.</p>
+
+<p>Каждая тень применяется как к самому тексту, так и к элементам его оформления (свойство <code>text-decoration</code>). Одновременно можно задавать несколько теней, указывая их через запятую. Тени накладываются друг на друга, но не перекрывают сам текст. Первая тень всегда расположена сверху над остальными тенями. Свойство наследуется.</p>
+
+<p>Каждая тень определяется двумя или тремя значениями длины и необязательным цветом. Допустимы длины, равные <code>0</code>. </p>
+
+<p style="text-align: center;"><img src="example/pic/text-shadow-syntax.png" style="width: 65%"></p>
+
+<table>
+<tbody><tr>
+<th colspan="2">text-shadow</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td>x-offset</td>
+<td>Задает горизонтальное смещение тени. Положительное значение рисует тень, смещенную вправо от текста, отрицательная длина — влево.</td>
+</tr>
+<tr>
+<td>y-offset</td>
+<td>Задает вертикальное смещение тени. Положительное значение смещает тень вниз, отрицательное — вверх.</td>
+</tr>
+<tr>
+<td>blur</td>
+<td>Задает радиус размытия. Отрицательные значения не допускаются. Если значение размытия равно нулю, то край тени четкий. В противном случае, чем больше значение, тем больше размыт край тени.</td>
+</tr>
+<tr>
+<td>цвет</td>
+<td>Задает <a class="txthref" href="../L6/lab6.html#M11" target="_blank">цвет</a> тени. Если цвет отсутствует, используемый цвет берется из свойства <code>color</code>.</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>Значение по умолчанию, означает отсутствие тени текста. Убирает тень элемента из группы элементов с заданным свойством.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table><br>
+
+<p>В отличие от <code>box-shadow</code>, текстовые тени не обрезаются и могут отображаться, если текст частично прозрачен. Как и <code>box-shadow</code>, текстовые тени не влияют на макет и не вызывают прокрутку или увеличение размера прокручиваемой области.</p>
+
+<pre>text-shadow: 2px 2px 4px pink; 
+text-shadow: #fc0 1px 0 10px; 
+text-shadow: 5px 5px #4D4644;
+text-shadow: blue 2px 5px;
+text-shadow: 5px 10px;
+text-shadow: inherit;
+text-shadow: initial;</pre>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M101>10.1.  Примеры тени</h2></div><br>
+
+<p>Ниже приведены несколько примеров стилизации текста с помощью теней. Просмотрите и разберитесь в коде их создания.</p>
+
+<p style="font-weight: 600">Плакатная тень</p>
+
+<p style="text-align: center; font-size: 320%" class="text-shadow-1"> Стиль тени текста 1</p>
+
+<pre>.text-shadow-1 {
+  background-color: #333333;
+  color: white;
+  text-shadow: -2px -2px 0 #4D4644, 2px -2px 0 #4D4644, -2px 2px 0 #4D4644, 2px 2px 0 #4D4644, 4px 4px 0 white, 5px 5px 0 white, 6px 6px 0 white;
+  letter-spacing: 0.1em;
+}</pre>
+
+<p style="font-weight: 600">3D тень</p>
+
+<p style="text-align: center; font-size: 320%" class="text-shadow-2"> Стиль тени текста 2</p>
+
+<pre>.text-shadow-2 {
+  background: linear-gradient(-45deg, #FEE864, #F5965E);
+  color: #f4f4f4;
+  text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+}</pre>
+
+<p style="font-weight: 600">Ретро-тень</p>
+
+<p style="text-align: center; font-size: 320%" class="text-shadow-3"> Стиль тени текста 3</p>
+
+<pre>.text-shadow-3 {
+  background-color: #222222;
+  color: #FB631E;
+  letter-spacing: .1em;
+  text-shadow: 4px 4px white, 6px 6px #D7CC88;
+}</pre>
+
+<p style="font-weight: 600">Неоновая тень</p>
+
+<p style="text-align: center; font-size: 320%" class="text-shadow-4"> Стиль тени текста 4</p>
+
+<pre>.text-shadow-4 {
+  background: black;
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+}</pre>
+
+<p style="font-weight: 600">Тень-обводка</p>
+
+<p style="text-align: center; font-size: 320%" class="text-shadow-5"> Стиль тени текста 5</p>
+
+<pre>.text-shadow-5 {
+  color: white;
+  text-shadow: 1px 1px #732372, 1px -1px #732372, -1px 1px #732372, -1px -1px #732372, 3px 3px 6px rgba(0,0,0,.5);
+}</pre>
+
+<br>
+<hr class="separator">     
+<p id="practic" style="text-align: center; font-weight: 600; font-size: 36px; color: #000000; text-indent: 0;">ПРАКТИКА</p>
+<hr class="separator">     
+
+<p style="text-align: center; font-size: 18px">Цель работы: Практическое освоение форм в HTML-документах.</p>
+<br><h2 align="center" style="text-align:center;">Задание к лабораторной работе №7:</h2><br>
+
+<ol>
+  <li>В своей папке по пути: <code>Группа&nbsp;/&nbsp;Фамилия.Имя&nbsp;/</code> создать новый HTML - документ.</li>
+  <li>Добавьте на страницу статью (можно взять из ресурсов);</li>
+  <li>Добавьте заголовок статье;</li>
+  <li>Отредактируйте статью следующим образом используя CSS:</li>
+  <ul>
+    <li>Разбейте текст на 3 колонки;</li>
+    <li>Добавьте изображения в статью;</li>
+    <li>Отредактируйте позиционирование изображений, сделайте отступы, подписи, задайте размеры;</li>
+    <li>Добавьте рамку изображениям, измените ширину, цвет, стиль рамки;</li>
+    <li>Стилизуйте границу между колонками в статье;</li>
+    <li>Сделайте отступ перед каждым абзацом;</li>
+    <li>Для подзаголовков измените ширину и размер шрифта;</li>
+    <li>К заголовку добавьте тень, стилизуйте заголовок;</li>
+    <li>Добавьте фон к веб-странице.</li>
+  </ul>
+</ol>
+
+<br><h2 style="text-align: center;">Отчет по лабораторной работе должен содержать:</h2><br>
+
+<P>В электронном варианте представить все HTML-документы созданные в работе. Проилюстрировать преподавателю функционирование этих HTML-документов по всем пунктам задания лабораторной работы.</P>
+
+<br><br><p style="text-align: center; font-size: 22px"><a class="txthref" href="#T1">Вернуться в начало</a></p><br><br>
+
+
+
+</div>
+</div>
+</div>
+  <!-- book end -->
+
+
+  <!-- content start -->
+<div style="display: block ;width: 20%; height: 100%; right:5%; top:28%; z-index: 101; position: absolute;font-size: 150%; line-height: 1.6;">
+  
+    <p style="color:#f24660; font-size: 28px; text-align:center; text-indent: 0;">Лабораторная работа №7</p>
+  <div  id="aside1" style="text-indent: 0;" >   
+    <hr>
+    <LI><A HREF="lab7.html#T1">Понятие блоков в CSS</A><BR>
+    <LI><A HREF="lab7.html#M2">Работа с рамками</A><BR>
+    <LI><A HREF="lab7.html#M21">Стиль рамки</A><BR>
+    <LI><A HREF="lab7.html#M22">Цвет рамки</A><BR>
+    <LI><A HREF="lab7.html#M23">Ширина рамки</A><BR>
+    <LI><A HREF="lab7.html#M3">Колонки</A><BR>
+    <LI><A HREF="lab7.html#M4">Разделители</A><BR>
+    <LI><A HREF="lab7.html#M41">Разрыв колонок</A><BR>
+    <LI><A HREF="lab7.html#M5">Охват колонок</A><BR>
+    <LI><A HREF="lab7.html#M6">Заполнение колонок</A><BR>
+    <LI><A HREF="lab7.html#M7">Переполнение</A><BR>
+    <LI><A HREF="lab7.html#M8">Стилизация текста</A><BR>
+    <LI><A HREF="lab7.html#M81">Расположение текста</A><BR>  
+    <LI><A HREF="lab7.html#M9">Шрифты</A><BR>  
+    <LI><A HREF="lab7.html#M10">Тень текста</A><BR>
+    <LI><A HREF="lab7.html#M101">Примеры тени</A><BR>
+    <hr>
+    <p style="text-align: center; font-size: 28px; color: #fafafa; margin-top: -10px;  text-indent: 0;"> 
+    <a href="lab7.html#practic">Практика</a></p>
+</div>
+  <!-- content end -->
+</div>
+  <!-- footer start -->
+    <div class="templatemo_footer" style="position: relative; left: 0; bottom: 0; ">
+      <div class="container">
+      <div class="row" style="color: white">
+          <div class="col-md-9 col-sm-12">
+              <span>Dnipro National University |  Laboratory Workshop &copy; 2019  </span>
+            </div>
+            <div  style="text-align: right">
+              <span> Designed by Zymeth</span>
+            </div>
+        </div>
+        </div>
+    </div>
+  <!-- footer end -->    
+
+<script src='../sources/js/content_scroll.js'></script>
+
+  </body>
+</HTML>

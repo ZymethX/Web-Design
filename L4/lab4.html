@@ -1,0 +1,671 @@
+﻿<!DOCTYPE HTML>
+  <head>
+    <title>Лабораторная работа №4</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="../sources/css/w3.css"               rel="stylesheet">
+    <link href="../sources/css/type_text.css"        rel="stylesheet">
+    <link href="../sources/css/bootstrap.min.css"    rel="stylesheet">
+    <link href="../sources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../sources/css/templatemo_misc.css"  rel="stylesheet">
+    <link href="../sources/css/templatemo_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+    <link href="../sources/css/go_top.css"           rel="stylesheet">
+    <link href="../sources/css/scrollbar.css"        rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../sources/js/jquery.min.js"></script> 
+    <script src="../sources/js/jquery.lightbox.js"></script>
+    <script src="../sources/js/templatemo_custom.js"></script>
+    <script src='../sources/js/jquery.min.js'></script>
+    <script src="../sources/js/prefixfree.min.js"></script>
+    <script src="../sources/js/go_top.js"></script>    
+    <script src="js/index.js"></script>
+    
+    <style>
+      @media(max-height:700px){.all{zoom:90%}}
+
+      p,h1,h2,h2,h4,h5,ol,td,ul,li{
+        color:black;
+        font-family: Lora-Regular;
+      }
+
+      h2 {
+        font-size: 150%;
+      }
+
+      body {
+        font-family: 'Roboto';
+        color: #333;
+        background-color:#393e42;
+      }
+
+      a {font-size:108%; color:#e9e9e9; }
+      a:hover {font-size:108%; color:#da7b7f; }
+
+      .sticky {
+        position: fixed;
+        top: 0px;  
+        z-index: 101;
+      }
+
+      .stop {
+        position: relative;
+        z-index: 101;
+      }
+
+      article {
+        display: block;
+        float: left;
+      }
+
+      hr.separator:after {
+        background: none repeat scroll 0% 0% #000;
+        content: "";
+        height: 10px;
+        left: 40%;
+        margin: -5px auto auto -5px;
+        position: absolute;
+        transform: rotate(-45deg);
+        width: 10px;
+      }
+      hr.separator {
+        border-top: 1px solid #000;
+        width: 95%;
+        clear: both;
+      }
+
+      a.txthref{ color: #0477f7; font-weight: 400; }
+      a:hover.txthref {  color:#da7b7f; }
+      
+      @font-face {
+        font-family: Lora-Regular; /* Имя шрифта */
+        src: url(../sources/fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+      }
+
+      p {          
+        text-indent: 1.5em;
+      }
+    </style>
+
+</head>
+<body>
+<div class="all">
+  <div class="site-header">
+    <div class="main-navigation">
+      <div class="responsive_menu">
+        <ul>
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-envelope"></span>Инфо</a></li>
+              </ul>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row templatemo_gallerygap">
+                    <div class="col-md-1 col-sm-1">
+                      <a href="#"><img src="../sources/images/logo.png" alt="Web Design"></a>
+                    </div>
+          <div class="main_menu">
+             
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="#"><span class="fa fa-star"></span>4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-exclamation"></span>Инфо</a></li>
+              </ul>
+
+          </div> <!-- /.col-md-12 -->
+
+          <div id=T1 class='text' style="position: relative; margin-top: 10%">
+          <div class='content'></div>
+          <div class='dash'></div>
+          </div> 
+        
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.main-navigation -->
+  </div> <!-- /.site-header -->
+
+
+    <!-- book start -->
+<div id="article" >
+<div style="background-image: url(../sources/images/ppm.png); width: 60%; margin-left:10%; background-size: 110%;background-repeat: repeat-y;background-attachment: fixed;margin-top:-5%; ">
+
+<img src="../sources/images/top1.png" style="position: relative; width:100%;">
+
+
+<div style="width:90%;margin: auto;margin-top:-10%; font-size: 140%; a:link{color:#ffffff;} " > <!--CONTENT-->
+
+
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M1>1. Типы листов стилей</h2></div><br>
+
+<p><strong>CSS (Cascading Style Sheets)</strong> — язык таблиц стилей, который позволяет прикреплять стиль 
+(например, шрифты и цвет) к структурированным документам (например, документам HTML и приложениям XML). 
+Обычно CSS-стили используются для создания и изменения стиля элементов веб-страниц и пользовательских интерфейсов, написанных на языках HTML и XHTML. Отделяя стиль представления документов от 
+содержимого документов, CSS упрощает создание веб-страниц и обслуживание сайтов.</p>
+<p>
+<p>Чтоб создать CSS-файл, создайте файл блокнота и переменуйте его, изменив расширение на <code>.css</code></p>
+<h3 style="font-weight: 600"><i>Существует четыре способа применения листов стилей в документе HTML:</i></h3><br>
+</p>
+<p>&nbsp;<strong>1 вариант. Внутри открывающего тега с помощью атрибута <code>style</code>.</strong></p>
+<p>&nbsp;Элементам на странице, которые располагаются внутри элемента <code>body</code>, можно добавить 
+атрибут <code>style</code>. Значением этого атрибута могут быть свойства и значения CSS, которые должны 
+будут применены к этому элементу.</p>
+<p>&nbsp;Давайте посмотрим, как это работает на конкретном примере. Атрибут <code>style</code> 
+добавлен для элемента <code>&lt;p&gt;</code>.</p>
+<pre>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Документ без названия&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+<span style="color: #ff0000;"><b>&lt;p style="color:red;"&gt;Абзац&lt;/p&gt;
+</span></b>&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>&nbsp;Обратите внимание, что в этом случае не нужно использовать селектор, т.к. элемент, к которому добавлены стили уже определен.</p>
+<p>&nbsp;<strong>2 вариант. Внутри элемента <code>style</code>.</strong></p>
+<p>&nbsp;Еще один способ подключения стилей CSS, это воспользоваться элементом <code>&lt;style&gt;</code>.</p>
+<p>&nbsp;Давайте посмотрим, как это выглядит на конкретном примере.</p>
+<pre>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+<span style="color: #ff0000;"><b>&lt;style&gt;
+p {color:red;}
+&lt;/style&gt;
+</b></span>&lt;title&gt;Документ без названия&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Абзац&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>&nbsp;<strong>3 вариант. Подключение внешнего файла стилей. </strong></p>
+<p>&nbsp;3 вариант подключения стилей CSS является использование элемента <code>link</code>, 
+который позволяет подключать к HTML-странице внешние файлы.</p>
+<p>&nbsp;Обратите внимание на атрибут, который указывается у этого элемента.</p>
+<pre>&lt;link rel="stylesheet" href="style.css" &gt;</pre>
+<p>&nbsp;Он тоже является обязательным. В атрибуте <code>href</code> указывается путь к css-файлу, который нужно подключить.</p>
+<pre>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+<span style="color: #ff0000;"><b>&lt;link rel="stylesheet" href="style.css"&gt;
+</b></span>&lt;title&gt;Документ без названия&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Абзац&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<br>
+<p>&nbsp;<strong>4 вариант. Использование импорта. </strong></p>
+<p>
+Используя ключевое слово <code>@import</code>, можно импортировать лист стилей в HTML-файл. 
+Не забудьте, что вы просто импортируете текстовый файл, а потому вы должны вставить его в 
+контейнер <code>&lt;style></code>. В этом случае импортирование листа стилей происходит точно так же, как внедрение 
+листа в HTML-файл. Например:<br>
+<pre>&lt;style> 
+  @import url(http://www.myserver.coin/style.css);
+&lt;/style></pre></p>
+<p>&nbsp;В современной верстке веб-страниц, невозможно представить создание сайта без CSS, поэтому советую вам поэкспериментировать с подключением CSS к своей веб-странице. В будущем, это вам очень сильно пригодится.
+</p>
+<br><h2 align="center" id=M2>2. Синтаксис листов стилей</h2><br>
+
+<p>Каскадные таблицы стилей описывают правила форматирования элементов с помощью свойств и допустимых значений этих свойств. 
+Для каждого элемента можно использовать ограниченный набор свойств, остальные свойства не будут оказывать на него никакого влияния.</p>
+<p>Объявление стиля состоит из двух частей: <strong>селектора</strong> и <strong>объявления</strong>. 
+В HTML имена элементов нечувствительны к регистру, поэтому <code>«h1»</code> работает так же, как и <code>«H1»</code>. Объявление 
+состоит из двух частей: имя свойства (например, <code>color</code>) и значение свойства (<code>grey</code >). 
+Селектор сообщает браузеру, какой именно элемент форматировать, а в блоке объявления (код в фигурных скобках) 
+перечисляются форматирующие команды — свойства и их значения.</p>
+<figure style="margin-left: 20%"><img src="example/pic/css_osnovy.png" alt="css_osnovy" width="450" height="169">
+<figcaption style="margin-left: 20%">Рис. 1. Структура объявления</figcaption></figure><br>
+<p>Хотя приведенный пример пытается влиять только на пару свойств, необходимых для рендеринга 
+HTML-документа, он сам по себе квалифицируется как таблица стилей. В сочетании с другими таблицами 
+стилей (одна фундаментальная особенность CSS заключается в том, что таблицы стилей объединяются), 
+правило будет определять окончательное представление документа.</p>
+</p>
+<pre>h1 {
+type-family: garamond, times, serif;
+}</pre>
+<p>
+Обратите внимание на то, что объявление взято в фигурные скобки. Данное правило распространяется 
+только на внедренные и связанные стили. При объявлении встроенного стиля  используются кавычки. 
+Кроме того, в этом случае не используются селекторы, так как стиль применяется только к дескриптору, в котором он определен:<br>
+<pre>&lt;h1 style="type-family; garamond, times, serif;">Стиль текущего абзаца определен соответствующим объявлением.&lt;/h1></pre>
+<p>Составные объявления разделяются точкой с запятой (<code>;</code>). В случае единичного объявления в точке с запятой нет необходимости.</p>
+
+
+<br><h2 align="center" id=M3>3. Именование и объединение листов стилей</h2><br>
+
+<p>Атрибут <code>title</code> дескриптора <code>&lt;link></code> позволяет дать имя листу стилей. 
+Если вы не указываете значение <code>title</code>, лист стилей является постоянным (persistent), и пользователь 
+не может отключать его (если только он не отключает листы стилей в целом). Присвоение значения <code>title</code>
+изменяет тип листа стилей на стандартный (default), и пользователь может выбирать стили из числа именованных.<br>
+браузер объединяет любые листы стилей с одинаковыми заголовками, которые имеют ключевое слово <code>alternate</code>, 
+присвоенное атрибуту <code>REL</code>.<br>
+ В следующем примере браузер применяет стили как из файла first.css, так и из second.css, 
+ поскольку дескрипторы <code>&lt;link></code> присваивают атрибуту <code>REL</code> значение <code>alternate</code> 
+ и имеют один и тот же заголовок.<br>
+
+<pre>&lt;link  REL="alternate stylesheet" title="Example"
+HREF="first.css">
+&lt;link  REL="alternate stylesheet" title="Example1'
+HREF="second.css"></pre>
+
+<p>Вы можете переназначить старшинство для правила, используя ключевое слово <code>important</code>. 
+В следующем примере присваивание значения <code>red</code> свойству <code>color</code> и значения <code>sans-serif</code> свойству <code>font-family</code> 
+отмечено как <code>important</code>. В этом случае браузер не будет отменять эти стили. Если два конкурирующих листа 
+стилей отмечают одно и то же свойство как <code>important</code>, применяются приведенные ранее правила.<br>
+<pre>h1 (color:red ! important font-weight:bold font-family:sans-serif ! important}</pre></p>
+
+<br><h2 align="center" id=M4>4. Добавление правил к листу стилей</h2><br>
+
+<p>Связанные и вложенные листы стилей позволяют определять стили для 
+одного или нескольких отдельных дескрипторов. Например, вы можете создать лист стилей, который определяет 
+стили для дескрипторов <code>&lt;h1>, &lt;h2>, &lt;p>, &lt;em></code>. Каждое определение стилей называется правилом 
+(rule). Правило содержит селектор (selector), представляющий собой дескриптор HTML, сопровождаемый декларацией 
+(описанием стиля). Селектор правила связывает определение стиля с дескрипторами, используемыми в HTML-файле. 
+Вот пример правила, которое определяет стиль для каждого дескриптора <code>&lt;h1></code>:
+<pre>h1 {color  :  blue}</pre>
+<p>Объявление заключено в фигурные скобки <code>{}</code>. Каждый элемент в объявлении имеет две части: 
+имя свойства и значение, которое вы присваиваете ему, разделенные двоеточием (<code>:</code>). В этом примере <code>color</code> - имя свойства, 
+a <code>blue</code> - значение, которое вы ему присваиваете. HTML определяет множество имен свойств (размер шрифта, 
+стиль шрифта, цвет, правое поле и так далее). Каждое свойство имеет также заранее определенный тип и диапазон значений.<br>
+Следующий пример показывает несколько правил, содержащихся внутри вложенного листа стилей:</p>
+<pre>&lt;style >
+h1 {color: blue}
+P {font-size: 10pt}&nbsp;
+&lt;/style></pre>
+
+<br><h2 align="center" id=M5>5. Установка нескольких свойств в одном правиле</h2><br>
+
+<p>Вы можете установить несколько свойств внутри одного правила. Это можно сделать, отделяя каждое 
+присвоение значений точкой с запятой (<code>;</code>):<br>
+
+<pre>h1 {color: blue; font-size: 12pt; text-line: center}</pre>
+
+<p>В данном случае браузер будет выводить заголовки <code>&lt;h1></code> синим цветом, используя шрифт размером 12 
+пунктов, выравнивая текст в окне браузера по центру. Для всех других свойств браузер будет использовать 
+значения по умолчанию. В данном случае свойство <code>font-style</code> будет равно <code>normal</code>.<br>
+</p>
+
+<br><h2 align="center" id=M6>6. Группирование селекторов в одном правиле</h2><br>
+
+<p>Если вы хотите определить один и тот же стиль для нескольких дескрипторов, можно вносить их в ваш лист стилей списком, как показано далее:<br>
+<pre>Р {font-size: 12pt}&nbsp;
+UL {font-size: 12pt}&nbsp;
+LI {font-size: 12pt}</pre>
+<p>Вы можете также группировать селекторы вместе и определять правило для них как для группы. 
+В следующем примере группируются селекторы в одной строке и определяется правило, 
+которое устанавливает свойство <code>font-size</code>, равным 12pt:<br>
+
+<pre>Р, UL, LI (font-size: 12pt}</pre></p>
+<p>Обратите внимание на запятые в списке между селекторами. Пропуск этой запятой приведет к совершенно другому результату.</p>
+
+<br><h2 align="center" id=M7>7. Определение наследования в правилах</h2><br>
+
+<p>Используя листы стилей HTML, вы можете очень точно определить применение стиля к дескриптору. 
+Например, вы можете определить два стиля для дескриптора <code>&lt;LI></code>: один для случая, когда он порожден 
+дескриптором <code>&lt;UL></code> и другой, когда он порожден дескриптором <code>&lt;OL></code>. Это делается с помощью контекстных селекторов.<br>
+<p>Контекстные селекторы определяют точную последовательность дескрипторов, для которых будет применяться стиль. 
+Другими словами, можно определить, что стиль будет применяться к специфическому дескриптору типа <code>&lt;LI></code> 
+только в том случае, когда он порожден дескриптором <code>&lt;OL></code>, как показано далее:
+<pre>OL LI {list-style-type: decimal}</pre>
+<p>Таким же образом можно определять, что некоторый стиль применяется к дескриптору <code>&lt;LI></code> только в том случае, когда он порожден дескриптором <code>&lt;UL></code>:<br>
+</p>
+<pre>UL LI {list-style-type: square}</pre>
+<p>&nbsp;Обратите внимание, что в этом случае список селекторов не разделен запятыми.<br>
+</p><a name="P2"></a>
+
+<br><h2 align="center" id=M8>8. Работа с классами в листах стилей</h2><br>
+<p>Класс определяет разновидность стиля, к которому вы обращаетесь в определенном дескрипторе, используя атрибут <code>CLASS</code>. 
+Например, можно определить три разновидности стиля <code>h1</code> и затем использовать каждый из них в соответствующем контексте. 
+Класс определяется во многом подобно тому, как обычно определяют стиль, с той разницей, что к дескриптору добавляется 
+произвольное имя класса, отделяемое точкой, как в следующем примере:
+<pre>h1.blue {color: blue}&nbsp;
+h1.red {color: red}&nbsp;
+h1.black {color: black}</pre>
+<p>При добавлении дескриптора <code>&lt;h1></code> к вашему HTML-документу, вы устанавливаете атрибут <code>CLASS</code>, чтобы указать, 
+какoй именно стиль вы намерены использовать:</p>
+<a name="P3"></a>
+<pre>&lt;h1 CLASS=red>Kpacный заголовок&lt;/h1></pre>
+
+<form action="example\exam2.html">
+<p><input type="submit" value="Пример 1"></p>
+</form>
+
+<br><h2 align="center" id=M9>9. Определение стиля для специфического элемента</h2><br>
+
+<p>Вы можете использовать оперативный стиль для определения внешнего вида элемента, указывая 
+его в атрибуте <code>style</code>. Вы можете также сделать ваш HTML-документ легко читаемым, присваивая элементу идентификатор (<code>ID</code>); 
+затем вы ставите в соответствие стиль этому элементу, используя <code>ID</code>.<br>
+Например, следующий дескриптор <code>&lt;p></code> присваивает атрибуту абзаца <code>ID</code> значение <code>test</code>:
+<pre>&lt;Р ID=test>Tecтовый абзац&lt;/p></pre>
+<p>Теперь можно определить правило, которое действует только на данный элемент, используя префикс <code>#</code> и 
+идентификатор в качестве селектора для правила:
+
+<pre>test (color: red)</pre></p>
+<form action="example\exam3.html">
+ <input type="submit" value="Пример 2">
+</form>
+<br><h2 align="center" id=M10>10. Работа с псевдоклассами</h2><br>
+<p>Псевдоклассы определяют динамическое состояние элементов, которое изменяется с помощью действий пользователя, а также положение в дереве документа. 
+Примером такого состояния служит текстовая ссылка, которая меняет свой цвет при наведении на неё курсора мыши. При использовании 
+псевдоклассов браузер не перегружает текущий документ, поэтому с помощью псевдоклассов можно получить разные динамические эффекты на странице.
+Синтаксис применения псевдоклассов следующий.</p>
+<p>&nbsp;
+<code>Селектор:Псевдокласс { Описание правил стиля }</code></p>
+<p>&nbsp;
+Первое, что нужно понять, это концепция состояний ссылок - различных состояний, в которых могут существовать ссылки, 
+которые могут быть стилизованы с использованием различных псевдоклассов :
+</p>
+<p>&nbsp;
+<b>Ссылка (не посещенная) :</b> состояние по умолчанию, в котором находится ссылка, когда она не находится в каком-либо другом состоянии. 
+Это может быть специально стилизовано с использованием <code>:link</code> псевдокласса.
+</p>
+<p>&nbsp;
+<b>Посещенные :</b> ссылка, когда она уже была посещена (существует в истории браузера), стилизованная с использованием <code>:visited</code> псевдокласса.
+</p>
+<p>&nbsp;
+<b>Наведение :</b> ссылка, когда на нее указывает указатель мыши, стилизованный с использованием <code>:hover</code> псевдокласса.
+</p>
+<p>&nbsp;
+<b>Фокус :</b> ссылка, когда она была сфокусирована (например, перемещена пользователем клавиатуры с помощью Tab клавиши или подобного, 
+или программно сфокусирована с использованием HTMLElement.focus()) - это оформляется с использованием <code>:focus</code> псевдокласса.
+</p>
+<p>&nbsp;
+<b>Активно : </b>ссылка, когда она активируется (например, по нажатию), стилизована с использованием <code>:active</code> псевдокласса.
+</p>
+<p>&nbsp;
+Ниже примеры использования:
+<pre>A:link {color: blue}&nbsp;
+A:active {color: red}
+A:visited {color; yellow}</pre>
+<p>&nbsp;
+CSS определяет также псевдокласс для первой строки абзаца. Любое правило стиля, которое вы назначаете селектору по 
+имени <code>first-line</code>, применяется к первой строке этого элемента. Если вы используете псевдокласс <code>first-line</code>, например, 
+с дескриптором <code>&lt;P></code>, первая строка абзаца будет форматироваться согласно этому правилу. Следующий пример определяет 
+вывод первой строки каждого абзаца полужирным шрифтом:
+<pre>P:first-line {font-weight: bold}</pre>
+<p>Точно так же вы можете изменять форматирование для первого символа в элементе, используя псеидокласс <code>first-symbol</code>. 
+Это удобно для создания специальных эффектов выделения заглавных букв:
+<Pre>Р:irst-letter {ont-size: 400%; float: left}</pre>
+</p>
+
+
+   <br><h2 align="center" id=M11>11. CSS Цвета</h2><br>
+  <p>Цвета задаются с помощью предопределенного названия цветов или значения <code>RGB</code>, <code>HEX</code>, <code>HSL</code>, <code>RGBA</code>, <code>HSLA</code>.<br>
+     В HTML, цвет может быть определен с помощью имени цвета, например как:
+     <pre>&lt;div style="background-color:tomato;"&gt;Tomato&lt;/div&gt;</pre>
+     <p>Некоторые примеры цветов:</p>
+
+   <div class="w3-row w3-center" style="margin:0 -16px;line-height:80px;color:white;">
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:tomato;">Tomato</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:orange;">Orange</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:dodgerblue;">DodgerBlue</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:mediumseagreen;">MediumSeaGreen</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:gray;">Gray</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:slateblue;">SlateBlue</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:violet;">Violet</div>
+      </div>
+      <div class="w3-col l3 m6 w3-padding">
+         <div style="background-color:lightgray;color:#444444">LightGray</div>
+      </div>
+   </div>
+
+   <br><p>Вы можете установить цвет фона для HTML-элементов:</p>
+      <pre>&lt;div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;"&gt;</pre> <br>
+   
+   <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">
+      <font style="vertical-align: inherit;">
+         <font class="" style="vertical-align: inherit;">Привет, мир</font>
+      </font>
+   </div>
+   
+   <br><p>Вы можете установить цвет текста:</p>
+
+<pre>&lt;h3 style="color:tomato; text-align: center"&gt;
+&lt;p class="xxx" style="vertical-align: inherit;">Привет, мир&lt;/p&gt;
+&lt;/h3&gt;</pre>
+
+
+   <h3 style="color:tomato; text-align: center">
+
+         <font class="" style="vertical-align: inherit;">Привет, мир</font>
+
+   </h3>
+
+   <p>
+         В HTML цвета также могут быть определены с использованием значений <code>RGB</code>, <code>HEX</code> значения, значения <code>HSL</code>, значения <code>RGBA</code>
+         и значения <code>HSLA</code>.
+         То же значение цвета «Помидор»:
+
+   </p>
+
+   <div class="w3-center"
+      style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+      <div style="background-color:rgb(255, 99, 71);margin:10px 0;">
+         <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">RGB (255, 99, 71)</font>
+         </font>
+      </div>
+      <div style="background-color:#ff6347;margin:10px 0;">
+         <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;"># ff6347</font>
+         </font>
+      </div>
+      <div style="background-color:hsl(9, 100%, 64%);margin:10px 0;">
+         <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">HSL (9, 100%, 64%)</font>
+         </font>
+      </div>
+   </div>
+
+   <p>
+         То же значение цвета «Томатный», но 50% прозрачно:
+
+   </p>
+
+   <div class="w3-center"
+      style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+      <div style="background-color:rgba(255, 99, 71, 0.5);margin:10px 0;">
+         <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">RGBA (255, 99, 71, 0,5)</font>
+         </font>
+      </div>
+      <div style="background-color:hsla(9, 100%, 64%, 0.5);margin:10px 0;">
+         <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">HSLA (9, 100%, 64%, 0,5)</font>
+         </font>
+      </div>
+   </div>
+
+      <br><h2 align="center" id=M12>12. CSS обои</h2><br>
+
+   <p>
+         <code>background-color</code> Свойство задает цвет фона элемента.
+         Цвет фона страницы устанавливается следующим образом:
+<pre>body {
+background-color: lightblue;
+}</pre>
+         <p><code>background-image</code> Свойство определяет изображение для использования в качестве фона элемента.
+         По умолчанию изображение повторяется так оно охватывает весь элемент.
+         Фоновое изображение для страницы можно установить следующим образом:
+<pre>body {
+background-image: url("paper.gif");
+}</pre>
+         <p>По умолчанию <code>background-image</code> свойство повторяет изображение по горизонтали и по вертикали.
+         Некоторые изображения должны повторяться только по горизонтали или по вертикали, или они будут выглядеть странно.
+         Для повторений только по горизонтали <code>background-repeat: repeat-x;</code> , а для повторений изображения по вертикали, установите <code>background-repeat: repeat-y;</code>.
+         <code>background-repeat</code> выставление повторяемости изображения, например:
+<pre>body {
+background-image: url("img_tree.png");
+background-repeat: no-repeat;
+}</pre>
+         <p>Положение изображения задается <code>background-position</code> свойством:
+<pre>body {
+background-image: url("img_tree.png");
+background-repeat: no-repeat;
+background-position: right top;
+}</pre>
+
+         <p>Для того, чтобы указать , что фоновое изображение должно быть фиксированным (не будет прокручиваться с остальной частью страницы), используйте <code>background-attachment</code> свойство:
+<pre>body {
+background-image: url("img_tree.png");
+background-repeat: no-repeat;
+background-position: right top;
+background-attachment: fixed;
+}</pre>
+
+         <p>Для сокращения кода, также можно указать все свойства фона в одной собственности. Это называется сокращенным свойством.
+         Сокращённое свойство для фона <code>background</code>:
+<pre>body {
+background: #ffffff url("img_tree.png") no-repeat right top;
+}</pre>
+         <div style="text-align: center" >
+            <iframe frameborder="1" width="90%" height="400px" scrolling="no" src="Additional\back_ground_presentation.html"
+               id="iframeResult" id=iframeResult"></iframe>
+         </div>
+         <br>
+
+         <p>При использовании сокращённого свойства порядок значений свойств является:
+         <ul>
+            <li><code>background-color</code></li>
+            <li><code>background-image</code></li>
+            <li><code>background-repeat</code></li>
+            <li><code>background-attachment</code></li>
+            <li><code>background-position</code></li>
+         </ul>
+         <p>Это не имеет значения, если одно из значений свойств отсутствует, при условии, что остальные находятся в таком порядке.
+
+   </p>
+<p style="color: red; font-style: italic; text-align: center;">Используйте справочник <a target="_blank" class="txthref" href="../Additional/css.html">CSS-свойств</a> во вкладке "Инфо".</p>
+
+<br>
+<hr class="separator">     
+<p id="practic" style="text-align: center; font-weight: 600; font-size: 36px; color: #000000; text-indent: 0;">ПРАКТИКА</p>
+<hr class="separator">     
+
+<p style="text-align: center; font-size: 18px">Цель работы: Изучение написания таблиц стилей и
+использование их при организации документов HTML.</P>
+<br><h2 align="center" style="text-align:center;">Задание к лабораторной работе №4:</h2><br>
+
+<ol>
+<li>Создайте отдельный CSS-файл.</li>
+<li>Скопируйте и переименуйте HTML - документ созданный в лабораторной работе №2, чтобы применить в нем лист стилей созданный в п.1 настоящей работы (далее работаем с созданной копией).</li>
+<li>Используя созданный CSS-файл сделайте:</li>
+<ul>
+  <li>Добавьте фоновое изображение;</li>
+  <li>Отступ в начале каждого абзаца при использовании тега <code>&lt;p&gt;</code>;</li>
+  <li>Измените цвет текста;</li>
+  <li>Измените цвет отображение ссылок в их различном состоянии;</li>
+  <li>Фоновый цвет для тега класса, добавить этот класс к тегу <code>div</code>, в который обернуть текст в документе;</li>
+</ul>  
+<li>Подключите получившийся CSS-файл ко всем ранее созданным веб-страницам, посмотрите, как они изменятся;</li>
+<li>Добавить в получившийся HTML-документ (из пункта 2) любые цитаты на ваш выбор (минимум 3);</li>
+<li>Подключите к этому документу <code>bootstrap-min.css</code> из папки <code>CoolStyles</code>, посмотрите, как изменится документ;</li>
+<li>Посмотрите другие CSS-файлы в этой папке, выберите еще миниум 1 файл, и подключите его к своему документу используя class, разберитесь как он работает;</li>
+<li>С помощью тега <code>style</code> в голове документа увеличить шрифт в теге <code>p</code>;</li>
+<li>Изменить позиционирование всех изображений с помощью атрибута <code>style</code>;</li>
+<li>Добавьте фон к тексту в теге <code>p</code>, используйте прозрачность;</li>
+<li>Оформите цитаты используя CSS;</li>
+<li>Добавьте изображения разделители между цитатами, задайте им позиционирование, размер.</li>
+</ol>
+
+<p>Ваша задача сделать стильно оформленную веб - страницу с цитатами и изображениями. </p><br>
+
+<p style="font-style: italic; text-align: center;">Необходимые ресурсы можно найти в папке <code>labs_web_design/sources/!for_students/CoolStyles</code>.</p>
+
+<br><h2 style="text-align: center;">Отчет по лабораторной работе должен содержать:</h2><br>
+
+<P>В электронном варианте представить все HTML-документы созданные в работе. Проилюстрировать преподавателю функционирование этих HTML-документов по всем пунктам задания лабораторной работы, рассказать какие теги и свойства были использованы и для чего.</P>
+
+<br><br><p style="text-align: center; font-size: 22px"><a class="txthref" href="#T1">Вернуться в начало</a></p><br><br>
+
+
+
+</div>
+</div>
+</div>
+  <!-- book end -->
+
+
+  <!-- content start -->
+<div style="display: block ;width: 20%; height: 100%; right:5%; top:28%; z-index: 101; position: absolute;font-size: 150%; line-height: 1.6;">
+  
+    <p style="color:#f24660; font-size: 28px; text-align:center; text-indent: 0;">Лабораторная работа №4</p>
+  <div  id="aside1" style="text-indent: 0;" >   
+   <hr>
+
+  <LI><A href="lab4.html#T1">Типы листов стилей</A><BR>
+  <LI><A href="lab4.html#M2">Синтаксис листов стилей</A><BR>
+  <LI><A HREF="lab4.html#M3">Именование и объединение листов стилей</A><BR>
+  <LI><A HREF="lab4.html#M4">Добавление правил</A><BR>
+  <LI><A HREF="lab4.html#M5">Установка нескольких свойств в одном правиле</A><BR>
+  <LI><A HREF="lab4.html#M6">Группирование селекторов в одном правиле</A><BR>
+  <LI><A HREF="lab4.html#M7">Определение наследования в правилах</A><BR>
+  <LI><A HREF="lab4.html#M8">Работа с классами</A><BR>
+  <LI><A HREF="lab4.html#M9">Cпецифические элементы</A><BR>
+  <LI><A HREF="lab4.html#M10">Работа с псевдоклассами</A><BR>
+  <LI><A HREF="lab4.html#M11">CSS Цвета</A><BR>
+  <LI><A HREF="lab4.html#M12">CSS обои</A><BR>
+
+    <hr>
+    <p style="text-align: center; font-size: 28px; color: #fafafa; margin-top: -10px;  text-indent: 0;"> 
+    <a href="lab4.html#practic">Практика</a></p>
+</div>
+  <!-- content end -->
+</div>
+  <!-- footer start -->
+    <div class="templatemo_footer" style="position: relative; left: 0; bottom: 0; ">
+      <div class="container">
+      <div class="row" style="color: white">
+          <div class="col-md-9 col-sm-12">
+              <span>Dnipro National University |  Laboratory Workshop &copy; 2019  </span>
+            </div>
+            <div  style="text-align: right">
+              <span> Designed by Zymeth</span>
+            </div>
+        </div>
+        </div>
+    </div>
+  <!-- footer end -->    
+
+<script src='../sources/js/content_scroll.js'></script>
+
+  </body>
+</HTML>

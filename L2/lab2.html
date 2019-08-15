@@ -1,0 +1,803 @@
+﻿<!DOCTYPE HTML>
+  <head>
+    <title>Лабораторная работа №2</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="../sources/css/type_text.css"        rel="stylesheet">
+    <link href="../sources/css/bootstrap.min.css"    rel="stylesheet">
+    <link href="../sources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../sources/css/templatemo_misc.css"  rel="stylesheet">
+    <link href="../sources/css/templatemo_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+    <link href="../sources/css/go_top.css"           rel="stylesheet">
+    <link href="../sources/css/scrollbar.css"        rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../sources/js/jquery.min.js"></script> 
+    <script src="../sources/js/jquery.lightbox.js"></script>
+    <script src="../sources/js/templatemo_custom.js"></script>
+    <script src='../sources/js/jquery.min.js'></script>
+    <script src="../sources/js/prefixfree.min.js"></script>
+    <script src="../sources/js/go_top.js"></script>
+    <script src="js/index.js"></script>
+    
+    <style>
+      @media(max-height:700px){.all{zoom:90%}}
+
+      p,h1,h2,h2,h4,h5,ol,td,ul,li{
+        color:black;
+        font-family: Lora-Regular;
+      }
+
+      h2 {
+        font-size: 150%;
+      }
+
+      body {
+        font-family: 'Roboto';
+        color: #333;
+        background-color:#393e42;
+      }
+
+      a {font-size:108%; color:#e9e9e9; }
+      a:hover {font-size:108%; color:#da7b7f; }
+
+      .sticky {
+        position: fixed;
+        top: 0px;  
+        z-index: 101;
+      }
+
+      .stop {
+        position: relative;
+        z-index: 101;
+      }
+
+      article {
+        display: block;
+        float: left;
+      }
+
+      hr.separator:after {
+        background: none repeat scroll 0% 0% #000;
+        content: "";
+        height: 10px;
+        left: 40%;
+        margin: -5px auto auto -5px;
+        position: absolute;
+        transform: rotate(-45deg);
+        width: 10px;
+      }
+      hr.separator {
+        border-top: 1px solid #000;
+        width: 95%;
+        clear: both;
+      }
+
+      a.txthref{ color: #0477f7; font-weight: 400; }
+      a:hover.txthref {  color:#da7b7f; }
+      
+      @font-face {
+        font-family: Lora-Regular; /* Имя шрифта */
+        src: url(../sources/fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+      }
+
+      p {          
+        text-indent: 1.5em;
+      }
+    </style>
+</head>
+<body>
+<div class="all">
+  <div class="site-header">
+    <div class="main-navigation">
+      <div class="responsive_menu">
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-envelope"></span>Инфо</a></li>
+              </ul>
+      </div>
+      <div class="container">
+        <div class="row templatemo_gallerygap">
+                    <div class="col-md-1 col-sm-1">
+                      <a href="#"><img src="../sources/images/logo.png" alt="Web Design"></a>
+                    </div>
+          <div class="main_menu">
+             
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="#"><span class="fa fa-star"></span>2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="../L5/lab5.html">5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-exclamation"></span>Инфо</a></li>
+              </ul>
+
+          </div> <!-- /.col-md-12 -->
+
+          <div id=T1 class='text' style="position: relative; margin-top: 10%">
+          <div class='content'></div>
+          <div class='dash'></div>
+          </div> 
+        
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.main-navigation -->
+  </div> <!-- /.site-header -->
+
+
+    <!-- book start -->
+<div id="article" >
+<div style="background-image: url(../sources/images/ppm.png); width: 60%; margin-left:10%; background-size: 110%;background-repeat: repeat-y;background-attachment: fixed;margin-top:-5%; ">
+
+<img src="../sources/images/top1.png" style="position: relative; width:100%;">
+
+
+<div style="width:90%;margin: auto;margin-top:-10%; font-size: 140%; a:link{color:#ffffff;} " > <!--CONTENT-->
+
+
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M1>1. Основные положения</h2></div><br>
+
+
+<p style="margin: 0">Файл с документом, закодированным на языке HTML, - это текстовый
+файл. Графическую информацию, относящуюся к данному документу, размещают не в самом HTML-файле, а в 
+отдельных файлах; при этом в HTML-файл помещают специальные теги добавленя
+медиа. Эти теги указывают программе просмотра из каких файлов считывать медиа информацию и как располагать
+медиа на экране.</p>
+
+<br><h2 align="center" id=M2>2.Форматы изображений</h2><br>
+
+<p><strong>Формат JPEG</strong> <em>(Joint Photographic Experts Group)</em>. 
+Изображения JPEG идеальны для фотографий, они могут содержать миллионы различных цветов. 
+Сжимают изображения лучше GIF, но текст и большие площади со сплошным цветом могут покрыться пятнами.</p>
+<p><strong>Формат GIF</strong> <em>(Graphics Interchange Format)</em>. Идеален для сжатия 
+изображений, в которых есть области со сплошным цветом, например, логотипов. GIF-файлы позволяют 
+установить один из цветов прозрачным, благодаря чему фон веб-страницы может проявляться через часть 
+изображения. Также GIF-файлы могут включать в себя простую анимацию. GIF-изображения содержат всего 
+лишь 256 оттенков, из-за чего изображения выглядят пятнистыми и нереалистичного цвета, как плакаты.</p>
+<p><strong>Формат PNG</strong> <em>(Portable Network Graphics)</em>. Включает в себя 
+лучшие черты GIF- и JPEG-форматов. Содержит 256 цветов и дает возможность сделать один из цветов прозрачным, 
+при этом сжимает изображения в меньший размер, чем GIF-файл.</p>
+<p><strong>Формат APNG</strong> <em>(Animated Portable Network Graphics)</em>. Формат изображения, 
+основанный на формате PNG. Позволяет хранить анимацию, а также поддерживает прозрачность.</p>
+<p><strong>Формат SVG</strong> <em>(Scalable Vector Graphics)</em>. SVG-рисунок состоит 
+из набора геометрических фигур, описанных в формате XML: линия, эллипс, многоугольник и т.п. Поддерживается 
+как статичная, так и анимированная графика.  Набор функций включает в себя различные преобразования, 
+альфа-маски, эффекты фильтров, возможность использования шаблонов. Изображения в формате SVG могут 
+изменяться в размере без снижения качества.</p>
+<p><strong>Формат BMP</strong> <em>(Bitmap Picture)</em>. Представляет собой несжатое 
+(оригинальное) растровое изображение, шаблоном которого является прямоугольная сетка пикселей. 
+Bitmap-файл состоит из заголовка, палитры и графических данных. В заголовке хранится информация о 
+графическом изображении и файле (глубина пикселей, высота, ширина и количество цветов). Палитра 
+указывается только в тех Bitmap-файлах, которые содержат палитровые изображения (8 и менее бит) 
+и состоят не более чем из 256 элементов. Графические данные представляют саму картинку. Глубина 
+цвета в данном формате может быть 1, 2, 4, 8, 16, 24, 32, 48 бит на пиксель.</p>
+<p><strong>Формат ICO</strong> <em>(Windows icon)</em>. Формат хранения значков 
+файлов в Microsoft Windows. Также, Windows icon, используется как иконка на сайтах в интернете. 
+Именно картинка такого формата отображается рядом с адресом сайта или закладкой в браузере. Один 
+ICO-файл содержит один или несколько значков, размер и цветность каждого из которых задаётся отдельно. 
+Размер значка может быть любым, но наиболее употребимы квадратные значки со сторонами 16, 32 и 48 пикселей.</p>
+<a name="P1"></a>
+
+<br><h2 align="center" id=M3>3. Добавление изображений в документ HTML</h2><br>
+
+<p>Элемент <code>&lt;img&gt;</code> представляет изображение и его резервный контент, 
+который добавляется с помощью атрибута <code>alt</code>. Так как элемент <code>&lt;img&gt;</code> 
+является строчным, то рекомендуется располагать его внутри блочного элемента, например, 
+<code>&lt;p&gt;</code> или <code>&lt;div&gt;</code>. </p>
+<p>Тег <code>&lt;img&gt;</code> имеет обязательный атрибут <code>src</code>, 
+значением которого является абсолютный или относительный путь к изображению: </p>
+<pre>&lt;img src="image.png" alt="Пример кода"&gt;</pre>
+<FORM ACTION="Example/exam1.html">
+<INPUT TYPE="submit" value="Пример 1"></form>
+<p>Адрес изображения может быть указан полностью (абсолютный URL), например:<br>
+<code>url(http://anysite.ru/images/anyphoto.png)</code></p>
+<p>Или же через относительный путь от <b>документа</b> или <b>корневого каталога</b> сайта:<br>
+<code>url(../images/anyphoto.png)</code> — относительный путь от документа,<br>
+<code>url(/images/anyphoto.png)</code> — относительный путь от корневого каталога.</p>
+<p>Это интерпретируется следующим образом:<br>
+<code>../</code> — означает подняться вверх на один уровень, к корневому каталогу,<br>
+<code>images/</code> — перейти к папке с изображениями,<br>
+<code>anyphoto.png</code> — указывает на файл изображения.</p>
+
+<p>В HTML5 рекомендуется оформлять изображение в коде с помощью контейнера <code>&lt;picture&gt;</code>.HTML-элемент <code>&lt;picture&gt;</code> служит контейнером для одного или более элементов <code>&lt;source&gt;</code> и одного элемента <code>&lt;img&gt;</code> для обеспечения оптимальной версии изображения для различных размеров экрана. Браузер рассмотрит каждый из дочерних элементов  <code>&lt;source&gt;</code> и выберет один, соответствующий лучшему совпадению; если совпадений среди элементов <code>&lt;source&gt;</code> найдено не будет, то будет выбран файл, указанный  атрибутом  src элемента <code>&lt;img&gt;</code>. Затем выбранное изображение отображается в пространстве, занятом элементом <code>&lt;img&gt;</code>. </p>
+
+<p>HTML-элемент <code>&lt;source&gt;</code>  указывает несколько медиа-ресурсов для элементов <code>&lt;picture&gt;</code>, <code>&lt;video&gt;</code> и <code>&lt;audio&gt;</code>. Это пустой элемент. Он обычно используется для обслуживания одного и того же медиа-контента в нескольких форматах, поддерживаемых различными браузерами.</p>
+
+<p>Чтобы выбрать оптимальное изображение, user agent  анализирует атрибуты <code>srcset</code>, <code>media</code>, и <code>type</code> элемента <code>&lt;source&gt;</code> и выбирает совместимое изображение, которое наилучшим образом соответствует текущему макету страницы, характеристикам устройства отображения и т. д.
+
+Элемент <code>&lt;picture&gt;</code> часто используют для того, чтобы обеспечить HiDPI (Retina) - версию изображений для дисплеев с высоким разрешением, а также для добавления других форматов изображений, не поддерживаемых всеми браузерами. Для <code>&lt;picture&gt;</code> доступны только <a class="txthref" href="../Additional/html_atributes.html" target="_blank">универсальные атрибуты</a>.</p>
+
+<p>Далее рассмотрим примеры, которые демонстрируют влияние различных атрибутов элемента <code>&lt;source&gt;</code> на выбор изображения, которое будет отображаться при их использовании внутри тега <code>&lt;picture&gt;</code>.</p>
+
+<p>Атрибут <code>media</code> позволяет определить медиа-запрос, который веб-браузер будет анализировать для выбора элемента  <code>&lt;source&gt;</code>. Если медиа-запрос определяется как ложный (false), то элемент  <code>&lt;source&gt;</code> пропускается.</p>
+
+<pre>
+&lt;picture&gt;
+ &lt;source srcset="mdn-logo-wide.png" media="(min-width: 600px)"&gt;
+ &lt;img src="mdn-logo-narrow.png" alt="MDN"&gt;
+&lt;/picture&gt;
+</pre>
+
+<p>Атрибут <code>type</code> позволяет Вам обозначить MIME-тип данных, указанных в атрибуте <code>srcset</code> элемента  <code>&lt;source&gt;</code>. Если браузер не подерживает данный тип, то элемент   <code>&lt;source&gt;</code> опускается.</p>
+
+<pre>
+​&lt;picture&gt;
+ &lt;source srcset="mdn-logo.svg" type="image/svg+xml"&gt;
+ &lt;img src="mdn-logo.png" alt="MDN"&gt;
+&lt;/picture&gt;
+</pre>
+
+<p>Для тега <code>&lt;img&gt;</code> доступны следующие атрибуты:</p>
+<table border="1" id="table_img">
+<tbody><tr>
+<th style="width:15%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td><code>alt</code></td>
+<td>Атрибут <code>alt</code> добавляет альтернативный текст для изображения. Выводится на месте 
+появления изображения<br> до его загрузки или при отключенной графике, а также выводится всплывающей 
+подсказкой при<br> наведении курсора мыши на изображение.<br>
+Синтаксис: <code>alt="описание изображения"</code>.</td>
+</tr>
+<tr>
+<td><code style="color:#38bac7">crossorigin</code></td>
+<td>Атрибут <code>crossorigin</code> позволяет загружать изображения с ресурсов другого домена с 
+помощью CORS-запросов.<br> Изображения, загруженные в холст с помощью CORS-запросов, могут быть 
+использованы повторно. Допускаемые значения:<br>
+<code>anonymous</code> — Cross-origin запрос выполняется с помощью HTTP-заголовка, при этом учетные 
+данные не передаются. <br>Если сервер не даёт учетные данные серверу, с которого запрашивается контент, 
+то изображение будет испорчено<br> и его использование будет ограничено.<br>
+<code>use-credentials</code> — Cross-origin запрос выполняется с передачей учетных данных.<br>
+Синтаксис: <code>crossorigin="anonymous"</code>.</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>Атрибут <code>height</code> задает высоту изображения. Может указываться в <code>px</code> или <code>%</code>.<br>
+Синтаксис: <code>height="300px"</code>.</td>
+</tr>
+<tr>
+<td><code>ismap</code></td>
+<td>Атрибут<code>ismap</code> указывает на то, что картинка является частью изображения-карты, 
+расположенного на <br>сервере (изображение-карта — изображение с интерактивными областями). При 
+нажатии на изображение-карту координаты <br>передаются на сервер в виде строки запроса URL-адреса. 
+Атрибут <code>ismap</code> допускается только в случае, если элемент <code>&lt;img&gt;</code> <br>
+является потомком элемента <code>&lt;a&gt;</code> с действительным атрибутом <code>href</code>.<br>
+Синтаксис: <code>ismap</code>.</td>
+</tr>
+<tr>
+<td><code>longdesc</code></td>
+<td>URL расширенного описания изображения, дополняющее атрибут <code>alt</code>.<br>
+Синтаксис: <code>longdesc="http://www.example.com/description.txt"</code>.</td>
+</tr>
+<tr>
+<td><code>src</code></td>
+<td>Атрибут <code>src</code> задает путь к изображению.<br>
+Синтаксис: <code>src="flower.jpg"</code>.</td>
+</tr>
+<tr>
+<td><code style="color:#38bac7">sizes</code></td>
+<td>Задаёт размер изображения в зависимости от параметров отображения. Работает только при 
+заданном атрибуте <code>srcset</code>. <br>Значением атрибута является одна или несколько строк, 
+указанных через запятую.</td>
+</tr>
+<tr>
+<td><code style="color:#38bac7">srcset</code></td>
+<td>Создаёт список источников для изображения, которые будут выбраны, исходя из разрешения экрана. 
+Может использоваться <br>вместе или вместо атрибута <code>src</code>. Значением атрибута является 
+одна или несколько строк, разделенных запятой.<p></p>
+<pre>&lt;img src="flower.jpg"
+  srcset="
+    img/flower-mobile.jpg 320w,
+    img/flower-wide-mobile.jpg 480w,
+    img/flower-tablet.jpg 768w,
+    img/flower-desktop.jpg 1024w,
+    img/flower-hires.jpg 1280w"
+  sizes="
+    (max-width: 20em) 30vw,
+    (max-width: 30em) 60vw,
+    (max-width: 40em) 90vw"
+  alt="Роза в моём саду"&gt;</pre>
+Каждая строка может состоять из следующих частей:
+<OL>
+<li>адрес изображения;
+<li>дескриптор ширины, который представляет собой следующее положительное число,
+за которым следует w (например: 600w);
+<li>дескриптор плотности пикселей, представляет собой положительное десятичное число,
+за которым сразу следует x.</OL>
+Каждая строка в списке должна содержать обязательно адрес и 
+по желанию дескриптор ширины или плотности писелей. Если никакой
+дескриптор не задан, то по умолчанию он равен 1x.<br>
+Браузер сам выбирает наиболее подходящее изображение из списка и отображает его.
+</td>
+</tr>
+<tr>
+<td><code>usemap</code></td>
+<td>Атрибут <code>usemap</code> определяет изображение в качестве карты-изображения. Значение 
+обязательно должно начинаться<br> с символа <code>#</code>. Значение ассоциируется со значением 
+атрибута <code>name</code> или <code>id</code> тега <code>&lt;map&gt;</code> и создает связь 
+между элементами <br><code>&lt;img&gt;</code> и <code>&lt;map&gt;</code>. Атрибут нельзя использовать, 
+если элемент <code>&lt;map&gt;</code> является потомком элемента <code>&lt;a&gt;</code> или 
+<code>&lt;button&gt;</code>.<br>
+Синтаксис: <code>usemap="#mymap"</code>.</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>Атрибут <code>width</code> задает ширину изображения. Может указываться в <code>px</code> или <code>%</code>.<br>
+Синтаксис: <code>width="100%"</code>.</td>
+</tr>
+</tbody></table><a name="P4"></a><br>
+<p><i>Без задания размеров изображения рисунок отображается на странице в реальном размере. 
+Отредактировать размеры изображения можно с помощью атрибутов <code>width</code> и <code>height</code>. 
+Если будет задан только один из атрибутов, то второй будет вычисляться автоматически для сохранения пропорций рисунка.</i></p>
+<form action="example\exam4.html">
+<input type="submit" value="Пример 2"></p>
+</form>
+<p>Заметим, что указание высоты и ширины меньших, чем реальная ширина и высота изображения, не уменьшает время 
+загрузки. браузер загружает все изображение, а затем уже масштабирует его, чтобы поместить в зарезервированное место.</p>
+<p>Также изображению можно задать положение с помощью атрибута <code>align</code>:</p>
+<pre>&lt;img align="bottom | left | middle | right | top"&gt;</pre>
+<p>Вместо данного способа рекомендуется использовать CSS, но в данной лабораторной работе можете использовать этот атрибут.</p>
+
+<table border="1px">
+  <caption>Использование значений атрибута align</caption>
+    <tbody><tr>
+      <th>Значение</th>
+      <th>Описание</th>
+      <th>Пример</th>
+    </tr>
+    <tr>
+      <td>bottom</td>
+      <td>Выравнивание нижней границы изображения по окружающему тексту..</td>
+      <td>Lorem ipsum dolor sit amet, consectetuer <img src="example/pic/pic.gif" width="20" height="20" align="bottom" alt=""> adipiscing elit...</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td>Выравнивает изображение по левому краю окна.</td>
+      <td><img src="example/pic/pic.gif" width="20" height="20" align="left" alt=""> Lorem 
+        ipsum dolor sit amet, consectetuer adipiscing elit...</td>
+    </tr>
+    <tr>
+      <td>middle</td>
+      <td>Выравнивание середины изображения по базовой линии текущей строки. </td>
+      <td>Lorem ipsum dolor sit amet, <img src="example/pic/pic.gif" width="20" height="20" align="middle" alt=""> consectetuer adipiscing elit...</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>Выравнивает изображение по правому краю окна.</td>
+      <td><img src="example/pic/pic.gif" width="20" height="20" align="right" alt=""> Lorem 
+        ipsum dolor sit amet, consectetuer adipiscing elit...</td>
+    </tr>
+    <tr>
+      <td>top</td>
+      <td>Верхняя граница изображения выравнивается по самому высокому элементу 
+        текущей строки.</td>
+      <td>Lorem ipsum dolor sit amet, <img src="example/pic/pic.gif" width="20" height="20" align="top" alt=""> consectetuer adipiscing elit...</td>
+    </tr>
+  </tbody></table>
+
+<br><h2 style="text-align: center;" id=M4>4. Создание альтернативного текста</h2><br>
+
+<p style="margin-left: 0; margin-right: 0">
+Если браузер по какой-то причине не может отобразить
+изображения в HTML документах можно
+предусмотреть альтернативный
+текст, который будет сообщать им об изображении.
+Также использование  <code>alt</code> необходимо для правильной работы браузеров
+предназначенных для людей с нарушениями зрения. Такие браузеры обычно
+воспроизводят отображаемый на экране контент, и правильное описание изображения
+помогает человеку с нарушением зрения правильно представить себе контент.
+В случае, если изображение носит декоративный характер, принято указывать 
+ <code>alt=""</code>, такая запись означает, что изображение не является ключевой частью контента 
+ и невизуальные браузеры могут пропустить его при рендеринге.
+Вот пример использования атрибута <code>alt</code> тега
+<code>&lt;img&gt;</code>:</p>
+
+<pre>&lt;img src="<i>путь к файлу/имя файла"</i> alt="<i>Описание</i>"&gt;</pre>
+
+<p style="margin-left: 0; margin-right: 0">Если
+браузер не отображает графику, то в том месте, где
+должно быть изображение, пользователь увидит альтернативный текст. Если же
+браузер отображает графику, то пользователь будет видеть альтернативный текст в процессе
+загрузки изображения.</p>
+<p>Значение атрибута alt должно четко и кратко описывать содержимое изображения. Он не должен описывать наличие самого изображения или название файла изображения. </p>
+<p style="margin-left: 0; margin-right: 0"><a name="P5"></a>В
+примере 3 показан документ HTML, в котором используется
+альтернативный текст с описанием рисунка.&nbsp;</font></p>
+<form action="example\exam5.html">
+<input type="submit" value="Пример 3"></p>
+</form>
+
+<h2 align="center" id=M5>5. Контейнер <code>&lt;figure&gt;</code></h2><br>
+
+<p>HTML-элемент <code>&lt;figure&gt;</code> (Иллюстрация с необязательной подписью) представляет самостоятельный контент, часто с подписью (заголовком), которая указывается с помощью элемента <code>&lt;figcaption&gt;</code>. Диаграмма и её подпись представляет собой единое целое.</p>
+
+<p>Обычно <code>&lt;figure&gt;</code> это рисунок, иллюстрация, диаграмма, фрагмент кода, и т.д., на который ссылаются в основном потоке документа, но может быть перенесен в другую часть документа или в приложение не нарушив основной поток.</p>
+
+<p>Являясь секционным корнем, структура содержимого элемента <code>&lt;figure&gt;</code> исключается из основной структуры документа.</p>
+
+<p>Подпись может быть связана с элементом <code>&lt;figure&gt;</code> с помощью вставки <code>&lt;figcaption&gt;</code> внутри него (как первый или последний потомок). Первый элемент <code>&lt;figcaption&gt;</code> в иллюстрации предоставляет её подпись (заголовок).</p>
+
+<pre>
+&lt;figure&gt;
+    &lt;img src="/media/examples/elephant-660-480.jpg"
+         alt="Elephant at sunset"&gt;
+    &lt;figcaption&gt;An elephant at sunset&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+
+<p>Также с помощью <code>&lt;figure&gt;</code> и <code>&lt;figcaption&gt;</code> можно оформлять цитаты:</p>
+
+<pre>
+&lt;figure&gt;
+  &lt;figcaption&gt;&lt;cite>Эдсгер Дейкстра:&lt;/cite>&lt;/figcaption&gt;
+  &lt;blockquote>
+    Если отладка — процесс удаления ошибок, то программирование должно быть процессом их внесения.
+  &lt;/blockquote>
+&lt;/figure&gt;
+</pre>
+
+<div style="border-style: solid;">
+<figure>
+  <figcaption><i>Эдсгер Дейкстра:</i></figcaption>
+  <blockquote>Если отладка — процесс удаления ошибок, то программирование должно быть процессом их внесения.</blockquote>
+</figure>
+</div>
+
+<br><h2 align="center" id=M6>6. Элемент <code>&lt;audio&gt;</code></h2><br>
+<p>&nbsp;<strong>HTML5-аудио</strong> предоставляет улучшенные возможности работы с аудио контентом. 
+До недавнего времени единственным способом добавления звуковых файлов на веб-страницы было интегрирование 
+фонового звука с помощью тега <code>&lt;bgsound&gt;</code>, который проигрывался во время просмотра 
+пользователем страницы без возможности выключения. </p>
+<p>&nbsp;Благодаря добавлению в спецификацию HTML5 нового элемента <code>&lt;audio&gt;</code>, появилась возможность 
+добавлять аудио содержимое со встроенным программным интерфейсом без привлечения подключаемых модулей. </p>
+<p>&nbsp;HTML5-элемент <code>&lt;audio&gt;</code> используется для внедрения звукового контента в веб-страницы. 
+В общем виде HTML-разметка имеет следующий вид:</p>
+<pre>&lt;audio src="name.ogg" controls&gt;&lt;/audio&gt; </pre>
+<p>Ниже представлены атрибуты тега &lt;audio&gt; в виде таблицы.</p>
+<table border = "1px">
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>autoplay</code></td>
+<td>Автоматическое воспроизведение аудио файла сразу же после загрузки страницы.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>controls</code></td>
+<td>Указывает браузеру, что нужно отобразить базовые элементы управления воспроизведением 
+(начинать и останавливать<br>воспроизведение, переходить в другое место записи, регулировать громкость).</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>loop</code></td>
+<td>Циклическое воспроизведение аудио файла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>muted</code></td>
+<td>Выключает звук при воспроизведении аудио файла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>preload</code></td>
+<td>Атрибут, отвечающий за предварительную загрузку аудио контента. Не является обязательным, некоторые браузеры игнорируют его.<br>Возможные значения:<br>
+<code>auto</code> — браузер загружает аудио файл полностью, чтобы он был доступен, когда пользователь начнет его воспроизведение.<br>
+<code>metadata</code> — браузер загружает первую небольшую часть аудио файла, чтобы определить его основные характеристики.<br>
+<code>none</code> — отсутствие автоматической загрузки аудио файла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>src</code></td>
+<td>Содержит абсолютный или относительный URL-адрес аудио файла.</td>
+</tr>
+</tbody></table>
+<br><h2 align="center" id=M61>6.1. Аудио кодеки</h2><br>
+<p>&nbsp;В настоящий момент не существует аудио формата, который бы работал во всех браузерах, поэтому 
+для обеспечения доступности контента максимально широкой аудитории рекомендуется включать несколько 
+источников звука, представленных с  использованием атрибута <code>src</code> элемента <code>&lt;source&gt;</code>. 
+Одновременно можно добавить резервный контент для браузеров, которые не поддерживают элемент <code>&lt;audio&gt;</code>.</p>
+<pre>&lt;audio controls&gt;
+  &lt;source src="name.ogg" type="audio/ogg"&gt;
+  &lt;source src="name.mp3" type="audio/mpeg"&gt;
+  &lt;a href="sounds/name.mp3"&gt;Скачать name.mp3&lt;/a&gt;
+&lt;/audio&gt;</pre>
+<p>&nbsp;Аудио кодек (декодер) представляет собой программу для преобразования цифровых данных в формат звукового файла 
+или звукового потока. Популярными аудио форматами являются следующие:  </p>
+<p>&nbsp;<strong>MP3</strong> — самый популярный аудио формат, использующий сжатие с потерями и позволяющий 
+уменьшить размер файла в несколько раз. В силу лицензионных отчислений не поддерживается Firefox и Opera.</p>
+<p>&nbsp;<strong>AAC <em>(Advanced Audio Codec)</em></strong> — закрытый кодек, аналог MP3, но по сравнению с последним, 
+поддерживает более высокое качество звука при сходном размере файла.</p>
+<p>&nbsp;<strong>Ogg Vorbis</strong> — бесплатный формат с открытым кодом, поддерживается в Firefox, Opera и Chrome. 
+Обеспечивает хорошее качество звука, но недостаточно широко поддерживается аппаратными проигрывателями.</p>
+
+<br><h2 align="center" id=M7>7. Элемент <code>&lt;video&gt;</code></h2><br>
+<p><b>&nbsp;HTML5-видео</b> — новый стандарт для размещения мультимедийных файлов в сети с оригинальным программным 
+интерфейсом без привлечения подключаемых модулей. С помощью элемента <code>&lt;video&gt;</code> появилась 
+возможность добавлять видеосодержимое на веб-страницы, а также стилизовать внешний вид видеоплеера при помощи css-стилей. </p>
+<p>&nbsp;В простом варианте HTML-разметка для размещения видеофайла на странице имеет следующий вид:</p>
+<pre>&lt;video src="video.ogv" controls&gt;&lt;/video&gt;</pre> 
+<p>&nbsp;Атрибут <code>controls</code> отвечает за появление элементов управления видеоплеером. 
+Вы можете добавить изображение с помощью атрибута <code>poster</code>, которое браузер будет использовать, 
+пока загружается видео или пока пользователь не нажмет на кнопку воспроизведения, а также задать высоту и ширину видео.</p>
+<p>&nbsp;Как и в случае с аудиофайлами, рекомендуется перечислять в <code>&lt;source&gt;</code> все форматы, начиная с более предпочтительного. 
+Также нужно указывать MIME-тип для каждого видеофайла.</p>
+<pre>&lt;div class="code-toolbar"&gt;&lt;pre class=" l&lt;video controls width="400" height="300"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;&lt;!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 --&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;&lt;!-- WebM/VP8 для Firefox4, Opera, и Chrome --&gt;
+  &lt;source src="video.ogv" type="video/ogg"&gt;&lt;!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera --&gt;
+  &lt;object data="video.swf" type="application/x-shockwave-flash"&gt;&lt;!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video --&gt;
+    &lt;param name="movie" value="video.swf"&gt;
+  &lt;/object&gt;
+&lt;/video&gt;</pre>
+<P>&nbsp;Ниже представлена таблица атрибутов тега &lt;video&gt;.</p>
+<table border="1px">
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>autoplay</code></td>
+<td>Автоматическое воспроизведение видеоофайла сразу же после загрузки страницы.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>controls</code></td>
+<td>Указывает браузеру, что нужно отобразить базовые элементы управления воспроизведением (воспроизведение, пауза, громкость).</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>height</code></td>
+<td>Задает высоту окна для отображения видеоданных, возможные значения: <code>px</code> или <code>%</code></td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>loop</code></td>
+<td>Циклическое воспроизведение видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>muted</code></td>
+<td>Выключает звук при воспроизведении видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>poster</code></td>
+<td>URL файла изображения, которое будет отображаться во время загрузки видеофайла или до тех пор, 
+пока пользователь не нажмет на кнопку PLAY. Если атрибут не задан, то будет отображаться первый кадр видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>preload</code></td>
+<td>Атрибут, отвечающий за предварительную загрузку видеоконтента. Не является обязательным, некоторые браузеры игнорируют его. Возможные значения:<br>
+<code>auto</code> — браузер загружает видеофайл полностью, чтобы он был доступен, когда пользователь начнет его воспроизведение.<br>
+<code>metadata</code> — браузер загружает первую небольшую часть видеофайла, чтобы определить его основные характеристики.<br>
+<code>none</code> — отсутствие автоматической загрузки видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>src</code></td>
+<td>Содержит абсолютный или относительный URL-адрес видеофайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>width</code></td>
+<td>Задает ширину окна для отображения видеоданных, возможные значения: <code>px</code> или <code>%</code></td>
+</tr>
+</tbody></table>
+<br><h2 align="center" id=M71>7.1. Видеокодеки</h2><br>
+<p>&nbsp;При просмотре видео проигрыватель должен его декодировать. Одни проигрыватели используют 
+программное декодирование видеопотока, другие используют аппаратное декодирование.</p>
+<p>&nbsp;<em style="color:#E85625; font-weight:900;">Важно!</em> Поскольку каждый браузер поддерживает определенный кодек, 
+поэтому, чтобы обеспечить воспроизведение видео-контента во всех браузерах, видео-файл нужно размещать в нескольких форматах.</p>
+<p>&nbsp;<strong>H.264</strong> — высококачественный кодек от фирмы MPEG, делится на профили для поддержки как устройств 
+с минимальными возможностями, так и устройств высокого разрешения.</p>
+<p>&nbsp;<strong>Ogg Theora</strong> — открытый бесплатный стандарт для видео, качество и производительность 
+несколько ниже стандарта H.264.</p>
+<p>&nbsp;<strong>VP8</strong> — открытый бесплатный кодек, сходный по качеству с H.264. Поддерживается в Firefox, Chrome и Opera.</p>
+
+<br><h2 align="center" id=M72>7.2. Видеоконтейнеры</h2><br>
+
+<p style="text-align: center;"><img src="example/pic/videocont.png"></p>
+<p>&nbsp;Любой видеофайл является файловым контейнером, в котором хранятся другие файлы. 
+Аудио- и видеодорожки объединяются для воспроизведения видеоролика. Метаданные содержат 
+информацию о данном видеоролике — изображение обложки, субтитры и пр. К популярным форматам 
+видеоконтейнеров относятся следующие:</p>
+<p>&nbsp;<strong>Ogg</strong> (.ogv, .oga, .ogx, .ogg) — формат-контейнер с открытым исходным 
+кодом для видеокодека Theora и аудио Vorbis. Работает в Firefox, Chrome и Opera.<br>
+MIME-тип: <code>video/ogg</code>.</p>
+<p>&nbsp;<strong>MPEG 4</strong> (.mp4) — формат-контейнер для видеокодека H.264 и аудиокодека AAC. 
+Работает в Safari и Chrome. Кодирует видео, в том числе высокой четкости, для полного спектра устройств, таких как iPhone, iPod и iPad.<br>
+MIME-тип: <code>video/mp4</code>.</p>
+<p>&nbsp;<strong>WebM</strong> (.webm) — формат-контейнер с открытым исходным кодом для видеокодека VP8 от Google 
+и аудиокодека Ogg Vorbis. Работает в Firefox, Chrome, Opera и Adobe Flash Player.<br>
+MIME-тип: <code>video/webm</code>.</p>
+<p>&nbsp;<strong>Audio Video Interleave</strong> (.avi) — формат предназначен для записи звука и движущихся изображений, 
+соответствует спецификации RIFF.<br>
+MIME-тип: <code>video/vnd.avi, video/avi, video/msvideo, video/x-msvideo</code>.</p>
+<p>&nbsp;<strong>Matroska</strong> (.mkv) — популярный видеоконтейнер, может содержать видео в формате H.264, VP8 или Theora.<br>
+MIME-тип: <code>video/x-matroska, audio/x-matroska</code>. </p>
+<p>&nbsp;<strong>На данный момент браузеры поддерживают три основных видео формата:</strong></p>
+<table border="1px">
+<tbody><tr>
+<th>Формат</th>
+<th style="border-right:1px solid white">Видеокодек</th>
+<th>Аудиокодек</th>
+</tr>
+<tr>
+<td>.mp4</td>
+<td>H.264</td>
+<td>AAC</td>
+</tr>
+<tr>
+<td>.ogg/.ogv</td>
+<td>Theora</td>
+<td>Vorbis</td>
+</tr>
+<tr>
+<td>.webm</td>
+<td>VP8</td>
+<td>Vorbis</td>
+</tr>
+</tbody></table><br>
+<p>&nbsp;<strong>Видео в формате <code>.avi</code> на сайте средствами HTML5 не воспроизводится</strong>. 
+Поэтому его необходимо перекодировать в эти три формата с соответствующими видео и аудиокодеками для вывода на сайте. 
+Для этого можно использовать видеоконвертеры, например, это можно сделать онлайн на <a target="_blank" class="txthref" href="https://convert-video-online.com/ru/">сайте.</a></p>
+
+<br><h2 align="center" id=M73>7.3. Альтернативные медиа-ресурсы</h2><br>
+<p>&nbsp;Элемент <code>&lt;source&gt;</code> используется для добавления нескольких медиа-ресурсов для <code>&lt;audio&gt;</code>
+ и <code>&lt;video&gt;</code>. Указывает на альтернативные видео/аудио файлы, которые браузер может выбрать из предложенных 
+ на основании поддерживаемого им типа носителя или кодека.</p>
+<table border="1px">
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>media</code></td>
+<td>Определяет тип медиа-устройства (т.е. для каких устройств оптимизирован файл).</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>src</code></td>
+<td>Содержит абсолютный или относительный URL-адрес медиафайла.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>type</code></td>
+<td>Определяет MIME-тип медиафайла.</td>
+</tr>
+</tbody></table>
+<br><h2 align="center" id=M74>7.4. Добавление субтитров и заголовков</h2><br>
+<p>&nbsp;Элемент <code>&lt;track&gt;</code> используется в качестве дочернего элемента 
+<code>&lt;audio&gt;</code> и <code>&lt;video&gt;</code>. Добавляет текстовую дорожку 
+для субтитров, заголовков медиафайлов или другой текстовой информации, которая должна 
+быть видна во время воспроизведения аудио или видеофайла.</p>
+<table border="1px">
+<tbody><tr>
+<th style="width:10%">Атрибут</th>
+<th>Описание, принимаемое значение</th>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>default</code></td>
+<td>Указывает, что данная дорожка воспроизводится по умолчанию. Только один элемент <code>&lt;track&gt;</code> может содержать данный атрибут.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>kind</code></td>
+<td>Указывает тип текстовой дорожки, по умолчанию выводятся субтитры (<code>subtitles</code>). Принимаемые значения:<br>
+<code>captions</code> — перевод диалогов и звуковых эффектов, отображаемый в виде текста поверх видео (для глухих пользователей).<br>
+<code>chapters</code> — добавляет названия глав в виде списка для навигации по медиафайлу.<br>
+<code>descriptions</code> — добавляет звуковое описание происходящего в видео (для слепых пользователей).<br>
+<code>metadata</code> — метаданные, используемые скриптами, не отображаются для пользователей.<br>
+<code>subtitles</code> — текстовое дублирование звуковой дорожки видео, отображается в виде субтитров к видео.
+</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>label</code></td>
+<td>Добавляет название дорожки. Если этот атрибут не задан, браузер применит значение по умолчанию.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>src</code></td>
+<td>Содержит абсолютный или относительный URL-адрес данных текстовой дорожки.</td>
+</tr>
+<tr>
+<td style="color:#38BAC7"><code>srclang</code></td>
+<td>Язык воспроизводимой дорожки.</td>
+</tr>
+</tbody></table>
+
+<br>
+<hr class="separator">     
+<p id="practic" style="text-align: center; font-weight: 600; font-size: 36px; color: #000000; text-indent: 0;">ПРАКТИКА</p>
+<hr class="separator">     
+
+<p style="text-align: center; font-size: 18px">Цель работы:
+изучение тегов форматирования графики, добавления аудио и видео в HTML - документы, а также их
+практическое освоение.</P>
+<br><h2 align="center" style="text-align:center;">Задание к лабораторной работе №2:</h2><br>
+
+<ol>
+<li> В своей папке по пути: <code>Группа&nbsp;/&nbsp;Фамилия.Имя&nbsp;/</code> создать новый HTML - документ.<br>
+<li> Добавьте в этот документ заголовок и текст.<br>
+<li> Отформатировать веб-страницу следующим образом:<br>
+<ul>
+  <li>Использование заголовка;</li>
+  <li>Использование линии;</li>
+  <li>Использование логического и физического форматирования текста;</li>
+  <li>Добавление изображений (минимум 4);</li>
+  <li>Указание всем изображениям размеров, альтернативного текста, подписи, положения;</li>
+  <li>Добавление аудиофайла с элементами управления воспроизведением, сделать так, чтоб он начинал прогрываться автоматически, сделать проигрывание циклическим;</li>
+  <li>Добавить видео с элементами управления воспроизведением, видео НЕ должно воспроизводиться автоматически после загрузки страницы;</li>
+  <li>Для добавленного ранее видео изменить заставку отображаемую до воспроизведения.</li>
+</ul>
+</ol>
+
+<p style="font-style: italic; text-align: center;">Необходимые ресурсы можно найти в папке <code>labs_web_design/sources/!for_students</code>.</p>
+
+<br><h2 style="text-align: center;">Отчет по лабораторной работе должен содержать:</h2><br>
+
+<P>В электронном варианте представить все HTML-документы созданные в работе. Проилюстрировать преподавателю функционирование этих HTML-документов по всем пунктам задания лабораторной работы, рассказать какие теги были использованы и для чего.</P>
+
+<br><br><p style="text-align: center; font-size: 22px"><a class="txthref" href="#T1">Вернуться в начало</a></p><br><br>
+
+
+
+</div>
+</div>
+</div>  <!-- book end -->
+
+
+  <!-- content start -->
+<div style="display: block ;width: 20%; height: 100%; right:5%; top:28%; z-index: 101; position: absolute;font-size: 150%; line-height: 1.6;">
+  
+    <p style="color:#f24660; font-size: 28px; text-align:center; text-indent: 0;">Лабораторная работа №2</p>
+  <div  id="aside1" style="text-indent: 0;" >   
+   <hr>
+
+    <div>
+      <LI><A href="lab2.html#T1">Основные положения</A><BR>
+      <LI><A href="lab2.html#M2">Форматы изображений</A><BR>
+      <LI><A href="lab2.html#M3">Добавление изображений</A><BR>
+      <LI><A href="lab2.html#M4">Альтернативный текст</A><BR>
+      <LI><A href="lab2.html#M5">Контейнер <code>&lt;figure&gt;</code></A><BR>
+      <LI><A href="lab2.html#M6">Элемент <code>&lt;audio&gt;</code></A><BR>
+      <LI><A href="lab2.html#M61">Аудио кодеки</A><BR>
+      <LI><A href="lab2.html#M7">Элемент <code>&lt;video&gt;</code></A><BR>  
+      <LI><A href="lab2.html#M71">Видеокодеки</A><BR>
+      <LI><A href="lab2.html#M72">Видеоконтейнер</A><BR>  
+      <LI><A href="lab2.html#M73">Альтернативные медиа-ресурсы</A><BR>
+      <LI><A href="lab2.html#M74">Добавление субтитров и заголовков</A><BR>
+    </div>
+    <hr>
+    <p style="text-align: center; font-size: 28px; color: #fafafa; margin-top: -10px;  text-indent: 0;"> 
+    <a href="lab2.html#practic">Практика</a></p>
+</div>
+  <!-- content end -->
+</div>
+  <!-- footer start -->
+    <div class="templatemo_footer" style="position: relative; left: 0; bottom: 0; ">
+      <div class="container">
+      <div class="row" style="color: white">
+          <div class="col-md-9 col-sm-12">
+              <span>Dnipro National University |  Laboratory Workshop &copy; 2019  </span>
+            </div>
+            <div  style="text-align: right">
+              <span> Designed by Zymeth</span>
+            </div>
+        </div>
+        </div>
+    </div>
+  <!-- footer end -->    
+
+<script src='../sources/js/content_scroll.js'></script>
+
+  </body>
+</HTML>

@@ -1,0 +1,857 @@
+<!DOCTYPE HTML>
+  <head>
+    <title>Лабораторная работа №5</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="../sources/css/type_text.css"        rel="stylesheet">
+    <link href="../sources/css/bootstrap.min.css"    rel="stylesheet">
+    <link href="../sources/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../sources/css/templatemo_misc.css"  rel="stylesheet">
+    <link href="../sources/css/templatemo_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
+    <link href="../sources/css/go_top.css"           rel="stylesheet">
+    <link href="../sources/css/scrollbar.css"        rel="stylesheet">
+
+    <!-- JS -->
+    <script src="../sources/js/jquery.min.js"></script> 
+    <script src="../sources/js/jquery.lightbox.js"></script>
+    <script src="../sources/js/templatemo_custom.js"></script>
+    <script src='../sources/js/jquery.min.js'></script>
+    <script src="../sources/js/prefixfree.min.js"></script>
+    <script src="../sources/js/go_top.js"></script>
+    <script src="js/index.js"></script>
+    
+    <style>
+      @media(max-height:700px){.all{zoom:90%}}
+
+      p,h1,h2,h2,h4,h5,ol,td,ul,li,dl,dt,dd{
+        color:black;
+        font-family: Lora-Regular;
+      }
+
+      h2 {
+        font-size: 150%;
+      }
+
+      body {
+        font-family: 'Roboto';
+        color: #333;
+        background-color:#393e42;
+      }
+
+      a {font-size:108%; color:#e9e9e9; }
+      a:hover {font-size:108%; color:#da7b7f; }
+
+      .sticky {
+        position: fixed;
+        top: 0px;  
+        z-index: 101;
+      }
+
+      .stop {
+        position: relative;
+        z-index: 101;
+      }
+
+      article {
+        display: block;
+        float: left;
+      }
+
+      hr.separator:after {
+        background: none repeat scroll 0% 0% #000;
+        content: "";
+        height: 10px;
+        left: 40%;
+        margin: -5px auto auto -5px;
+        position: absolute;
+        transform: rotate(-45deg);
+        width: 10px;
+      }
+      hr.separator {
+        border-top: 1px solid #000;
+        width: 95%;
+        clear: both;
+      }
+
+      a.txthref{ color: #0477f7; font-weight: 400; }
+      a:hover.txthref {  color:#da7b7f; }
+      
+      @font-face {
+        font-family: Lora-Regular; /* Имя шрифта */
+        src: url(../sources/fonts/Lora-Regular.ttf); /* Путь к файлу со шрифтом */
+      }
+
+      p {          
+        text-indent: 1.5em;
+      }
+
+      table.txt,tr.txt,th.txt,td.txt{
+        border: 1px solid grey;
+      }
+
+      table.one {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 16px;
+        background: white;
+        max-width: 70%;
+        width: 70%;
+        border-collapse: collapse;  
+        text-align: left;
+      }
+      th.one {
+        font-weight: normal;
+        color: #039;
+        border-bottom: 2px solid #6678b1;
+        padding: 10px 8px;
+      }
+      td.one {
+        border-bottom: 1px solid #ccc;
+        color: #669;
+        padding: 9px 8px;
+        transition: .3s linear;
+      }
+      tr:hover.one td.one {color: #222222;background: #e8edff;}
+
+      table.two {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 16px;
+        background: white;
+        max-width: 70%;
+        width: 70%;
+        border-collapse: collapse;  
+        text-align: left;
+      }
+      th.two {
+        font-weight: normal;
+        color: #039;
+        padding: 10px 15px;
+      }
+      td.two {
+        color: #669;
+        border-top: 1px solid #e8edff;
+        padding: 10px 15px;
+      }
+      tr:nth-child(2n).two {background: #e8edff;}
+    
+    </style>
+</head>
+<body>
+<div class="all">
+  <div class="site-header">
+    <div class="main-navigation">
+      <div class="responsive_menu">
+        <ul>
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-envelope"></span>Инфо</a></li>
+              </ul>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row templatemo_gallerygap">
+                    <div class="col-md-1 col-sm-1">
+                      <a href="#"><img src="../sources/images/logo.png" alt="Web Design"></a>
+                    </div>
+          <div class="main_menu">
+             
+              <ul>
+              <li><a href="../index.html"><span class="fa fa-reply"></span>Старт</a></li>
+
+              <li><a href="../L1/lab1.html">1</a></li>
+              <li><a href="../L2/lab2.html">2</a></li>
+              <li><a href="../L3/lab3.html">3</a></li>
+              <li><a href="../L4/lab4.html">4</a></li>
+              <li><a href="#"><span class="fa fa-star"></span>5</a></li>
+              <li><a href="../L6/lab6.html">6</a></li>
+              <li><a href="../L7/lab7.html">7</a></li>
+              
+              <li><a href="../Additional/html_tags.html" target="_blank"><span class="fa fa-exclamation"></span>Инфо</a></li>
+              </ul>
+
+          </div> <!-- /.col-md-12 -->
+
+          <div id=T1 class='text' style="position: relative; margin-top: 10%">
+          <div class='content'></div>
+          <div class='dash'></div>
+          </div> 
+        
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.main-navigation -->
+  </div> <!-- /.site-header -->
+
+
+    <!-- book start -->
+<div id="article" >
+<div style="background-image: url(../sources/images/ppm.png); width: 60%; margin-left:10%; background-size: 110%;background-repeat: repeat-y;background-attachment: fixed;margin-top:-5%; ">
+
+<img src="../sources/images/top1.png" style="position: relative; width:100%;">
+
+
+<div style="width:90%;margin: auto;margin-top:-10%; font-size: 140%; a:link{color:#ffffff;} " > <!--CONTENT-->
+
+
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M1>1. Основные положения</h2></div><br>
+
+<p>HTML-таблицы упорядочивают и выводят на экран данные с помощью строк или столбцов. Таблицы состоят из ячеек, образующихся при пересечении строк и столбцов. Ячейки таблиц могут содержать любые HTML-элементы, такие как заголовки, списки, текст, изображения, элементы форм, а также другие таблицы. Каждой таблице можно добавить связанный с ней заголовок, расположив его перед таблицей или после неё. Для всех элементов таблицы доступны глобальные атрибуты, а также собственные атрибуты.</p>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M2>2. Создание таблицы</h2></div><br>
+
+<p>Таблица создаётся при помощи парного тега <code>&lt;table&gt;&lt;/table&gt;</code>. Данный тег является контейнером для элементов таблицы и все элементы должны находиться внутри него. Например, с помощью данной разметки можно создать таблицу, состоящую из <strong>двух столбцов и двух строк</strong>:</p>
+
+<pre>&lt;table&gt;
+&lt;tr>&lt;th>текст заголовка&lt;/th><th>текст заголовка&lt;/th>&lt;/tr> <!--ряд с ячейками заголовков-->
+&lt;tr>&lt;td>данные&lt;/td>&lt;td>данные&lt;/td>&lt;/tr> <!--ряд с ячейками тела таблицы-->
+&lt;/table&gt;</pre>
+
+<br>  
+<table>
+<tr><th>текст заголовка</th><th>текст заголовка</th></tr> <!--ряд с ячейками заголовков-->
+<tr><td>данные</td><td>данные</td></tr> <!--ряд с ячейками тела таблицы-->
+</table>
+<br>
+<p>Внешний вид таблицы без форматирования CSS-свойствами.</p>
+
+<p>По умолчанию таблица и ячейки не имеют видимых границ. <b>Границы</b> задаются с помощью CSS-свойства <code>border</code> (т.е. чтоб отобразить границы между ячейками, достаточно написать следующий код в контейнер <code>style</code> в <code>head</code> документа, либо подключить CSS другими способами):</p>
+
+<pre>/* внешние границы таблицы серого цвета толщиной 1px */
+table {border: 1px solid grey;} 
+/* границы ячеек первого ряда таблицы */
+th {border: 1px solid grey;}
+/* границы ячеек тела таблицы */
+td {border: 1px solid grey;}</pre>
+
+<p>Устаревшим и применяемым в HTML4 способом задания рамок таблиц является написания такого кода:</p>
+
+<pre>&lt;table border="1px"&gt;
+...
+...
+&lt;/table&gt;</pre>
+
+<p>По умолчанию <b>ширина и высота таблицы</b> определяется содержимым её ячеек. Если ширина не задана, то она будет равна ширине самого широкого ряда (строки). </p>
+
+<p>Ширина таблицы и столбцов задаётся с помощью свойства <code>width</code>. Если для таблицы задано <code>table {width: 100%;}</code>, то ширина таблицы будет равна ширине блока-контейнера, в котором она находится.</p>
+
+<p>Ширину таблицы и столбцов обычно задают в <code>px</code> или <code>%</code>, например:</p>
+
+<pre>table {width: 600px;}
+th {width: 20%;}
+td:first-child {width: 30%;}</pre>
+
+<p>Если для ячеек таблицы заданы внутренние отступы и границы, то ширина таблицы будет включать в себя следующие значения:<br>
+<code>padding-left</code> и <code>padding-right</code>, ширина <code>border-left</code> плюс ширина <code>border-right</code> последней ячейки в ряду. Если заданы ширина и границы ячеек, то ширина таблицы будет складываться из ширины ячеек плюс ширина <code>border-left</code> и ширина <code>border-right</code> последней ячейки в ряду.</p>
+
+<p style="font-style: italic; font-weight: 600">Запомните, что размеры и расстояния обычно задаются в пикселях или процентах в любом свойстве, описывающем эти значения для того либо иного элемента.</p>
+
+
+<p>Строки или ряды таблицы создаются с помощью тега <code>&lt;tr&gt;</code>. Количество горизонтальных строк таблицы определяется количеством парных тегов <code>&lt;tr&gt;&lt;/tr&gt;</code>. </p>
+
+<p>Элемент <code>&lt;th&gt;</code> создаёт заголовок столбца — специальную ячейку, текст в которой выделяется полужирным. Количество ячеек заголовка определяется количеством пар тегов <code>&lt;th&gt;&lt;/th&gt;</code>. Для элемента доступны атрибуты <code>colspan</code>, <code>rowspan</code>, <code>headers</code>.</p>
+
+<pre>&lt;table&gt;
+&lt;tr>&lt;th>ячейка заголовка&lt;/th>&lt;th>ячейка заголовка&lt;/th>&lt;/tr>
+&lt;/table&gt;</pre>
+
+<p>Элемент <code>&lt;td&gt;</code> создаёт ячейки таблицы, внутрь которых помещаются данные таблицы. Парные теги <code>&lt;td&gt;&lt;/td&gt;</code>, расположенные в одном ряду, определяют количество ячеек в строке таблицы. Количество пар ячеек <code>&lt;td&gt;</code> должно быть равно количеству пар ячеек <code>&lt;th&gt;</code>. Для элемента доступны атрибуты <code>colspan</code>, <code>rowspan</code>, <code>headers</code>.</p>
+
+<pre>&lt;table&gt;
+&lt;tr>&lt;th>ячейка заголовка&lt;/th>&lt;th>ячейка заголовка&lt;/th>&lt;/tr>
+&lt;tr>&lt;td>ячейка тела таблицы&lt;/td>&lt;td>ячейка тела таблицы&lt;/td>&lt;/tr>
+&lt;/table&gt;</pre>
+
+<table class="txt">
+<caption>Атрибуты элементов таблицы</caption>
+<tbody><tr class="txt">
+<th class="txt" style="width:10%">Атрибут</th>
+<th class="txt">Описание, принимаемое значение</th>
+</tr>
+<tr class="txt">
+<td class="txt"><code>colspan</code></td>
+<td class="txt">Количество ячеек в строке для объединения по горизонтали.<br>
+<code>&lt;td colspan="3"&gt;</code><br>
+Возможные значения: число от 1 до 999.</td>
+</tr>
+<tr class="txt">
+<td class="txt"><code>headers</code></td>
+<td class="txt">Задает список ячеек заголовка, содержащих информацию о заголовке текущей ячейки данных. Предназначен для речевых браузеров.<br>
+<code>&lt;th id="идентификатор"&gt;...&lt;/th&gt;<br>
+&lt;th headers="идентификатор"&gt;...&lt;/th&gt;</code><br>
+Принимаемые значения: список имен ячеек, разделенных пробелами; эти имена должны быть присвоены ячейкам через их атрибут <code>id</code>.</td>
+</tr>
+<tr class="txt">
+<td class="txt"><code>rowspan</code></td>
+<td class="txt">Количество ячеек в столбце для объединения по вертикали.<br>
+<code>&lt;td rowspan="2"&gt;</code><br>
+Возможные значения: число от 1 до 999.</td>
+</tr>
+<tr class="txt">
+<td class="txt"><code>span</code></td>
+<td class="txt">Количество колонок, объединяемых для задания единого стиля, по умолчанию равно 1.<br>
+<code>&lt;col span="2"&gt;</code><br>
+Принимаемые значения: любое целое положительное число.</td>
+</tr>
+</tbody></table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M3>3. Добавление подписи (заголовка) к таблице</h2></div><br>
+
+<p>Добавить заголовок в таблицу можно с помощью тега <code>&lt;caption&gt;</code>, а с помощью свойства <code>caption-side</code> его можно поместить перед таблицей или под ней. Для горизонтального выравнивания текста заголовка применяется свойство <code>text-align</code>. Наследуется.</p>
+
+<table border="1px">
+<tbody><tr>
+<th colspan="2">caption-side</th>
+</tr>
+<tr>
+<td>Значения:</td>
+<td></td>
+</tr>
+<tr>
+<td><code>top</code></td>
+<td>Заголовок таблицы располагается над таблицей. Значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>bottom</code></td>
+<td>Располагает заголовок под таблицей.</td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Устанавливает значение свойства в значение по умолчанию.</td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Наследует значение свойства от родительского элемента.</td>
+</tr>
+</tbody></table>
+<br>
+<pre>&lt;table&gt;
+&lt;caption&gt;Перечень продуктов&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п&lt;/th&gt;
+    &lt;th&gt;Наименование товара&lt;/th&gt;
+    &lt;th&gt;Ед. изм.&lt;/th&gt;
+    &lt;th&gt;Количество&lt;/th&gt;
+    &lt;th&gt;Цена за ед. изм., руб.&lt;/th&gt;
+    &lt;th&gt;Стоимость, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1.&lt;/td&gt;
+    &lt;td&gt;Томаты свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;15,20&lt;/td&gt;&lt;td&gt;69,00&lt;/td&gt;&lt;td&gt;1048,80&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2.&lt;/td&gt;
+    &lt;td&gt;Огурцы свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;2,50&lt;/td&gt;&lt;td&gt;48,00&lt;/td&gt;&lt;td&gt;120,00&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="5" style="text-align:right"&gt;ИТОГО:&lt;/td&gt;&lt;td&gt;1168,80&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M4>4. Группирование строк и столбцов таблицы</h2></div><br>
+
+<p>Элемент <code>&lt;colgroup&gt;</code> создает структурную группу столбцов, выделяя логически однородные ячейки. Группирует один или более столбцов для единого форматирования, позволяя применить стили к столбцам вместо того, чтобы повторять стили для каждой ячейки и для каждой строки. Добавляется непосредственно после тегов <code>&lt;table&gt;</code> и <code>&lt;caption&gt;</code>. </p>
+
+<p>Элемент <code>&lt;col&gt;</code> формирует группы столбцов, которые делят таблицу на разделы, не относящиеся к общей структуре, т.е. не содержащие информацию одного типа. Позволяет задавать свойства столбцов для каждого столбца в пределах элемента <code>&lt;colgroup&gt;</code>. С помощью атрибута <code>style</code> можно изменить основной цвет фона ячеек. Для элемента <code>&lt;col&gt;</code> доступен атрибут <code>span</code>, задающий количество столбцов для объединения.</p>
+
+<p>С помощью селектора <code>table td:first-child</code>, <code>table td:last-child</code> можно задать стили для первого или последнего столбца таблицы (за исключением первой ячейки заголовка таблицы).</p>
+
+<pre>&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col span="2" style="background:Khaki"&gt;&lt;!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы--&gt;
+    &lt;col style="background-color:LightCyan"&gt;&lt;!-- Задаем цвет фона для следующего (одного) столбца таблицы--&gt;
+  &lt;/colgroup&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п&lt;/th&gt;
+    &lt;th&gt;Наименование&lt;/th&gt;
+    &lt;th&gt;Цена, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Карандаш цветной&lt;/td&gt;
+    &lt;td&gt;20,00&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;Линейка 20 см&lt;/td&gt;
+    &lt;td&gt;30,00&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+<table class="txt">
+  <colgroup>
+    <col span="2" style="background:Khaki;">
+    <col style="background-color:LightCyan">
+  </colgroup>
+  <tr class="txt">
+    <th class="txt">№ п/п</th>
+    <th class="txt">Наименование</th>
+    <th class="txt">Цена, руб.</th>
+  </tr>
+  <tr class="txt">
+    <td class="txt">1</td>
+    <td class="txt">Карандаш цветной</td>
+    <td class="txt">20,00</td>
+  </tr>
+  <tr class="txt">
+    <td class="txt">2</td>
+    <td class="txt">Линейка 20 см</td>
+    <td class="txt">30,00</td>
+  </tr>
+</table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M5>5. Группировка разделов таблицы</h2></div><br>
+
+<p>Элемент <code>&lt;thead&gt;</code> создает группу заголовков для строк таблицы с целью задания единого оформления. Используется в сочетании с элементами <code>&lt;tbody&gt;</code> и <code>&lt;tfoot&gt;</code> для указания каждой части таблицы. </p>
+
+<p>Элемент должен быть использован в следующем порядке: как дочерний элемент <code>&lt;table&gt;</code>, после <code>&lt;caption&gt;</code> и <code>&lt;colgroup&gt;</code>, и перед <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code> и <code>&lt;tr&gt;</code> элементами. В пределах одной таблицы можно использовать один раз.</p>
+
+<p>Элемент <code>&lt;tbody&gt;</code> группирует основное содержимое таблицы. Используется в сочетании с элементами <code>&lt;thead&gt;</code> и <code>&lt;tfoot&gt;</code>.</p>
+
+<p>Элемент <code>&lt;tfoot&gt;</code> создает группу строк для представления информации о суммах или итогах, расположенную в нижней части таблицы. Используется в таблице один раз. Располагается после тега <code>&lt;thead&gt;</code>, перед тегами <code>&lt;tbody&gt;</code> и <code>&lt;tr&gt;</code>.</p>
+
+<pre>&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п&lt;/th&gt;
+    &lt;th&gt;Наименование товара&lt;/th&gt;
+     &lt;th&gt;Ед. изм.&lt;/th&gt;
+     &lt;th&gt;Количество&lt;/th&gt;
+     &lt;th&gt;Цена за ед. изм., руб.&lt;/th&gt;
+     &lt;th&gt;Стоимость, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tfoot&gt;
+  &lt;tr&gt;
+    &lt;td colspan="5" style="text-align:right"&gt;ИТОГО:&lt;/td&gt;&lt;td&gt;1168,80&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1.&lt;/td&gt;
+    &lt;td&gt;Томаты свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;15,20&lt;/td&gt;&lt;td&gt;69,00&lt;/td&gt;&lt;td&gt;1048,80&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2.&lt;/td&gt;
+    &lt;td&gt;Огурцы свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;2,50&lt;/td&gt;&lt;td&gt;48,00&lt;/td&gt;&lt;td&gt;120,00&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;  
+&lt;/table&gt;</pre>
+    
+<p><em>Такая группировка строк была заложена в стандарте в расчете на то, что обозреватели при отображении длинных таблиц обеспечат прокрутку строк данных при сохранении надзаголовка и подзаголовка неподвижными, а при их выводе на принтер смогут использовать надзаголовок и подзаголовок в качестве колонтитулов страницы. Однако, современные обозреватели этого не делают и либо просто отображают <code>&lt;thead&gt;</code> и <code>&lt;tfoot&gt;</code> как строки данных, либо, в лучшем случае, просто помещают соответствующие строки в начало и конец таблицы.<p>Элемент <code>&lt;tfoot&gt;</code> создает группу строк для представления информации о суммах или итогах, расположенную в нижней части таблицы. Используется в таблице один раз. Располагается после тега <code>&lt;thead&gt;</code>, перед тегами <code>&lt;tbody&gt;</code> и <code>&lt;tr&gt;</code>.</p></em></p>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M6>6. Объединение ячеек таблицы</h2></div><br>
+
+<p>Атрибуты <code>colspan</code> и <code>rowspan</code> объединяют ячейки таблицы. Атрибут <code>colspan</code> задает количество ячеек, объединенных по горизонтали, а <code>rowspan</code> — по вертикали.</p>
+
+<pre>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;№ п/п&lt;/th&gt;
+    &lt;th&gt;Наименование товара&lt;/th&gt;
+     &lt;th&gt;Ед. изм.&lt;/th&gt;
+     &lt;th&gt;Количество&lt;/th&gt;
+     &lt;th&gt;Цена за ед. изм., руб.&lt;/th&gt;
+     &lt;th&gt;Стоимость, руб.&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1.&lt;/td&gt;
+    &lt;td&gt;Томаты свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;15,20&lt;/td&gt;&lt;td&gt;69,00&lt;/td&gt;&lt;td&gt;1048,80&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2.&lt;/td&gt;
+    &lt;td&gt;Огурцы свежие&lt;/td&gt;&lt;td&gt;кг&lt;/td&gt;&lt;td&gt;2,50&lt;/td&gt;&lt;td&gt;48,00&lt;/td&gt;&lt;td&gt;120,00&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="5" style="text-align:right"&gt;ИТОГО:&lt;/td&gt;&lt;td&gt;1168,80&lt;/td&gt;&lt;!-- Задаем количество ячеек по горизонтали для объединения--&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+<table class="txt">
+  <tr class="txt">
+    <th class="txt">№ п/п</th>
+    <th class="txt">Наименование товара</th>
+     <th class="txt">Ед. изм.</th>
+     <th class="txt">Количество</th>
+     <th class="txt">Цена за ед. изм., руб.</th>
+     <th class="txt">Стоимость, руб.</th>
+  </tr>
+  <tr class="txt">
+    <td class="txt">1.</td>
+    <td class="txt">Томаты свежие</td><td class="txt">кг</td><td class="txt">15,20</td><td class="txt">69,00</td><td class="txt">1048,80</td>
+  </tr>
+  <tr class="txt">
+    <td class="txt">2.</td>
+    <td class="txt">Огурцы свежие</td><td class="txt">кг</td><td class="txt">2,50</td><td class="txt">48,00</td><td class="txt">120,00</td>
+  </tr>
+  <tr class="txt">
+    <td class="txt" colspan="5" style="text-align:right">ИТОГО:</td><td class="txt">1168,80</td><!-- Задаем количество ячеек по горизонтали для объединения-->
+  </tr>
+</table>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M7>7. Примеры таблиц</h2></div><br>
+
+<h3>1. Горизонтальный минимализм</h3>
+
+<p>Горизонтальные таблицы — это таблицы, текст в которых читается по горизонтали. Каждая сущность представляет собой отдельную строку. Вы можете оформить подобные таблицы в минималистском стиле, поместив  двухпиксельную границу под заголовком <code>th</code> и однопиксельную между строками для лучшего восприятия.<br></p>
+
+<p>Добавление эффекта <code>:hover</code> для элемента <code>tr</code> облегчит чтение таблиц, оформленных в минималистском стиле. При наведении курсора мыши на ячейку, остальные ячейки той же строки выделяются одновременно, что упрощает процесс отслеживания информации, если таблицы имеют несколько столбцов.<br>
+</p>
+
+<table class="one">
+<tr class="one"><th class="one">Employee</th><th class="one">Salary</th><th class="one">Bonus</th><th class="one">Supervisor</th></tr>
+<tr class="one"><td class="one">Stephen C. Cox</td><td class="one">$300</td><td class="one">$50</td><td class="one">Bob</td></tr>
+<tr class="one"><td class="one">Josephin Tan</td><td class="one">$150</td><td class="one">-</td><td class="one">Annie</td></tr>
+<tr class="one"><td class="one">Joyce Ming</td><td class="one">$200</td><td class="one">$35</td><td class="one">Andy</td></tr>
+<tr class="one"><td class="one">James A. Pentel</td><td class="one">$175</td><td class="one">$25</td><td class="one">Annie</td></tr>
+</table>
+<br>
+<pre>&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Employee&lt;/th&gt;&lt;th&gt;Salary&lt;/th&gt;&lt;th&gt;Bonus&lt;/th&gt;&lt;th&gt;Supervisor&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Stephen C. Cox&lt;/td&gt;&lt;td&gt;$300&lt;/td&gt;&lt;td&gt;$50&lt;/td&gt;&lt;td&gt;Bob&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Josephin Tan&lt;/td&gt;&lt;td&gt;$150&lt;/td&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;Annie&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Joyce Ming&lt;/td&gt;&lt;td&gt;$200&lt;/td&gt;&lt;td&gt;$35&lt;/td&gt;&lt;td&gt;Andy&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;James A. Pentel&lt;/td&gt;&lt;td&gt;$175&lt;/td&gt;&lt;td&gt;$25&lt;/td&gt;&lt;td&gt;Annie&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</pre>
+<br>
+<pre>table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  background: white;
+  max-width: 70%;
+  width: 70%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 8px;
+}
+td {
+  border-bottom: 1px solid #ccc;
+  color: #669;
+  padding: 9px 8px;
+  transition: .3s linear;
+}
+tr:hover td {color: #6699ff;background: #e8edff;}</pre>
+    
+<h3>2. Горизонтальная зебра</h3>
+
+<p>Зебра-таблица выглядит довольно привлекательной и удобной. Дополнительный цвет фона может служить в качестве визуальной подсказки для людей при чтении таблицы.<br>
+
+<table class="two">
+<tr class="two"><th class="two">Employee</th><th class="two">Salary</th><th class="two">Bonus</th><th class="two">Supervisor</th></tr>
+<tr class="two"><td class="two">Stephen C. Cox</td><td class="two">$300</td><td class="two">$50</td><td class="two">Bob</td></tr>
+<tr class="two"><td class="two">Josephin Tan</td><td class="two">$150</td><td class="two">-</td><td class="two">Annie</td></tr>
+<tr class="two"><td class="two">Joyce Ming</td><td class="two">$200</td><td class="two">$35</td><td class="two">Andy</td></tr>
+<tr class="two"><td class="two">James A. Pentel</td><td class="two">$175</td><td class="two">$25</td><td class="two">Annie</td></tr>
+</table>
+<br>
+<pre>table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 16px;
+  background: white;
+  max-width: 70%;
+  width: 70%;
+  border-collapse: collapse;  
+  text-align: left;
+}
+th {
+  font-weight: normal;
+  color: #039;
+  padding: 10px 15px;
+}
+td {
+  color: #669;
+  border-top: 1px solid #e8edff;
+  padding: 10px 15px;
+}
+tr:nth-child(2n) {background: #e8edff;}</pre>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M8>8. Фреймы</h2></div><br>
+
+<p>Термин «фрейм» пришел к нам из английского языка. В переводе это слово означает «рамка» и представляет собой отдельную область окна. По своей структуре такой участок является полностью законченным HTML-документом.</p>
+
+<p>Отдельные фреймы делят окна браузера на участки, которые размещаются рядом. При этом внутрь каждого из фреймов загружается собственная полноценная страница. Фреймовая технология до сих пор вызывает много споров, но нужно сказать, что пик ее популярности уже прошел. В данный момент эта технология считается устаревшей, и обычные фреймы больше не поддерживаются в HTML5.</p>
+
+<p>Сегодня можно констатировать, что решение об отходе от работы с фреймовой технологией окончательно принято. На сайте <a href="https://www.w3.org/TR/html5-diff/#obsolete-elements" rel="nofollow" target="_blank" class="txthref">www.w3.org </a> четко указано, что обычные теги для создания такой структуры <code>frame</code>, <code>frameset</code> и <code>noframes</code> являются устаревшими. В качестве аргумента приводятся данные о том, что использование такой структуры отрицательно отражается на юзабилити сайтов и их доступности в сети.</p>
+<p>
+<h3 style="font-weight: 600"><i>Преимущества фреймов:</i></h3><br>
+</p>
+<ol>
+  <li>Простота использования, высокая скорость работы, возможность точного позиционирования информации в определенных местах окна.</li>
+  <li>Применение фреймов обеспечивает экономию на объеме передаваемого трафика в процессе работы с сайтом. Ведь при обращении к другому разделу информации обычно происходит обновление только одного участка страницы, а не всего ее кода.</li>
+  <li>Такая структура обеспечивает интересные возможности навигации по контенту ресурсов. Ведь внутри окна браузера в соседних фреймах можно просматривать различные информационные блоки. Пользователям важно знать, что поиск по фрейму равнозначен выполнению такой операции на отдельной странице.</li>
+  <li>В процессе работы с сайтом можно динамически менять размеры отдельного участка, что тяжело реализовать с использование других технологических решений.</li>
+</ol>
+<p>
+<h3 style="font-weight: 600"><i>Недостатки фреймов:</i></h3><br>
+</p>
+<p>Проблемы работы сайтов с использованием фреймов накапливались постепенно, но на сегодня они достигли порогового значения. Среди основных недостатков выделяют:</p>
+<ol>
+<li>Неудовлетворительное юзабилити. Сегодня доля пользователей мобильных устройств и планшетов с небольшим разрешением экрана растет и уже превышает число тех, кто посещает сайты со стационарных компьютеров и ноутбуков. И здесь применение фреймов создает серьезные проблемы с адаптивностью страниц при их отображении на различных устройствах. Эта проблема на сегодня практические не имеет решения.</li>
+<li>Ухудшение доступности сайта для различных программ. Увеличение количества дополнительных программ (например, экранные дикторы) выявляет гораздо худшую доступность информации для считывания.</li>
+<li>Неверное отображение страниц. Часто верстка страниц с такой структурой выглядит в браузерах некорректно с точки зрения дизайна. И это связано с особенностями технологии. С точки зрения SEO использование фреймов в html-верстке страницы весьма нежелательно.</li>
+<li>Наличие единого адреса для всей структуры. В результате внутренние страницы такого сайта невозможно добавить в закладки. Это приводит к неудобствам в работе пользователей.</li>
+<li>Некорректная индексация поисковиками. Наличие на сайте нескольких полноценных документов, из которых формируется одна страница, заметно затрудняет работу поисковых систем. Это приводит к существенным ошибкам при индексации. Как следствие – неправильное определение тематики и адресов страниц, выпадение критически важного контента из индексации.</li>
+<li>Непрестижность. Это довольно необычный недостаток для ресурсов в сети. И все же нужно сказать, что факт устаревания верстки сайтов на фреймах приводит к тому, что авторы и владельцы таких ресурсов считаются ретроградами. Но есть отдельные исключения. Даже современные сайты, в которых размещаются чаты, обычно используют работу с фреймами.</li>
+</ol>
+
+<br><div style="position: relative;"><h2 style="text-align: center;" id=M9>9. Использование фреймов</h2></div><br>
+
+<p>С&nbsp;помощью тега <code>&lt;iframe&gt;</code> можно вставить в страницу другой документ, который отобразится во фрейме&nbsp;— специальной прямоугольной области с собственными полосами прокрутки (scrollbars). Основным атрибутом этого элемента является <code>src</code>, в значении которого указывается абсолютный или относительный URL вставляемого документа. HTML5, однако, предлагает альтернативный вариант&nbsp;— вы можете указать исходный код дочерней страницы непосредственно в атрибуте <code>srcdoc</code>, без необходимости хранить ее отдельно. Естественно, этот код должен быть экранирован и соответствовать стандарту HTML.</p>
+
+<pre> &lt;iframe src="frame.html">&lt;/iframe></pre>
+
+<p>Если вы заполняете оба атрибута, то браузер должен отдать предпочтение <code>srcdoc</code>, проигнорировав <code>src</code>. В таком случае целесообразно указывать в атрибуте <code>src</code> адрес копии документа, содержащегося в <code>srcdoc</code>. Это позволит корректно отобразить страницу даже в браузерах, не поддерживающих HTML 5. Несмотря на то, что вся необходимая информация о вставляемом документе задается в атрибутах <code>&lt;iframe&gt;</code>, исторически сложилось так, что этот тег все же парный. Это необходимо для обеспечения совместимости с браузерами, которые вообще не поддерживают этот элемент — они просто отобразят его содержимое. Браузеры же с поддержкой <code>&lt;iframe&gt;</code> проигнорируют все, что находится между его открывающим и закрывающим тегами.</p>
+
+<p>Стандартом HTML5 более не поддерживаются атрибуты, отвечающие за графическое оформление фреймов. Даже необходимость отображения полос прокрутки теперь определяется только инструкциями CSS. Однако все еще можно указать ширину и высоту фрейма, присвоив ему атрибуты <code>width</code> и <code>height</code> соответственно. Значения их, как и в случае с <code>&lt;img&gt;</code>, указываются в пикселях или процентах.</p>
+
+<p>Для управления отображением полос прокрутки используйте CSS-свойство <code>overflow</code>. Свойство <code>overflow</code> управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров. <code>overflow-x</code> управляет горизонтальной полосой прокрутки, <code>overflow-y</code> соответственно вертикальной. </p>
+
+<p>Значения свойства <code>overflow</code>:</p>
+
+<pre>overflow: auto | hidden | scroll | visible | inherit</pre>
+
+<dl>
+  <dt>visible </dt>
+  <dd>Отображается все содержание элемента, даже за пределами установленной высоты 
+    и ширины. </dd>
+  <dt>hidden</dt>
+  <dd>Отображается только область внутри элемента, остальное будет скрыто.</dd>
+  <dt>scroll</dt>
+  <dd>Всегда добавляются полосы прокрутки.</dd>
+  <dt>auto</dt>
+  <dd>Полосы прокрутки добавляются только при необходимости.</dd>
+  <dt>inherit</dt>
+  <dd>Наследует значение родителя.</dd>
+</dl>
+
+<p>Также у <code>&lt;iframe&gt;</code> есть атрибут <code>name</code>, позволяющий озаглавить фрейм. Если указать имя фрейма в атрибуте <code>target</code> какой-либо ссылки, то документ, на который она ссылается, при нажатии по ней откроется в указанном фрейме.</p>
+
+<pre>&lt;a href="second.html" target="myFrame"&gt;Эта ссылка откроется во фрейме&lt;/a&gt;
+&lt;iframe src="frame.html" name="myFrame" width="100%"&gt;
+   Ваш браузер не поддерживает фреймы.
+&lt;/iframe&gt;</pre>
+
+<p>HTML5 предоставляет еще два новых атрибута для управления фреймами. Установленный булев атрибут <code>seamless="seamless"</code> означает, что браузер должен обрабатывать содержимое вставленного документа так, как будто оно является частью основного документа. В частности, на него будут действовать инструкции CSS, подключенные к странице-родителю. Кроме того, ссылки дочерней страницы будут открываться в основном (родительском) окне браузера, а не в самом фрейме, как это происходит по умолчанию. Также ширина и&nbsp;высота <code>&lt;iframe&gt;</code> будут автоматически установлены браузером так, как будто фрейм является обычным блочным элементом.</p>
+
+<p>Вторым из&nbsp;упомянутых атрибутов является <code>sandbox</code>, позволяющий управлять функциональностью фрейма. Если он&nbsp;не&nbsp;указан, то&nbsp;в&nbsp;<code>&lt;iframe&gt;</code> разрешены все возможности HTML&nbsp;5. В&nbsp;противном случае в&nbsp;подключенном документе запрещается:</p>
+
+<ul>
+<li>отправка данных из&nbsp;форм на&nbsp;сервер;</li>
+<li>применение скриптов;</li>
+<li>размещение ссылок, указывающих на&nbsp;другие окна и&nbsp;фреймы (нельзя использовать атрибут <code>target</code>);</li>
+<li>применение плагинов с&nbsp;элементами <code>&lt;embed&gt;</code> и <code>&lt;object&gt;</code>;</li>
+<li>использование атрибута <code>seamless</code> во&nbsp;вложенных фреймах;</li>
+<li>доступ к&nbsp;содержимому родительского документа, включая cookie и&nbsp;localStorage, путем принудительной унификации источника страницы, даже если это фактически один и&nbsp;тот же&nbsp;документ (применяется при необходимости сохранить возможность скриптования в&nbsp;пределах дочернего документа, ограничив доступ к&nbsp;родительскому).</li>
+</ul>
+
+<p>Значением атрибута <code>sandbox</code> может быть набор из&nbsp;перечисленных ниже ключевых слов, которые указываются через пробел. Каждое из&nbsp;них снимает некоторые из&nbsp;вышеуказанных ограничений:</p>
+
+<table>
+<tbody><tr><td><code>allow-forms</code></td><td>&nbsp;—&nbsp;</td><td>разрешает отправку данных с&nbsp;помощью форм.</td></tr>
+<tr><td><code>allow-scripts</code></td><td>&nbsp;—&nbsp;</td><td>разрешает применение скриптов.</td></tr>
+<tr><td><code>аllow-same-origin</code></td><td>&nbsp;—&nbsp;</td><td>отключает принудительную блокировку доступа к&nbsp;родительскому документу.</td></tr>
+<tr><td><code>аllow-top-navigation</code></td><td>&nbsp;—&nbsp;</td><td>разрешает ссылаться на&nbsp;документ верхнего уровня. Остальные окна и&nbsp;фреймы остаются под защитой атрибута <code>sandbox</code>.</td></tr>
+</tbody></table>
+
+<p>Помните, что использование <code>sandbox</code> не&nbsp;гарантирует безопасности при отображении загруженного на&nbsp;сервер пользовательского кода, поскольку злоумышленник может загрузить вредоносную страницу непосредственно в&nbsp;главном окне браузера, обойдя действие атрибута. Для более надежной защиты необходимо обеспечить вывод пользовательских страниц с&nbsp;указанием MIME-типа <code>text/html-sandboxed</code> вместо <code>text/html</code>.</p>
+
+<table border="1">
+<caption>Атрибуты <code>&lt;iframe&gt;</code></caption>
+<tbody>
+<tr>
+<td style="width: 15%">Название атрибута</td>
+<td style="width: 22%">Значение</td>
+<td>Описание</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>пиксели <code>%</code></td>
+<td>Определяет высоту фрейма на HTML странице.</td>
+</tr>
+<tr>
+<td><code>sandbox</code></td>
+<td><code>Allow-same-origin<br>
+Allow-top-navigation<br>
+Allow-forms<br>
+Allow-scripts</code></td>
+<td>Задает ряд ограничений на контент, загружаемый во фрейм. Задается перед тем, как создать HTML страницу.</td>
+</tr>
+<tr>
+<td><code>scrolling</code></td>
+<td><code>yes no auto</code></td>
+<td>Определяет показывать скроллы в фрейме или нет. Является устаревшим в HTML5. Вместо него используйте CSS.</td>
+</tr>
+    <tr>
+        <td><code>seamless</code></td>
+        <td></td>
+        <td>Определяет, что содержимое фрейма должно отображаться так, словно оно является частью документа.</td>
+    </tr>
+<tr>
+<td><code>Name</code></td>
+<td>название</td>
+<td>Задает имя фрейма.</td>
+</tr>
+<tr>
+<td><code>Align</code></td>
+<td><code>left right top<br>
+middle bottom</code></td>
+<td>Определяет выравнивание фрейма относительно окружающих элементов. Является устаревшим. Вместо него используйте CSS.</td>
+</tr>
+<tr>
+<td><code>frameborder</code></td>
+<td><code>yes</code> (или 1)<br>
+<code>no</code></td>
+<td>Используется для включения отображения границы вокруг фрейма. Является устаревшим в HTML5. Вместо него используйте CSS.</td>
+</tr>
+<tr>
+<td><code>longdesc</code></td>
+<td><code>URL</code></td>
+<td>Используется, чтобы указать URL-адрес страницы, которая содержит длинное описание содержания фрейма. Является устаревшим. Вместо него используйте CSS.</td>
+</tr>
+<tr>
+<td><code>marginwidth</code></td>
+<td>пиксели</td>
+<td>Используется для контроля ширины отступа от содержания до границы фрейма. Является устаревшим. Вместо него используйте CSS.</td>
+</tr>
+<tr>
+<td><code>src</code></td>
+<td><code>URL</code></td>
+<td>Определяет URL-адрес документа для отображения в IFRAME.</td>
+</tr>
+    <tr>
+        <td><code>srcdoc</code></td>
+        <td>HTML-код</td>
+        <td>Хранит содержимое фрейма непосредственно в атрибуте.</td>
+    </tr>
+<tr>
+<td><code>vspace</code></td>
+<td>пиксели</td>
+<td>Устанавливает вертикальные отступы от фрейма до окружающего контента. Является устаревшим. Вместо него используйте CSS.</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>пиксели <code>%</code></td>
+<td>Определяет ширину фрейма на HTML странице.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<hr class="separator">     
+<p id="practic" style="text-align: center; font-weight: 600; font-size: 36px; color: #000000; text-indent: 0;">ПРАКТИКА</p>
+<hr class="separator">     
+
+<p style="text-align: center; font-size: 18px">Цель работы: Изучение и практическое освоение тегов используемых в стандарте HTML при форматировании таблиц и создании фреймов.</P>
+<br><h2 align="center" style="text-align:center;">Задание к лабораторной работе №5:</h2><br>
+
+<ol>
+  <li>В своей папке по пути: <code>Группа&nbsp;/&nbsp;Фамилия.Имя&nbsp;/</code> создать новый HTML - документ.</li>
+  <li>Выберите тему, и создайте по ней HTML-таблицу.</li>
+  <li>Отредактируйте созданную таблицу:</li>
+  <ul>
+    <li>Добавьте ей фон;</li>
+    <li>Объедините несколько ячеек в одной строке;</li>
+    <li>Стилизуйте таблицу с помощью CSS, сделайте эффект выделения при наведении мыши на ячейку;</li>
+    <li>Добавьте рамку к таблице;</li>
+    <li>Перекрасьте каждую вторую строку с помощью CSS;</li>
+    <li>Откорректируйте размеры таблицы;</li>
+    <li>Сделайте текст в каждой ячейке посередине;</li>
+    <li>Добавьте подпись к таблице с помощью специального элемента;</li>
+  </ul>
+  <li>Возьмите любой текст и с помощью таблицы сделайте этот текст в 2 колонки, каждая на пол страницы;</li>
+  <li>С помощью CSS стилизуйте текст в колонках;</li>
+  <li>Внизу каждой колонки добавьте по изображению;</li>
+  <li>Добавьте фрейм с 3-ей лабораторной работой в этот документ;</li>
+  <ul>
+    <li>Задайте размер фрейму;</li>
+    <li>Добавьте рамку фрейму;</li>
+    <li>Добавьте принудительно полосы прокрутки.</li>
+  </ul>
+  <li>Ниже добавьте еще 1 фрейм, скопируйте в него код из 1-ой лабораторной работы используя специальный атрибут фрейма.</li>
+</ol>
+
+<p style="font-style: italic; text-align: center;">Необходимые ресурсы можно найти в папке <code>labs_web_design/sources/!for_students</code>.</p>
+
+<br><h2 style="text-align: center;">Отчет по лабораторной работе должен содержать:</h2><br>
+
+<P>В электронном варианте представить все HTML-документы созданные в работе. Проилюстрировать преподавателю функционирование этих HTML-документов по всем пунктам задания лабораторной работы, рассказать какие теги и свойства были использованы и для чего.</P>
+
+<br><br><p style="text-align: center; font-size: 22px"><a class="txthref" href="#T1">Вернуться в начало</a></p><br><br>
+
+
+
+</div>
+</div>
+</div>
+  <!-- book end -->
+
+
+  <!-- content start -->
+<div style="display: block ;width: 20%; height: 100%; right:5%; top:28%; z-index: 101; position: absolute;font-size: 150%; line-height: 1.6;">
+  
+    <p style="color:#f24660; font-size: 28px; text-align:center; text-indent: 0;">Лабораторная работа №5</p>
+  <div  id="aside1" style="text-indent: 0;" >   
+   <hr>
+
+      <LI><A HREF="lab5.html#T1">Общие положения</A>
+      <LI><A HREF="lab5.html#M2">Создание таблицы</A>
+      <LI><A HREF="lab5.html#M3">Добавление подписи к таблице</A> 
+      <LI><A HREF="lab5.html#M4">Группировка строк и столбцов</A>
+      <LI><A HREF="lab5.html#M5">Группировка разделов</A>
+      <LI><A HREF="lab5.html#M6">Объединение ячеек таблицы</A>
+      <LI><A HREF="lab5.html#M7">Примеры таблиц</A>
+      <LI><A HREF="lab5.html#M8">Фреймы</A>
+      <LI><A HREF="lab5.html#M9">Использование фреймов</A> 
+
+    <hr>
+    <p style="text-align: center; font-size: 28px; color: #fafafa; margin-top: -10px;  text-indent: 0;"> 
+    <a href="lab5.html#practic">Практика</a></p>
+</div>
+  <!-- content end -->
+</div>
+  <!-- footer start -->
+    <div class="templatemo_footer" style="position: relative; left: 0; bottom: 0; ">
+      <div class="container">
+      <div class="row" style="color: white">
+          <div class="col-md-9 col-sm-12">
+              <span>Dnipro National University |  Laboratory Workshop &copy; 2019  </span>
+            </div>
+            <div  style="text-align: right">
+              <span> Designed by Zymeth</span>
+            </div>
+        </div>
+        </div>
+    </div>
+  <!-- footer end -->    
+
+<script src='../sources/js/content_scroll.js'></script>
+
+  </body>
+</HTML>
